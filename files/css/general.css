@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900|Oswald:400,300,700);
+
+body{
+font-family: 'Lato', sans-serif;
+}
+
+#listado_notas .view-content > div{
+	margin-bottom: 40px;
+}
+#listado_notas .view-content .imagen, #listado_notas .view-content .content{
+	display: inline-block;
+}
+#listado_notas .view-content .content{
+	display: inline-block;
+	width: 280px;
+	vertical-align: top;
+	margin-left: 15px;
+}
+#listado_notas .view-content .content{
+}
+#listado_notas .view-content .imagen img{
+	max-width: 200px;
+    height: auto;
+}

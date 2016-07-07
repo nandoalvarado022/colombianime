@@ -1,0 +1,3 @@
+11-12-2015
+El archivo jquery.autopager-1.0.0.js
+se tuvo que descargar ya que no estaba con el modulo inicialmente

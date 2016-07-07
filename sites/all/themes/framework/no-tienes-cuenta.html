@@ -1,0 +1,35 @@
+<section class="section-gris" id="no-tines-cuenta">
+  <article class="no-tienes-cuenta">
+    <span style="font-weight: 600;">¿Y tú? apúntate! recibe nuestras mejores ofertas</span>
+    &nbsp;&nbsp;
+    <a href="/apuntate" class="btn btn-naranja btn-clickeame">Clickeame!</a>
+  </article>
+  <article>
+    <div class="box-facebook">
+    <!--   <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/colombianimeCO" data-small-header="true" data-adapt-container-width="true" data-width="450" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=1525358061109357&amp;container_width=450&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FcolombianimeCO&amp;locale=es_CO&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;width=450"><span style="vertical-align: bottom; width: 450px; height: 154px;"><iframe name="f100fd1b9" width="450px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="http://www.facebook.com/v2.5/plugins/page.php?adapt_container_width=true&amp;app_id=1525358061109357&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D42%23cb%3Df186f8b7c%26domain%3Dcolombianime.com%26origin%3Dhttp%253A%252F%252Fcolombianime.com%252Ffcf70d66%26relation%3Dparent.parent&amp;container_width=450&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FcolombianimeCO&amp;locale=es_CO&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;width=450" style="border: none; visibility: visible; width: 450px; height: 154px;" class=""></iframe></span></div>
+    </div> -->
+
+    <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/colombianimeCO" data-layout="standard" data-action="like" data-show-faces="true" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1525358061109357&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2FMercadoLibre&amp;layout=standard&amp;locale=es_ES&amp;sdk=joey&amp;share=false&amp;show_faces=true"><span style="vertical-align: bottom; width: 450px; height: 57px;"><iframe name="f6312d784f1e08" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.5/plugins/page.php?adapt_container_width=true&amp;app_id=1525358061109357&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D42%23cb%3Df186f8b7c%26domain%3Dcolombianime.com%26origin%3Dhttp%253A%252F%252Fcolombianime.com%252Ffcf70d66%26relation%3Dparent.parent&amp;container_width=450&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FcolombianimeCO&amp;locale=es_CO&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;width=450" style="border: none; visibility: visible; width: 450px; height: 57px;"></iframe></span></div>
+
+  </article>
+</section>
+
+
+<script>
+  effects=Array("tada", "bounce", "wobble", "bounceIn", "flip");
+  window.setInterval(function(){
+    animation=effects[Math.floor(Math.random() * effects.length)];//aleatorio
+    element = $(".btn-clickeame");
+    element.addClass('animated ' + animation);
+    //wait for animation to finish before removing classes
+    window.setTimeout( function(){
+        element.removeClass('animated ' + animation);
+    }, 2000);
+  }, 4000);
+</script>
+
+<style>
+  .btn-clickeame{
+    display: inline-block;
+  }
+</style>

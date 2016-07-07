@@ -1,0 +1,4 @@
+name = Demo Drupal Angularjs.
+Description = Demo for using angularjs in Drupal.
+version = "7.x-0.1"
+core = "7.x"

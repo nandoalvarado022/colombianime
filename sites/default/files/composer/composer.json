@@ -1,0 +1,12 @@
+{
+    "require": {
+        "lullabot/amp": "^1.0.0",
+        "php": ">=5.3.0"
+    },
+    "config": {
+        "autoloader-suffix": "ComposerManager",
+        "vendor-dir": "C:\\xampp\\htdocs/sites/all/vendor"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}

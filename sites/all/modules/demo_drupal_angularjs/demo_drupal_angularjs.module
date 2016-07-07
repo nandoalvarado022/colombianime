@@ -1,0 +1,48 @@
+<?php
+/**
+ * Implements hook_menu().
+ */
+function demo_drupal_angularjs_menu() {
+  $items = array();
+  $items['demo/drupal-angular'] = array(
+    'title' => 'Angularjs with Drupal!',
+    'page callback' => 'demo_drupal_angularjs_page',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+function demo_drupal_angularjs_page() {
+  angularjs_init_application('app');
+  drupal_add_js(drupal_get_path('module', 'demo_drupal_angularjs') . '/js/app.js');
+
+  $book_nodes = node_load_multiple(array(), array('type' => 'books'));
+
+  $books = array();
+  foreach ($book_nodes as $key => $book) {
+    $wrapper = entity_metadata_wrapper('node', $book);
+    $author = $wrapper->field_name->value();
+    $year = $wrapper->field_year->value();
+    $description = $wrapper->body->value();
+    $image_field = $wrapper->field_book_image->value();
+    $image = file_create_url($image_field['uri']);
+    $books[] = array(
+      'title' => $book->title,
+      'author' => $author,
+      'year' => $year,
+      'description' => $description['value'],
+      'image' => $image
+    );
+  }
+
+  drupal_add_js(array(
+    'drupal_angular' => array(
+      'books' => $books,
+    )
+  ), 'setting');
+  
+  drupal_add_js(drupal_get_path('module', 'demo_drupal_angularjs') . '/js/bookController.js');
+
+  return theme('demo_drupal_angularjs_books');
+}

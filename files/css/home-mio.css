@@ -1,0 +1,74 @@
+/*font-family: 'Source Sans Pro', sans-serif;*/
+/*font-family: 'Titan One', cursive;*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,300);
+@import url(https://fonts.googleapis.com/css?family=Titan+One);
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.view-nodequeue-1 {
+	font-family: 'Titan One', cursive;
+}
+.view-nodequeue-1 .imagen_principal{
+	display: inline-block;
+    width: 400px;
+}
+.view-nodequeue-1 .imagen, .view-nodequeue-1 .texto{
+	display: inline-block;
+	vertical-align: top;
+    width: 100%;
+}
+.view-nodequeue-1 .imagen img{ width: 100%; height: auto;}
+.view-nodequeue-1 .texto > div {
+	margin-top: 20px;
+}
+/*.view-nodequeue-1 img{width:auto; height:auto; max-height: 500px; max-width: 500px;}*/
+.view-nodequeue-1 .titulo{
+	display: inline-block;vertical-align: top;
+	font-family: 'Titan One', cursive;}
+.view-nodequeue-1 .sumario{display: inline-block;
+    vertical-align: top;
+    float: right;
+    width: 200px;}
+#main > .apertura_home .der .row {
+	position: relative;
+    text-align: right;
+}
+#listado_notas .view-content > div img{
+    max-width: 100%; height: auto;}
+.anuncio label{
+    font-size: 14px;
+}
+#listado_notas .view-content > div .titulo_imagen{ position: relative; padding-bottom: 30px;}
+#listado_notas .view-content > div p:first-child:first-letter { color: #F49401; font-size: 50px; display: inline-block; float: left; line-height: 40px; margin: 0 10px 0 0;}
+
+.region-header .header .icon_compartir{height: 35px;
+    float: right;
+    top: 22px;
+    position: relative;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    padding-top: 23px;
+    background-position: 0px 8px;
+}
+.region-header .header .barra_logo{width: 100%;background-image: url(../images/barra-principal.jpg);    height: 90px;}
+.region-header .header .barra_menu{background:#F49401;color:#fff;border:2px solid #fff; border-left: inherit;}
+.region-header .header li{ display: inline-block; height: 50px; line-height: 50px; cursor: pointer; font-size: 20px; border: solid 1px; padding: 0 16.7px; font-family: 'Anton', sans-serif; margin: 0 -2px !important; border-top: inherit; border-bottom: inherit;}
+.region-header .header li a{color:#fff !important;}
+.region-header .header li.select{background:#E85601;}
+.region-header .header .content{ width: 1000px;margin: 0 auto;text-align: center;}
+.region-header .header li a:hover{ opacity: 0.7;}
+.izq{ width: 200px;}
+.der{ width: 791px;}
+.izq, .der{ float: left; margin-left: 3px; overflow: hidden;}
+.izq .anuncio label{ color: #858585;}
+
+@media screen and (max-width: 480px) {
+    #main{width: 90%;}
+    #main .der{width: 98%;}
+    #main .der .titulo{height: 70px; font-size: 15px;}
+    #main .izq, body #container .chica_chat{display: none;}
+    .region-header .header .content{    width: 100%;    height: 50px;}
+    .region-header .header .barra_logo .content{height: 70px;}
+    .region-header .header li{display: none;}
+    .der{margin-left: 1%;}
+}
