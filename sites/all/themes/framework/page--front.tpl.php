@@ -25,7 +25,7 @@
   <section>
     <div class="bloque-info-sup">
       <a href="https://www.facebook.com/colombianimeCO/?fref=ts" target="_BLANK">
-      Bienvenido :D, recuerda seguir todas nuestras noticias, sorteos y mas cosas que tenemos para tí en nuestra fanpage aquí
+      . Bienvenido :D, recuerda seguir todas nuestras noticias, sorteos y mas cosas que tenemos para tí en nuestra fanpage aquí
       </a>
     </div>  
   </section>
