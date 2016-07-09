@@ -1,10 +1,37 @@
 @import "reset.css";
+@font-face {
+  font-family: 'Agency_fb';
+  src: url('fonts/agency_fb.ttf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('fonts/BebasNeue.otf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'BebasNeue-regular';
+  src: url('fonts/BebasNeue-Regular.otf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'BebasNeue-light';
+  src: url('fonts/BebasNeue-Light.otf'); /* IE9 Compat Modes */
+}
 /*@import url(https://fonts.googleapis.com/css?family=Anton);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 @import url(https://fonts.googleapis.com/css?family=Jaldi:400,700);
 @import url(https://fonts.googleapis.com/css?family=Titan+One);*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,700);
 
+.view-id-frontpage.view-display-id-block_12 .subtitulo{
+  margin: 10px 0;
+}
+span.subtitulo{
+  font-family: BebasNeue-regular;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background: #e6e10c;
+  padding: 5px 20px;
+  display: inline-block;
+}
 body{
   overflow-x: hidden;
 }
@@ -224,11 +251,11 @@ body{
 	width: 474px;
 	margin: 30px 0 25px 25px;}
 	.view-frontpage.view-display-id-block_10 .view-header{
-	background: rgba(234,234,234,1);
-	color: #535E6D;
+	/*background: rgba(234,234,234,1);
+	color: #535E6D;*/
 	padding: 8px 0px;
 	text-align: center;
-	font-weight: 500;
+	/*font-weight: 500;*/
 	}
 	.view-frontpage.view-display-id-block_10 .views-field-title a{
 	color: #5A5A5A;
@@ -463,16 +490,20 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
     font-size: 18px;
     font-weight: 600;
   }
-  a.productos-destacados{
-  vertical-align: top;
-  line-height: 35px;
-  margin-left: 10px;
+  .productos-destacados{
+    vertical-align: top;
+    /*line-height: 35px;*/
+    margin-left: 10px;
+    margin: 10px 0 10px 10px;
+    transform: rotate(-2deg);
   }
   .icon-star{
-  background: url(/sites/all/themes/framework/img/start.png) no-repeat 0px -1px;
-  height: 33px;
-  width: 30px;
-  display: inline-block;
+    background: url(/sites/all/themes/framework/img/start.png) no-repeat 0px -1px;
+    height: 33px;
+    width: 30px;
+    display: inline-block;
+    margin: 15px 0 0 24px;
+
   }
   .item-producto{display: inline-block; margin-bottom: 20px; text-align: center; width: 220px; vertical-align: top;}
   .item-producto a{color: #1b2c3f; font-size: 16px;}
