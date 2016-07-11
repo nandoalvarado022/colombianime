@@ -436,10 +436,11 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   }
 
   html body .container{
+  box-shadow: 0px 0px 20px #6d6d6d;
   width: 1000px;
   margin:0 auto;
   background: #fff;
-  padding-top: 225px;
+  padding-top: 185px;
   transition: 0.5s;
   }
   .columnas{/*No tiene margin top porque lo tiene el titulo de la columna*/}
