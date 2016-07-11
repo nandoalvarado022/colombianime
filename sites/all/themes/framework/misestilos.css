@@ -31,11 +31,64 @@ span.subtitulo{
   background: #e6e10c;
   padding: 5px 20px;
   display: inline-block;
+  color: #1b2c3f;
+  font-weight: 600;
 }
 body{
   overflow-x: hidden;
 }
 /*Home*/
+
+
+  .view-id-frontpage.view-display-id-block_13{
+    float: right;
+    width: 785px;
+    color: #fff;
+    margin: 15px 0px 10px 0;
+  }
+  .view-id-frontpage.view-display-id-block_13 .views-field-field-fecha{
+    width: 190px;
+    float: left;
+  }
+  .view-id-frontpage.view-display-id-block_13 .views-field-field-foto{
+    float: right;
+    width: 190px;
+    overflow: hidden;
+    margin-top: -45px;
+  }
+  .view-id-frontpage.view-display-id-block_13 .view-header{
+    margin: 0px 20px 10px 0;
+  }
+  .view-id-frontpage.view-display-id-block_13 .views-row{
+    overflow: hidden;
+    width: 390px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .view-id-frontpage.view-display-id-block_13 img{
+    width: 170px;
+    height: auto;
+  }
+  #header.scrollDifrCro{
+    
+  }
+  #header.scrollDifrCro .view-id-frontpage.view-display-id-block_13 .views-field-field-foto{
+    display: none;
+  }
+  #header.scrollDifrCro .view-id-frontpage.view-display-id-block_13 .views-row{
+    width: 270px;
+    height: 35px;
+  }
+  #header.scrollDifrCro .view-id-frontpage.view-display-id-block_13 .view-header{
+    display: inline-block;
+  }
+  #header.scrollDifrCro .view-id-frontpage.view-display-id-block_13 .view-content{
+    display: inline-block;
+    vertical-align: top;
+  }
+  html body .container.scrollDifrCro{
+    padding-top: 105px;
+  }
   #apertura-video{
     display: inline-block;
     vertical-align: top;
@@ -316,7 +369,7 @@ body{
   font-family: 'Raleway', sans-serif;
   line-height: 20px;
 }
-html body header{position:fixed; background: rgba(73,86,101,0.7); width: 100%; height: 57px; z-index: 999; left: 0; right: 0; margin: 0 auto;}
+html body header{position:fixed; background: rgba(73,86,101,0.7); width: 100%; z-index: 999; left: 0; right: 0; margin: 0 auto; transition:0.5s;}
 html body section.list-cosplayer{position: fixed; top: 0; z-index: -1;}
 html body section.list-cosplayer img{max-width: 100%;}
 html body section.list-cosplayer .izq{width: 15%; float: left;}
@@ -386,7 +439,8 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   width: 1000px;
   margin:0 auto;
   background: #fff;
-  padding-top: 57px;
+  padding-top: 225px;
+  transition: 0.5s;
   }
   .columnas{/*No tiene margin top porque lo tiene el titulo de la columna*/}
   html body .container section.col-izq{

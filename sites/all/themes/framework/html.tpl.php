@@ -64,6 +64,8 @@
       <link href="/files/owl-carousel/owl.theme.css" rel="stylesheet">
       <script src="/files/owl-carousel/owl.carousel.js"></script>
 
+      <link rel="stylesheet" href="/sites/all/themes/framework/css/estilosJesu.css" />
+
       <link rel="stylesheet" href="/sites/all/themes/framework/misestilos.css" />
       <link rel="stylesheet" type="text/css" href="/sites/all/themes/framework/misestilos-movil.css" media="screen and (max-width:480px)">
 
@@ -198,12 +200,13 @@
         <!-- Fin FB -->
         <header id="header" class="region-header" role="banner" class="clearfix">
           <div id="status_web"></div>
+          <?php print views_embed_view('frontpage','block_13'); ?>
           <figure class="content_logo" id="logo-colombianime">
             <a href="/">
               <img src="/files/images/logo-colombianime.png" alt="Logo Colombianime">
             </a>
           </figure>
-          <ul>
+          <ul style="display:none;">
             <!-- <li>
               <a href="">
                 <img src="sites/all/themes/framework/img/find.png" alt="" class="icon-find">

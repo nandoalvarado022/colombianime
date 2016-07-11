@@ -8,7 +8,6 @@ function numberWithCommas(x) {
 
 
 $(document).ready(function(){
-
 	// Popup suscripcion
 		if($("body").width()>=1000){
 			cookieSuscripcion=getCookie("suscripcion");
@@ -38,6 +37,15 @@ $(document).ready(function(){
 			});
 		}
 	// Fin popup suscripcion
+	$(window).on('scroll', function() {
+      if($(window).scrollTop() > 0) {
+    	$("#header").addClass("scrollDifrCro");
+    	$("html body .container").addClass("scrollDifrCro");
+        } else {
+    	$("#header").removeClass("scrollDifrCro");
+    	$("html body .container").removeClass("scrollDifrCro");
+      }
+    });
 });
 
 
