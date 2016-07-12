@@ -144,7 +144,6 @@
   }
 
   html body .container .columna-node-article section.col-der{margin-right: 3px;}
-  html body .container{padding-top: 60px;}
   html body .container section.col-izq .views-field-title a{
     text-transform: uppercase;
     padding: 7px 12px 0 0;
