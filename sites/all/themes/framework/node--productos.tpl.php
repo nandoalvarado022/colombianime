@@ -309,12 +309,12 @@
       //status_web("Ingresa tu contraseña");
       status_web("Cargando...");
       datos=$(".popup-detalle-contacto form").serialize();
-      debugger;
       $.ajax({
         url:"/ajax-productos",
         data:datos,
         type:"POST",
         success:function(res){
+          debugger;
           if (res==1) {
             status_web("Ahora ingresa tu pin ^^");
             $(".popup-detalle-contacto input[type='password']").fadeIn();
@@ -336,12 +336,12 @@
       status_web("Comprobando PIN ...");
       $(".popup-detalle-contacto form input[name='origen']").val("check_cliente");
       datos=$(".popup-detalle-contacto form").serialize();
-      debugger;
       $.ajax({
         url:"/ajax-productos",
         data:datos,
         type:"POST",
         success:function(res){
+          debugger;
           $("#msg_pop_compra").html("Verifica que tu información sea correcta");
           $(".popup-detalle-contacto form input[name='origen']").val(res);
           if (res=="check_cliente") {
@@ -358,7 +358,6 @@
       status_web("Guardando tu compra ...");
       datos=$(".popup-detalle-contacto form#enviar_compra").serialize();
       datos=datos+"&bonoVAL="+bonoVAL+"&bonoCODIGO="+bonoCODIGO;
-      debugger;
       $.ajax({
         url:"/ajax-productos",
         data:datos,
@@ -389,8 +388,11 @@
         url:"/ajax-productos",
         data:datos,
         type:"POST",
+        dataType: "json",
         success:function(res){
-          ajustarPopupDetalleContacto(500);
+          datos=res;
+          debugger;
+          /*ajustarPopupDetalleContacto(500);
           obj = JSON.parse(res);
           clienteID=obj.id;
           $(".popup-detalle-contacto form input[name='nombre']").val(obj.nombre);
@@ -404,7 +406,7 @@
           console.log(obj);
           $("#login_cliente").fadeOut();
           $("#info_cliente").fadeIn();
-          status_web("Bienvenido(a) "+obj.nombre+" ^^");
+          status_web("Bienvenido(a) "+obj.nombre+" ^^");*/
         }
       });
     }

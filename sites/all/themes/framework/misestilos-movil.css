@@ -1,4 +1,8 @@
 /*Home*/
+	html body .container{padding-top: 53px;}
+	.view-id-frontpage.view-display-id-block_13{
+		display: none;
+	}
   	#apertura-video{
   		width: 100%;
   	}
@@ -89,7 +93,11 @@
 		width: 100%; height: auto;
 	}
 	.item-producto{
-		width: 200px;
+		width: auto;
+    	margin: 20px auto;
+	}
+	.view-frontpage.view-display-id-block_9 .item-producto{
+    	margin: 20px auto;
 	}
 	html body .container section.col-izq .views-field-title a{
 		width: 95%;

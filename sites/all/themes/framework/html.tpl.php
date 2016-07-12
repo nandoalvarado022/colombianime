@@ -12,6 +12,11 @@
     require_once ('sites/all/libraries/mobile-detect-master/mobile_detect.php');
     $detect = new Mobile_Detect();
     $_SESSION["isMobile"]=$detect->isMobile();
+    ?>
+    <script>
+      var isMobile="<?php echo $detect->isMobile();?>";
+    </script>
+    <?php
     // if ($detect->isMobile()) {
     // // Detecta si es un móvil
     // }

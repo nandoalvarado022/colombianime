@@ -38,13 +38,15 @@ $(document).ready(function(){
 		}
 	// Fin popup suscripcion
 	$(window).on('scroll', function() {
-      if($(window).scrollTop() > 0) {
-    	$("#header").addClass("scrollDifrCro");
-    	$("html body .container").addClass("scrollDifrCro");
-        } else {
-    	$("#header").removeClass("scrollDifrCro");
-    	$("html body .container").removeClass("scrollDifrCro");
-      }
+		if (isMobile!="1") {
+			if($(window).scrollTop() > 0) {
+				$("#header").addClass("scrollDifrCro");
+				$("html body .container").addClass("scrollDifrCro");
+				} else {
+				$("#header").removeClass("scrollDifrCro");
+				$("html body .container").removeClass("scrollDifrCro");
+			}
+		}
     });
 });
 
