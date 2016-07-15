@@ -43,13 +43,22 @@
       <meta name="msvalidate.01" content="D5D05B1AAFCF0F5D4BBB8969372AC190" />
       <title><?php print $head_title; ?></title>
       <meta name=”description” content="Encontraras todas tus tiendas anime, todo sobre Cosplayer, Eventos anime en Colombia, Noticias anime, Concursos y mas"/>
+      <meta property="fb:pages" content="195187767526205" />
       <?php print $styles; ?>
       <?php print $scripts; ?>
       <!-- IE Fix for HTML5 Tags -->
       <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
+
+      <!--jQuery-->
+      <script type="text/javascript" src="http://localhost/misc/jquery.js?v=1.4.4"></script>
+      <!--
       <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="http://localhost/misc/jquery.once.js?v=1.2"></script>-->
+      <!--jQuery-->
+
+
       <script src="/files/js/jquery.colorbox-min.js"></script>
       <script src="/files/js/jquery.easing.1.3.js"></script>
       <script src="/files/js/jquery.easing.compatibility.js"></script>
