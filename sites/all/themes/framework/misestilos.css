@@ -44,7 +44,7 @@ body{
     float: right;
     width: 785px;
     color: #fff;
-    margin: 15px 0px 10px 0;
+    margin: 15px -10px 10px 0;
   }
   .view-id-frontpage.view-display-id-block_13 .views-field-field-fecha{
     width: 190px;
@@ -60,7 +60,7 @@ body{
     margin: 0px 20px 10px 0;
   }
   .view-id-frontpage.view-display-id-block_13 .views-row{
-    overflow: hidden;
+    
     width: 390px;
     display: inline-block;
     vertical-align: top;
@@ -78,6 +78,7 @@ body{
   #header.scrollDifrCro .view-id-frontpage.view-display-id-block_13 .views-row{
     width: 270px;
     height: 35px;
+    overflow: hidden;
   }
   #header.scrollDifrCro .view-id-frontpage.view-display-id-block_13 .view-header{
     display: inline-block;
