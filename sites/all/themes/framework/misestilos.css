@@ -441,7 +441,7 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   width: 1000px;
   margin:0 auto;
   background: #fff;
-  padding-top: 185px;
+  padding-top: 180px;
   transition: 0.5s;
   }
   .columnas{/*No tiene margin top porque lo tiene el titulo de la columna*/}
