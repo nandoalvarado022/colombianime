@@ -52,9 +52,9 @@
       <![endif]-->
 
       <!--jQuery-->
-      <script type="text/javascript" src="http://localhost/misc/jquery.js?v=1.4.4"></script>
-      <!--
+      <!--<script type="text/javascript" src="http://localhost/misc/jquery.js?v=1.4.4"></script>-->
       <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <!--
       <script type="text/javascript" src="http://localhost/misc/jquery.once.js?v=1.2"></script>-->
       <!--jQuery-->
 
