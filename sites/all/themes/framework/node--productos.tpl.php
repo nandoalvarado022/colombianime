@@ -35,6 +35,8 @@
         Ingresa con tus datos y te regalamos descuentos ^^
       </p>
 
+      <div id="status_web"></div>
+
       <form id="enviar_compra">
         <div id="login_cliente">
           <div>
@@ -71,7 +73,7 @@
         </div>
 
         <div id="info_compra">
-          <div style="margin: 10px 0;">
+          <div style="margin: 10px 0; text-align: center;">
             <input type="radio" name="field_tipo_entrega" value="Ir a la tienda" checked> Ir a la tienda
             <input type="radio" name="field_tipo_entrega" value="Domicilio"> Envío a domicilio
           </div>
@@ -184,11 +186,26 @@
 <script>
   // Efectos visuales
     $("#info_cliente input[type='button']").click(function(){
+      status_web("Actualizando tus datos ...");
       $(this).parent().fadeOut(function(){
         console.log("Termino.");
         $("#msg_pop_compra").html("");
         $("#info_compra").fadeIn();
       });
+      //Guardando/Actualizando datos del cliente
+      $(".popup-detalle-contacto form input[name='origen']").val("save_info_cliente");
+      datos=$(".popup-detalle-contacto form#enviar_compra").serialize();
+      $.ajax({
+        url:"/ajax-productos",
+        data:datos,
+        type:"POST",
+        success:function(res){
+          $(".popup-detalle-contacto form input[name='origen']").val("enviar_compra");
+          status_web("Si tienes un <b>cupon de descuento</b> pegalo en el cuadro amarillo de abajo y da clic en aplicar ^^");
+        }
+      });
+
+
     });
   // General
     effects=Array("tada", "bounce", "wobble", "bounceIn", "flip");
@@ -203,7 +220,7 @@
     }, 4000);
 
     $(document).ready(function() {
-      ajustarPopupDetalleContacto(365);
+      ajustarPopupDetalleContacto(500);
     	$(".items-fotos").owlCarousel({
           autoPlay: 3000,
           items : 1,
@@ -224,10 +241,12 @@
     var bonoID;
     var bonoVAL;
     var precioTotal=<?php echo $node->field_precio["und"][0]["value"]?>;
+    var productoID=<?php echo $node->nid?>;
+    var tiendaID=<?php echo $node->field_vendedor['und'][0]['nid']?>;
 
     function aplicar_bono(){
       status_web("Cargando ...");
-      datos="bono="+$("#bono").val()+"&origen=aplicar_bono&cedula="+$("#inp_cedula").val()+"&inp_tienda="+$("#inp_tienda").val();
+      datos="bono="+$("#bono").val()+"&origen=aplicar_bono&cedula="+$("#inp_cedula").val()+"&inp_tienda="+$("#inp_tienda").val()+"&productoID="+productoID;
       $.ajax({
         url:"/ajax-productos",
         data:datos,
@@ -270,7 +289,7 @@
         data:datos,
         type:"POST",
         success:function(res){
-          debugger;
+          
           $("tr.bono .val").html("- $"+numberWithCommas(res));
         }
       });
@@ -304,7 +323,7 @@
       });
     }
 
-    function check_correo(){
+    function check_correo(msg){
       //$(".popup-detalle-contacto form input[name='origen']").val("check_cliente");
       //status_web("Ingresa tu contraseña");
       status_web("Cargando...");
@@ -314,14 +333,19 @@
         data:datos,
         type:"POST",
         success:function(res){
-          debugger;
           if (res==1) {
-            status_web("Ahora ingresa tu pin ^^");
-            $(".popup-detalle-contacto input[type='password']").fadeIn();
-            $(".popup-detalle-contacto input[name='correo']").hide();
+            if (msg=="" || msg==null) {
+              status_web("Ahora ingresa tu pin ^^");
+            } else{
+              status_web(msg);
+            }
+            $(".popup-detalle-contacto input[name='correo']").addClass('animated fadeOutLeftBig').parent().hide();
+            $(".popup-detalle-contacto input[type='password']").show().addClass('animated fadeInLeftBig');
+            // $(".popup-detalle-contacto input[type='password']").fadeIn();
             $("#login_cliente input[type='button']").attr("onclick", "check_cliente()");
           } else{
             status_web("Se ha enviado tu pin a tu correo electronico ^^");
+            check_correo("Se ha enviado tu pin a tu correo electronico ^^");
           }
         }
       });
@@ -334,6 +358,7 @@
       }
 
       status_web("Comprobando PIN ...");
+      // Origen: 
       $(".popup-detalle-contacto form input[name='origen']").val("check_cliente");
       datos=$(".popup-detalle-contacto form").serialize();
       $.ajax({
@@ -341,7 +366,7 @@
         data:datos,
         type:"POST",
         success:function(res){
-          debugger;
+          
           $("#msg_pop_compra").html("Verifica que tu información sea correcta");
           $(".popup-detalle-contacto form input[name='origen']").val(res);
           if (res=="check_cliente") {
@@ -363,7 +388,7 @@
         data:datos,
         type:"POST",
         success:function(res){
-          debugger;
+          
           status_web("Compra finalizada ^^");
           $("#enviar_compra input[name='origen']").val("check_cliente");
           $("#info_compra").fadeOut();
@@ -380,33 +405,33 @@
       });
     }
 
-
     function info_cliente(){
+      // Origen: get_informacion_cliente
       status_web("Cargando tu información ...");
       datos=$(".popup-detalle-contacto form").serialize();
+      console.log(datos);
       $.ajax({
         url:"/ajax-productos",
         data:datos,
         type:"POST",
+        cache: false,
         dataType: "json",
         success:function(res){
-          datos=res;
-          debugger;
-          /*ajustarPopupDetalleContacto(500);
-          obj = JSON.parse(res);
-          clienteID=obj.id;
-          $(".popup-detalle-contacto form input[name='nombre']").val(obj.nombre);
-          $(".popup-detalle-contacto form input[name='apellidos']").val(obj.apellidos);
-          $(".popup-detalle-contacto form input[name='telefono']").val(obj.telefono);
-          $(".popup-detalle-contacto form input[name='celular']").val(obj.celular);
-          $(".popup-detalle-contacto form input[name='cedula']").val(obj.cedula);
-          $(".popup-detalle-contacto form input[name='direccion']").val(obj.direccion);
-          $(".popup-detalle-contacto form input[name='puntos']").val(obj.puntos);
+          console.log(res);
+          ajustarPopupDetalleContacto(500);
+          clienteID=res.id;
+          $(".popup-detalle-contacto form input[name='nombre']").val(res.nombre);
+          $(".popup-detalle-contacto form input[name='apellidos']").val(res.apellidos);
+          $(".popup-detalle-contacto form input[name='telefono']").val(res.telefono);
+          $(".popup-detalle-contacto form input[name='celular']").val(res.celular);
+          $(".popup-detalle-contacto form input[name='cedula']").val(res.cedula);
+          $(".popup-detalle-contacto form input[name='direccion']").val(res.direccion);
+          $(".popup-detalle-contacto form input[name='puntos']").val(res.puntos);
           $(".popup-detalle-contacto form input[name='origen']").val("enviar_compra");
-          console.log(obj);
+          console.log(res);
           $("#login_cliente").fadeOut();
           $("#info_cliente").fadeIn();
-          status_web("Bienvenido(a) "+obj.nombre+" ^^");*/
+          status_web("Bienvenido(a) "+res.nombre+" ^^");
         }
       });
     }
@@ -415,6 +440,11 @@
       $(".popup-detalle-contacto").css("height", height+"px");
       height=height-23;
       $(".popup-detalle-contacto .fondo_blanco").css("height", height+"px");
+      if (width!="") {
+        $(".popup-detalle-contacto").css("width", width+"px");
+        width=width-23;
+        $(".popup-detalle-contacto .fondo_blanco").css("width", width+"px");
+      }
     }
   // Fin compras
 </script>

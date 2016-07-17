@@ -16,6 +16,8 @@ switch ($origen) {
     $result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
     $line = mysql_fetch_array($result, MYSQL_ASSOC);
     echo $line["valor"];
+    mysql_free_result($result);
+    mysql_close($link);
   break;
 
   case 'check_correo':
@@ -73,7 +75,7 @@ switch ($origen) {
   case 'aplicar_bono':
     $query="SELECT a.id as id, a.valor, a.codigo
     from tbl_bonos a
-    where a.codigo='".$bono."' and a.reclamado=0 and a.tienda=$inp_tienda";
+    where a.codigo='".$bono."' and a.reclamado=0 and a.tienda=$inp_tienda and a.producto='".$productoID."'";
     // echo $query;
     
     $result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
@@ -106,16 +108,12 @@ switch ($origen) {
     } else{
       echo "check_cliente";
     }
+    mysql_free_result($result);
+    mysql_close($link);
   break;
 
   case 'enviar_compra':
-    // Actualizando informacion de la persona
-    $query="UPDATE tbl_clientes
-    SET nombre='$nombre', apellidos='$apellidos', telefono='$telefono', direccion='$direccion', cedula='$cedula'
-    WHERE correo='".$correo."'";
-    $result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
-    // Ingresando compra al sistema
-    // Creando el nodo de compra
+    // Ingresando compra al sistema/creando el nodo de compra
       $node = new stdClass();
       $node->title = $nombre." ".$apellidos." - ".$nombre_producto;
       $node->type = "compra";
@@ -135,21 +133,21 @@ switch ($origen) {
   break;
 
   case 'get_informacion_cliente':
-    // Conectando, seleccionando la base de datos
-    // Realizar una consulta MySQL
     $query = 'SELECT * FROM tbl_clientes WHERE correo="'.$correo.'"';
     $result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
-
-    // Imprimir los resultados en HTML
-    
     $line = mysql_fetch_array($result, MYSQL_ASSOC);
     echo json_encode($line);
-    
-
-    // Liberar resultados
     mysql_free_result($result);
+    mysql_close($link);
+  break;
 
-    // Cerrar la conexión
+  case 'save_info_cliente':
+    // Actualizando informacion de la persona
+    $query="UPDATE tbl_clientes
+    SET nombre='$nombre', apellidos='$apellidos', telefono='$telefono', direccion='$direccion', cedula='$cedula'
+    WHERE correo='".$correo."'";
+    $result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
+    mysql_free_result($result);
     mysql_close($link);
   break;
 }?>
