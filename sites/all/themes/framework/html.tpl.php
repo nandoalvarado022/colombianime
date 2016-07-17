@@ -213,7 +213,6 @@
           </script>
         <!-- Fin FB -->
         <header id="header" class="region-header" role="banner" class="clearfix">
-          <div id="status_web"></div>
           <?php print views_embed_view('frontpage','block_13'); ?>
           <figure class="content_logo" id="logo-colombianime">
             <a href="/">
