@@ -68,6 +68,7 @@ body{
   .view-id-frontpage.view-display-id-block_13 img{
     width: 170px;
     height: auto;
+    max-width: 170px;
   }
   #header.scrollDifrCro{
     
@@ -370,7 +371,7 @@ body{
   font-family: 'Raleway', sans-serif;
   line-height: 20px;
 }
-html body header{position:fixed; background: rgba(73,86,101,0.7); width: 100%; z-index: 999; left: 0; right: 0; margin: 0 auto; transition:0.5s;}
+html body header{position:fixed; background: rgba(73,86,101,0.7); width: 100%; z-index: 999; left: 0; right: 0; margin: 0 auto; transition:0.5s; height: 190px;}
 html body section.list-cosplayer{position: fixed; top: 0; z-index: -1;}
 html body section.list-cosplayer img{max-width: 100%;}
 html body section.list-cosplayer .izq{width: 15%; float: left;}
@@ -412,6 +413,7 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
     color: #7dbebd;
     font-weight: bold;
     text-align: center;
+    margin: 5px 0 7px;
   }
   li.logo img{
   width: 200px;
@@ -439,7 +441,7 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   width: 1000px;
   margin:0 auto;
   background: #fff;
-  padding-top: 180px;
+  padding-top: 190px;
   transition: 0.5s;
   }
   .columnas{/*No tiene margin top porque lo tiene el titulo de la columna*/}
@@ -786,10 +788,10 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   .popup-detalle-contacto input[type='text'], .popup-detalle-contacto input[type='password']{
     border: solid 1px #f3c784;
     border-radius: 5px;
-    padding: 5px 8px;
+    padding: 7px 8px;
     font-size: 14px;
     margin: 5px 0 0px;
-    text-align: center;
+    
     outline: none;
     background: #faffbd;
   }
@@ -902,6 +904,13 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   .view-id-node_productos.view-display-id-block_2 .views-row .btn-lo-quiero{
     width: 80px;
     margin: 0 auto;
+  }
+  #btn_recordarpass{
+    display: none;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
   }
 
 

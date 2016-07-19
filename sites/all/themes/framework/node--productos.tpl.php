@@ -46,7 +46,7 @@
           <div>
             <input type="password" name="pin" id="pin" placeholder="Escribe aquí tu PIN">
           </div>
-          <a href="#" onclick="recordar_contrasena();">La olvide</a>
+          <a href="#" onclick="recordar_contrasena();" id="btn_recordarpass">Recordar mi PIN</a>
           <input type="button" onclick="check_correo()" class="btn-estilos-v1" value="Comprobar" />
 
           <div style="clear:both;"></div>
@@ -226,7 +226,7 @@
     }, 4000);
 
     $(document).ready(function() {
-      ajustarPopupDetalleContacto(500);
+      ajustarPopupDetalleContacto(520);
     	$(".items-fotos").owlCarousel({
           autoPlay: 3000,
           items : 1,
@@ -344,6 +344,7 @@
     }
 
     function check_correo(msg){
+      $("#btn_recordarpass").show();
       //$(".popup-detalle-contacto form input[name='origen']").val("check_cliente");
       //status_web("Ingresa tu contraseña");
       status_web("Cargando...");
