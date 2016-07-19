@@ -872,6 +872,14 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
     width: 190px;
     float: left;
   }
+  .mas-productos{
+    float: right;
+    margin: 20px 20px 0 0;
+  }
+  .mas-productos .views-field-title{
+    margin-bottom: 15px;
+  }
+/*Fin nodo producto*/
 
 
 /*Node notas*/

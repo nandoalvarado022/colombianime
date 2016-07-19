@@ -40,13 +40,15 @@
       <form id="enviar_compra">
         <div id="login_cliente">
           <div>
-            <input type="text" name="correo" placeholder="Correo electronico">
+            <input type="text" id="inp_correo" name="correo" placeholder="Correo electronico">
           </div>
           
           <div>
             <input type="password" name="pin" id="pin" placeholder="Escribe aquí tu PIN">
           </div>
+          <a href="#" onclick="recordar_contrasena();">La olvide</a>
           <input type="button" onclick="check_correo()" class="btn-estilos-v1" value="Comprobar" />
+
           <div style="clear:both;"></div>
           <!-- <p>
             <a onclick="btn_registrate()">¿No tienes pin :O? no te preocupes, solo da click Aquí y obtén el tuyo</a>
@@ -173,6 +175,10 @@
     	    ?>
         </div>
       </section>
+
+      <section class="desktop mas-productos">
+        <?php $view = views_get_view('node_productos'); print $view->preview('block_6'); ?>
+      </section>
       <?php
     }?>
 
@@ -243,6 +249,20 @@
     var precioTotal=<?php echo $node->field_precio["und"][0]["value"]?>;
     var productoID=<?php echo $node->nid?>;
     var tiendaID=<?php echo $node->field_vendedor['und'][0]['nid']?>;
+
+    function recordar_contrasena(){
+      $.ajax({
+        url:"/ajax-productos",
+        data:{
+          "correo": $("#inp_correo").val(),
+          "origen": "recordar_pass"
+        },
+        type:"POST",
+        success:function(res){
+          console.log(res);
+        }
+      });
+    }
 
     function aplicar_bono(){
       status_web("Cargando ...");
