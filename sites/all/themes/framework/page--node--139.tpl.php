@@ -82,7 +82,7 @@ switch ($origen) {
     if ($pin!="") {
       // Enviando correo
         $para  = $correo; // atención a la coma
-        $título = 'Colombianime: Aquí esta tu PIN';
+        $título = 'Colombianime: Aqui esta tu PIN';
         $mensaje = '
         <html>
         <head>
@@ -94,7 +94,8 @@ switch ($origen) {
               <th><img src="http://www.colombianime.com/files/images/logo-colombianime.png" /></th>
             </tr>
             <tr>
-              <td>Hola! '.$correo.' te enviamos tu PIN para ingresar a <strong>Colombianime<strong>: '.$pin.'</td>
+              <td>Hola! '.$correo.' te enviamos tu PIN para ingresar: '.$pin.'</td>
+              <td>http://colombianime.com</td>
             </tr>
             <tr>
               <td>Att. Tu amiga Elen ^^</td>
@@ -109,7 +110,7 @@ switch ($origen) {
       // Fin enviar correo
         echo "Se ha enviado el PIN a tu correo electronico.";
     } else{
-      echo "No hemos encontrado tu correo electronico en la base de datos.";
+      echo "No hemos encontrado tu correo electronico en Colombianime.";
     }
   break;
   case 'aplicar_bono':

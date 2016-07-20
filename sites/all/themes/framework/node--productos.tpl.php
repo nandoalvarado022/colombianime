@@ -252,6 +252,7 @@
 
     function recordar_contrasena(){
       $.ajax({
+        dataType: "html",
         url:"/ajax-productos",
         data:{
           "correo": $("#inp_correo").val(),
