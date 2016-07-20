@@ -250,7 +250,26 @@
     var productoID=<?php echo $node->nid?>;
     var tiendaID=<?php echo $node->field_vendedor['und'][0]['nid']?>;
 
+    function validarEmail(email) {
+      if (email=="") {
+        alert("Escribe tu correo electronico.");
+        return false;
+      }
+      expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      if ( !expr.test(email) ){
+        return false;
+      } else{
+        return true;
+      }
+    }
+
     function recordar_contrasena(){
+      email=$("#inp_correo").val();
+      res=validarEmail(email);
+      if (res==false) {
+        alert("Correo electronico no valido.")
+      }
+
       $.ajax({
         dataType: "html",
         url:"/ajax-productos",
@@ -345,6 +364,13 @@
     }
 
     function check_correo(msg){
+      email=$("#inp_correo").val();
+      res=validarEmail(email);
+      if (res==false) {
+        alert("Correo electronico no valido.")
+        return false;
+      }
+
       $("#btn_recordarpass").show();
       //$(".popup-detalle-contacto form input[name='origen']").val("check_cliente");
       //status_web("Ingresa tu contraseña");

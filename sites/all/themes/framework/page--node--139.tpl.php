@@ -94,11 +94,13 @@ switch ($origen) {
               <th><img src="http://www.colombianime.com/files/images/logo-colombianime.png" /></th>
             </tr>
             <tr>
-              <td>Hola! '.$correo.' te enviamos tu PIN para ingresar: '.$pin.'</td>
-              <td>http://colombianime.com</td>
+              <td>Hola! '.$correo.' te enviamos tu PIN para ingresar: <b>'.$pin.'</b></td>
             </tr>
             <tr>
               <td>Att. Tu amiga Elen ^^</td>
+            </tr>
+            <tr>
+              <td><center><a href="http://colombianime.com">http://colombianime.com</a></center></td>
             </tr>
           </table>
         </body>
