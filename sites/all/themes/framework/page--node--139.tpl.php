@@ -72,6 +72,46 @@ switch ($origen) {
     }
   break;
 
+  case 'recordar_pass':
+    $query="SELECT a.pin
+    from tbl_clientes a
+    where a.correo='".$correo."'";
+    $result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
+    $line = mysql_fetch_array($result, MYSQL_ASSOC);
+    $pin=$line["pin"];
+    if ($pin!="") {
+      // Enviando correo
+        $para  = $correo; // atención a la coma
+        $título = 'Colombianime: Aquí esta tu PIN';
+        $mensaje = '
+        <html>
+        <head>
+          <title>¡Hemos encontrado tu PIN! - Colombianime</title>
+        </head>
+        <body>
+          <table>
+            <tr>
+              <th><img src="http://www.colombianime.com/files/images/logo-colombianime.png" /></th>
+            </tr>
+            <tr>
+              <td>Hola! '.$correo.' te enviamos tu PIN para ingresar a <strong>Colombianime<strong>: '.$pin.'</td>
+            </tr>
+            <tr>
+              <td>Att. Tu amiga Elen ^^</td>
+            </tr>
+          </table>
+        </body>
+        </html>';
+        $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+        $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $cabeceras .= 'Cc: nandoalvarado022@gmail.com' . "\r\n";
+        mail($para, $título, $mensaje, $cabeceras);
+      // Fin enviar correo
+        echo "Se ha enviado el PIN a tu correo electronico.";
+    } else{
+      echo "No hemos encontrado tu correo electronico en la base de datos.";
+    }
+  break;
   case 'aplicar_bono':
     $query="SELECT a.id as id, a.valor, a.codigo
     from tbl_bonos a

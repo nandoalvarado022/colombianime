@@ -259,7 +259,7 @@
         },
         type:"POST",
         success:function(res){
-          console.log(res);
+          alert(res);
         }
       });
     }
