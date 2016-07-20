@@ -257,6 +257,7 @@
       }
       expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
       if ( !expr.test(email) ){
+        alert("Correo electronico no valido.")
         return false;
       } else{
         return true;
@@ -267,9 +268,9 @@
       email=$("#inp_correo").val();
       res=validarEmail(email);
       if (res==false) {
-        alert("Correo electronico no valido.")
+        return false;
       }
-
+      
       $.ajax({
         dataType: "html",
         url:"/ajax-productos",
