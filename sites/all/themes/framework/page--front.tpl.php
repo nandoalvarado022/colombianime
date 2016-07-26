@@ -83,7 +83,8 @@
   <!-- Espacio aquarella -->
     <section id="esp-awuarella">
       <div class="content">
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faquarella.inkss%2Fvideos%2F236083693444783%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+        <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faquarella.inkss%2Fvideos%2F236083693444783%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faquarella.ink%2Fvideos%2F305756203105010%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         <?php $view = views_get_view('nodequeue_6'); print $view->preview('block'); ?>
       </div>
     </section>
@@ -165,6 +166,7 @@
       </section>
 
       <section id="listado-productos" class="listado-abajo" style="text-align:center;"><!--Noticias debajo-->
+        <span class="subtitulo" style="margin: 20px; display: block;">Productos para ti</span>
         <?php $view = views_get_view('frontpage'); print $view->preview('block_9'); ?>
       </section>
       <div class="spacer" style="clear: both;"></div>

@@ -99,7 +99,7 @@ body{
   }
 	/*Aquarella*/
 		section#esp-awuarella .content{
-          width: 660px; margin: 0 auto; display: block;
+          width: 790px; margin: 0 auto; display: block;
         }
         .view-id-nodequeue_6.view-display-id-block{float: right; margin-top: 10px; width: 220px;}
         section#esp-awuarella{
@@ -710,8 +710,11 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
     display: block;
     text-align: center;
   }
-  #info_cliente, #crear_cliente, #info_compra, .popup-detalle-contacto input[type='password']
+  #info_cliente, #crear_cliente, #info_compra, .popup-detalle-contacto input[type='password'], .hidden
   {display: none;}
+  .hidden{
+    background: red;
+  }
   #msg_pop_compra{
     text-align: center; margin: 10px 0; font-weight: 600;
     border-top: 1px solid #b4d6d5;
