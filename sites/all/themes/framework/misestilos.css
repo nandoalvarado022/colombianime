@@ -38,8 +38,17 @@ body{
   overflow-x: hidden;
 }
 /*Home*/
-
-
+  #streaming-home{
+    overflow: hidden;
+  }
+  #streaming-home .video{
+    float: left;
+    width: 500px;
+  }
+  #streaming-home .twitter{
+    float: right;
+    width: 400px;
+  }
   .view-id-frontpage.view-display-id-block_13{
     float: right;
     width: 785px;
