@@ -33,7 +33,8 @@
   <section id="streaming-home">
   <!-- Video -->
     <div class="video">
-      <iframe src="https://www.facebook.com/video/embed?video_id=1652417091745180" width="400" height="400" frameborder="0" style="width: 800px; height: 600px;"></iframe>
+      <!-- <iframe src="https://www.facebook.com/video/embed?video_id=1652417091745180" width="400" height="400" frameborder="0" style="width: 800px; height: 600px;"></iframe> -->
+      <iframe width="800" height="600" src="https://www.youtube.com/embed/xJYWfRS1_mY" frameborder="0" allowfullscreen></iframe>
     </div>
   <!-- fin Video -->
     <!-- Comentarios del streaming -->
@@ -196,19 +197,19 @@
     $(this).find("a:nth-child(2) img").removeClass("opacity-1");
   });
 
-	$(".bloque-info-sup").addClass('animated zoomInLeft', "", function(){
-	});
-	$(".bloque-info-sup a").fadeIn();
-	// $(".bloque-info-sup").animate({width:'toggle'},2000, 
+  $(".bloque-info-sup").addClass('animated zoomInLeft', "", function(){
+  });
+  $(".bloque-info-sup a").fadeIn();
+  // $(".bloque-info-sup").animate({width:'toggle'},2000, 
 
-	// Slider
-	$(".view-frontpage.view-display-id-block_11 .view-content").owlCarousel({
-		autoPlay: 3000,
-		items : 1,
-		itemsDesktop : [480,1],
+  // Slider
+  $(".view-frontpage.view-display-id-block_11 .view-content").owlCarousel({
+    autoPlay: 3000,
+    items : 1,
+    itemsDesktop : [480,1],
     itemMobile:[300, 1]
-		//itemsDesktopSmall : [979,1]
-	});
+    //itemsDesktopSmall : [979,1]
+  });
 
   $(".view-nodequeue-5 .view-content ul").owlCarousel();
   // $(".view-nodequeue-5 .view-content .owl-item").addClass("transparente");
@@ -270,22 +271,22 @@
   }
 
   function efectoEntrada(){
-  	tempOcu=true;
-  	$("html body .container").hide();
-  	$("html body section.list-cosplayer img").hide();
-  		setTimeout(function(){
-		  	$("html body section.list-cosplayer img").each(function(){
-		  		obj=$(this);
-		  		if (tempOcu==true) {
-			  		setTimeout(function(){
-			  			$(obj).fadeIn("", function(){
-			  				tempOcu=false;
-			  			});
-			  		}, 500);
-		  		}
-		  	});
-	  	}, 500);
-  	//$("html body .container").fadeIn();
+    tempOcu=true;
+    $("html body .container").hide();
+    $("html body section.list-cosplayer img").hide();
+      setTimeout(function(){
+        $("html body section.list-cosplayer img").each(function(){
+          obj=$(this);
+          if (tempOcu==true) {
+            setTimeout(function(){
+              $(obj).fadeIn("", function(){
+                tempOcu=false;
+              });
+            }, 500);
+          }
+        });
+      }, 500);
+    //$("html body .container").fadeIn();
   }
 
   
