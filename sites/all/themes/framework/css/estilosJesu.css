@@ -1,0 +1,49 @@
+body{
+
+}
+.view-id-node_vendedor.view-display-id-block_1 {
+
+}
+.Header_nvendedor{
+	margin:10px;
+	width:1200px;
+	height:300px;
+	padding:10px 10px
+}
+
+.Logo_nvendedor{
+	float:left
+}
+
+.Descripcion_nvendedor{
+	float:left;
+	margin-left:20px;
+	font-family: 'Anaheim', sans-serif;
+	font-size:23px;
+}
+.Header_nvendedor h1{
+	padding:10px 10px;
+	background:#6CC6D9;
+	font-weight:bold;
+	font-size:30px;
+	text-decoration:none;
+	display:inline-block;
+	font-family:"Bebas Neue";
+}
+.Header_nvendedor h2{
+	padding:10px 10px;
+	background:#E7E013;
+	font-weight:bold;
+	font-size:30px;
+	text-decoration:none;
+	display:inline-block;
+	font-family:"Bebas Neue";
+}
+.Social_nvendedor{
+	float: bottom; 
+ 	/*-margin-left:5px;*/
+}
+.Social_nvendedor img{
+    width:40px;
+	height:40px;
+}
