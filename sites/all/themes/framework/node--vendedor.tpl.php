@@ -12,8 +12,13 @@
 
 		</div>
 		<div class='Descripcion_nvendedor' style="height:500px;">
+            
+             
 			<h1><?php echo $node->title ?></h1><br><br> 
-			<strong>Sitio web:</strong> <?php echo $node->field_facebook["und"][0]["value"] ?> <br> <br> 
+			<strong>Sitio web:</strong>
+            <?php
+            print (isset($node->field_facebook["und"][0]["value"])) ? $node->field_facebook["und"][0]["value"] : ''; 
+            ?> <br> <br> 
 			<strong>Dirección:</strong> <?php echo $node->field_direccion["und"][0]["value"] ?> <br> <br> 
 			<strong>Teléfono:</strong> <?php echo $node->field_telefono["und"][0]["value"] ?> <br><br>
             <strong>Instagram:</strong> <?php echo $node->field_instagram["und"][0]["value"] ?> <br><br>
