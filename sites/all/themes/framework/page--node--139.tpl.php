@@ -8,6 +8,8 @@ include("sites/default/settings.php");
 $link = mysql_connect($databases['default']['default']['host'], $databases['default']['default']['username'], $databases['default']['default']['password']) or die('No se pudo conectar: ' . mysql_error());      
 mysql_select_db($databases['default']['default']['database']) or die('No se pudo seleccionar la base de datos '.$databases['default']['default']['database']);
 
+$origen="enviar_compra";
+
 switch ($origen) {
   case 'get_valor_bono':
     $query="select b.valor as valor
@@ -172,6 +174,48 @@ switch ($origen) {
         $node->uid = $field_usuario_gestion_compras;
       }
       $res=node_save($node);
+    // Fin
+
+    // Enviando correo al comprador
+
+    // Fin
+    // Enviando correo al vendedor
+      $field_usuario_gestion_compras=3;
+      if ($field_usuario_gestion_compras!="") {
+        $user=user_load($field_usuario_gestion_compras);
+        echo "El correo es:".
+        $correo_vendedor=$user->mail;
+        $título = 'Colombianime: Se ha registrado una compra, por favor revisar!';
+        echo $mensaje = '
+        <html>
+        <head>
+          <title>¡Se ha registrado una compra, por favor revisar! - Colombianime</title>
+        </head>
+        <body>
+          <table>
+            <tr>
+              <th><img src="http://www.colombianime.com/files/images/logo-colombianime.png" /></th>
+            </tr>
+            <tr>
+              <th>Info:</th>
+            </tr>
+            <tr>
+              <td>
+                '.$nombre." ".$apellidos." esta interesado en: ".$nombre_producto.'
+              </td>
+            </tr>
+            <tr>
+              <td>Att. Tu amiga Elen ^^</td>
+            </tr>
+          </table>
+        </body>
+        </html>';
+        $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+        $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $cabeceras .= 'From: Colombianime ' . "\r\n";
+        $cabeceras .= 'Cc: nandoalvarado022@gmail.com' . "\r\n";
+        mail($correo_vendedor, $título, $mensaje, $cabeceras);
+      }
     // Fin
   break;
 

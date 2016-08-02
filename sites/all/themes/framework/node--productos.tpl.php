@@ -437,7 +437,7 @@
         data:datos,
         type:"POST",
         success:function(res){
-          
+          console.log(res);
           status_web("Compra finalizada ^^");
           $("#enviar_compra input[name='origen']").val("check_cliente");
           $("#info_compra").fadeOut();
