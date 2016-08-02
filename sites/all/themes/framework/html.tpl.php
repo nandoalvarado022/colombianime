@@ -80,7 +80,7 @@
 
       <link rel="stylesheet" href="/sites/all/themes/framework/css/estilosJesu.css" />
 
-      <link rel="stylesheet" href="/sites/all/themes/framework/misestilos.css" />
+      <link rel="stylesheet" href="/sites/all/themes/framework/misestilos.css?update=<?= time()?>" />
       <link rel="stylesheet" type="text/css" href="/sites/all/themes/framework/misestilos-movil.css" media="screen and (max-width:480px)">
 
 
