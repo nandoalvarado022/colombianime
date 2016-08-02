@@ -443,6 +443,7 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   /*position: fixed;*/
   padding: 10px 0;
   background-size: contain;
+  font-weight: bold;
   }
   .bloque-info-sup a{
   color: #fff;
