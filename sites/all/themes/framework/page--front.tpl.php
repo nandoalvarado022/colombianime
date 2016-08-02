@@ -30,6 +30,29 @@
     </div>  
   </section>
 
+  <!-- Espacio aquarella -->
+    <section id="esp-awuarella">
+      <div class="content">
+        <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faquarella.inkss%2Fvideos%2F236083693444783%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
+        <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faquarella.ink%2Fvideos%2F305756203105010%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
+        <?php $view = views_get_view('nodequeue_6'); print $view->preview('block'); ?>
+      </div>
+    </section>
+  <!-- Fin -->
+  
+  <!--
+  <section id="streaming-home">
+      <div class="video">
+        <iframe width="800" height="600" src="https://www.youtube.com/embed/xJYWfRS1_mY" frameborder="0" allowfullscreen></iframe>
+      </div>
+    
+      <div class="twitter">
+        <a class="twitter-timeline"  href="https://twitter.com/search?q=Colombianime" data-widget-id="759225729804533760">Tweets sobre Colombianime</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+      </div>
+  </section>-->
+
   <section id="apertura-video">
     <!-- <img style="width:100%; height:auto;" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfl1/v/t1.0-9/13413515_1011270978992154_7323879543563251133_n.jpg?oh=0c655a0ee0169537b058f5eb7c2d176b&oe=58261EB0&__gda__=1475862517_1cc5cf5e45bfb6fa6ccdb0548792ecab">
      -->
@@ -80,15 +103,7 @@
     </section>
   <!-- Fin -->
 
-  <!-- Espacio aquarella -->
-    <section id="esp-awuarella">
-      <div class="content">
-        <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faquarella.inkss%2Fvideos%2F236083693444783%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faquarella.ink%2Fvideos%2F305756203105010%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-        <?php $view = views_get_view('nodequeue_6'); print $view->preview('block'); ?>
-      </div>
-    </section>
-  <!-- Fin -->
+  
 
   <!-- Section enterate de lo ultimo y cosplayer -->
     <section class="bloqueLoUltimo">
@@ -166,7 +181,7 @@
       </section>
 
       <section id="listado-productos" class="listado-abajo" style="text-align:center;"><!--Noticias debajo-->
-        <span class="subtitulo" style="margin: 20px; display: block;">Productos para ti</span>
+        <span class="subtitulo" style="margin: 20px 0px 30px;">Productos para ti</span>
         <?php $view = views_get_view('frontpage'); print $view->preview('block_9'); ?>
       </section>
       <div class="spacer" style="clear: both;"></div>

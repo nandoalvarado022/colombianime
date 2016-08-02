@@ -110,11 +110,13 @@ body{
   }
 	/*Aquarella*/
 		section#esp-awuarella .content{
-          width: 790px; margin: 0 auto; display: block;
+          width: 570px; margin: 0 auto; display: block;
         }
         .view-id-nodequeue_6.view-display-id-block{float: right; margin-top: 10px; width: 220px;}
         section#esp-awuarella{
-          background: url(http://www.colombianime.com/sites/default/files/aquarella-img-xmen-01.jpg) no-repeat -19px 0, url(https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/941358_231836530496978_3064749562827883514_n.jpg?oh=b75fb1ab3e1b989fce849b46f3f1a593&oe=58337AEB) no-repeat 961px -1px;
+          margin-bottom: 30px;
+          background: url(https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xtp1/v/t1.0-9/13882305_309516316062332_7602929146280774455_n.jpg?oh=63c12ac61e519b1a0a21763c6a8a25cf&oe=58219DC5&__gda__=1478345459_928f557da9b0660ed12e9beda158698d) no-repeat 0px 0, url(https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/941358_231836530496978_3064749562827883514_n.jpg?oh=b75fb1ab3e1b989fce849b46f3f1a593&oe=58337AEB) no-repeat 961px -1px;
+          /*background: url(http://www.colombianime.com/sites/default/files/aquarella-img-xmen-01.jpg) no-repeat -19px 0, url(https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/941358_231836530496978_3064749562827883514_n.jpg?oh=b75fb1ab3e1b989fce849b46f3f1a593&oe=58337AEB) no-repeat 961px -1px;*/
           background-color: rgba(83, 92, 102, 0.09);
           border-bottom: 2px solid rgba(83, 92, 102, 0.26);
           background-size: contain;
@@ -563,7 +565,6 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
     /*line-height: 35px;*/
     margin-left: 10px;
     margin: 10px 0 10px 10px;
-    transform: rotate(-2deg);
   }
   .icon-star{
     background: url(/sites/all/themes/framework/img/start.png) no-repeat 0px -1px;
