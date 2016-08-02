@@ -8,7 +8,7 @@ include("sites/default/settings.php");
 $link = mysql_connect($databases['default']['default']['host'], $databases['default']['default']['username'], $databases['default']['default']['password']) or die('No se pudo conectar: ' . mysql_error());      
 mysql_select_db($databases['default']['default']['database']) or die('No se pudo seleccionar la base de datos '.$databases['default']['default']['database']);
 
-$origen="enviar_compra";
+//$origen="enviar_compra";
 
 switch ($origen) {
   case 'get_valor_bono':
