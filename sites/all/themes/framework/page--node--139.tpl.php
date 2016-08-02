@@ -180,7 +180,7 @@ switch ($origen) {
 
     // Fin
     // Enviando correo al vendedor
-      $field_usuario_gestion_compras=3;
+      //$field_usuario_gestion_compras=3;
       if ($field_usuario_gestion_compras!="") {
         $user=user_load($field_usuario_gestion_compras);
         echo "El correo es:".
