@@ -214,7 +214,7 @@ switch ($origen) {
         $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
         $cabeceras .= 'From: Colombianime ' . "\r\n";
         $cabeceras .= 'Cc: nandoalvarado022@gmail.com' . "\r\n";
-        mail($correo_vendedor, $título, $mensaje, $cabeceras);
+        echo mail($correo_vendedor, $título, $mensaje, $cabeceras);
       }
     // Fin
   break;
