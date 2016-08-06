@@ -110,3 +110,13 @@ function framework_process_block(&$variables, $hook) {
 function framework_preprocess_search_block_form(&$vars) {
   $vars['search_form'] = str_replace('type="text"', 'type="search"', $vars['search_form']);
 }
+// Inicio de sesion
+function framework_theme() {
+  $items = array();
+  // create custom user-login.tpl.php
+  $items['user_login'] = array(
+  'render element' => 'form',
+  'path' => '/sites/all/themes/framework',
+  'template' => 'user-login');
+  return $items;
+}

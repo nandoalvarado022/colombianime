@@ -1,8 +1,11 @@
 <?php
 foreach($_POST as $nombre_campo => $valor){
-   $asignacion = "\$" . $nombre_campo . "='" . $valor . "';";
-   eval($asignacion);
+  $asignacion = "\$" . $nombre_campo . "='" . $valor . "';";
+  eval($asignacion);
 }
+
+date_default_timezone_set('Etc/UTC');
+require 'sites/all/libraries/PHPMailer-master/PHPMailerAutoload.php';
 
 include("sites/default/settings.php");
 $link = mysql_connect($databases['default']['default']['host'], $databases['default']['default']['username'], $databases['default']['default']['password']) or die('No se pudo conectar: ' . mysql_error());      
@@ -22,7 +25,7 @@ switch ($origen) {
     mysql_close($link);
   break;
 
-  case 'check_correo':
+  case 'check_correo'://Aqui se crea la cuenta
     $query="SELECT count(a.pin) as count
     from tbl_clientes a
     where a.correo='".$correo."'";
@@ -36,11 +39,21 @@ switch ($origen) {
       $query="INSERT into tbl_clientes(correo, pin) values
       ('$correo', $pin)";
       $result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
-      $para  = $correo; // atención a la coma
-      //$para .= ', nandoalvarado022@gmail.com';
-      $título = 'Colombianime: Se ha creado tu cuenta!';
-      $mensaje = '
-      <html>
+      
+      $mail = new PHPMailer;
+      $mail->isSMTP();
+      $mail->SMTPDebug = 0;
+      $mail->Debugoutput = 'html';
+      $mail->Host = "smtp.gmail.com";
+      $mail->Port = 587;
+      $mail->SMTPAuth = true;
+      $mail->Username = "ventas.colombianime@gmail.com";
+      $mail->Password = "nandito2007";
+      $mail->setFrom('ventas.colombianime@gmail.com', 'Colombianime');
+      $mail->addReplyTo('ventas.colombianime@gmail.com', 'Elen Colombianime');
+      $mail->addAddress($correo, '');
+      $mail->Subject = 'Colombianime: Se ha creado tu cuenta!';
+      $html = '<html>
       <head>
         <title>¡Se ha creado tu pin! - Colombianime</title>
       </head>
@@ -61,16 +74,11 @@ switch ($origen) {
         </table>
       </body>
       </html>';
-      // Para enviar un correo HTML, debe establecerse la cabecera Content-type
-      $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
-      $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-      // // Cabeceras adicionales
-      // $cabeceras .= $correo. "\r\n";
-      // $cabeceras .= 'From: Colombianime ' . "\r\n";
-      $cabeceras .= 'Cc: nandoalvarado022@gmail.com' . "\r\n";
-      // $cabeceras .= 'Bcc: birthdaycheck@example.com' . "\r\n";
-      // Enviarlo
-      mail($para, $título, $mensaje, $cabeceras);
+      $mail->Body=$html;
+      $mail->AltBody = 'This is a plain-text message body';
+      if (!$mail->send()) {
+        echo "Mailer Error: " . $mail->ErrorInfo;
+      }
     }
   break;
 
@@ -83,9 +91,20 @@ switch ($origen) {
     $pin=$line["pin"];
     if ($pin!="") {
       // Enviando correo
-        $para  = $correo; // atención a la coma
-        $título = 'Colombianime: Aqui esta tu PIN';
-        $mensaje = '
+        $mail = new PHPMailer;
+        $mail->isSMTP();
+        $mail->SMTPDebug = 0;
+        $mail->Debugoutput = 'html';
+        $mail->Host = "smtp.gmail.com";
+        $mail->Port = 587;
+        $mail->SMTPAuth = true;
+        $mail->Username = "ventas.colombianime@gmail.com";
+        $mail->Password = "nandito2007";
+        $mail->setFrom('ventas.colombianime@gmail.com', 'Colombianime');
+        $mail->addReplyTo('ventas.colombianime@gmail.com', 'Elen Colombianime');
+        $mail->addAddress($correo, '');
+        $mail->Subject = 'Colombianime: Aqui esta tu PIN';
+        $html = '
         <html>
         <head>
           <title>¡Hemos encontrado tu PIN! - Colombianime</title>
@@ -107,16 +126,18 @@ switch ($origen) {
           </table>
         </body>
         </html>';
-        $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
-        $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        $cabeceras .= 'Cc: nandoalvarado022@gmail.com' . "\r\n";
-        mail($para, $título, $mensaje, $cabeceras);
-      // Fin enviar correo
-        echo "Se ha enviado el PIN a tu correo electronico.";
+        $mail->Body=$html;
+        $mail->AltBody = 'This is a plain-text message body';
+        if (!$mail->send()) {
+          echo "Mailer Error: " . $mail->ErrorInfo;
+        } else {
+          echo "Se ha enviado el PIN a tu correo electronico.";
+        }
     } else{
       echo "No hemos encontrado tu correo electronico en Colombianime.";
     }
   break;
+
   case 'aplicar_bono':
     $query="SELECT a.id as id, a.valor, a.codigo
     from tbl_bonos a
@@ -159,6 +180,15 @@ switch ($origen) {
 
   case 'enviar_compra':
     // Ingresando compra al sistema/creando el nodo de compra
+      //valor
+      // link producto
+      // recibo $id_producto
+      $id_producto=164;
+      $nodeDetails=node_load($id_producto);
+      $precio=$nodeDetails->field_precio["und"][0]["value"];
+      $precio=number_format($precio);
+      $link="http://colombianime.com/".drupal_get_path_alias('node/'.$id_producto);
+      //echo "<pre>"; print_r($nodeDetails); echo "</pre>";
       $node = new stdClass();
       $node->title = $nombre." ".$apellidos." - ".$nombre_producto;
       $node->type = "compra";
@@ -176,18 +206,25 @@ switch ($origen) {
       $res=node_save($node);
     // Fin
 
-    // Enviando correo al comprador
-
-    // Fin
     // Enviando correo al vendedor
       //$field_usuario_gestion_compras=3;
       if ($field_usuario_gestion_compras!="") {
         $user=user_load($field_usuario_gestion_compras);
-        echo "El correo es:".
         $correo_vendedor=$user->mail;
-        $título = 'Colombianime: Se ha registrado una compra, por favor revisar!';
-        echo $mensaje = '
-        <html>
+        $mail = new PHPMailer;
+        $mail->isSMTP();
+        $mail->SMTPDebug = 2;
+        $mail->Debugoutput = 'html';
+        $mail->Host = "smtp.gmail.com";
+        $mail->Port = 587;
+        $mail->SMTPAuth = true;
+        $mail->Username = "ventas.colombianime@gmail.com";
+        $mail->Password = "nandito2007";
+        $mail->setFrom('ventas.colombianime@gmail.com', 'Colombianime');
+        $mail->addReplyTo('ventas.colombianime@gmail.com', 'Elen Colombianime');
+        $mail->addAddress('nandoalvarado022@gmail.com', 'Hernando Alvarado');
+        $mail->Subject = 'Elen de Colombianime: Felicidades, se ha registrado una venta!';
+        $html = '<html>
         <head>
           <title>¡Se ha registrado una compra, por favor revisar! - Colombianime</title>
         </head>
@@ -197,12 +234,24 @@ switch ($origen) {
               <th><img src="http://www.colombianime.com/files/images/logo-colombianime.png" /></th>
             </tr>
             <tr>
-              <th>Info:</th>
-            </tr>
-            <tr>
               <td>
                 '.$nombre." ".$apellidos." esta interesado en: ".$nombre_producto.'
               </td>
+            </tr>
+            <tr>
+              <th style="text-align: left;">Detalles:</th>
+            </tr>
+            <tr>
+              <td style="width:30%;">Nombre producto:</td><td style="width:30%;">'.$nombre_producto.'</td>  
+            </tr>
+            <tr>
+              <td>Precio:</td><td>$'.$precio.'</td>
+            </tr>
+            <tr>
+              <td>Telefono comprador:</td><td>'.$telefono.'</td>
+            </tr>
+            <tr>
+              <td>Direccion:</td><td>'.$direccion.'</td>
             </tr>
             <tr>
               <td>Att. Tu amiga Elen ^^</td>
@@ -210,11 +259,15 @@ switch ($origen) {
           </table>
         </body>
         </html>';
-        $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
-        $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        $cabeceras .= 'From: Colombianime ' . "\r\n";
-        $cabeceras .= 'Cc: nandoalvarado022@gmail.com' . "\r\n";
-        echo mail($correo_vendedor, $título, $mensaje, $cabeceras);
+        $mail->Body=$html;
+        $mail->AltBody = 'This is a plain-text message body';
+        if (!$mail->send()) {
+          echo "Mailer Error: " . $mail->ErrorInfo;
+        } else {
+          echo "Message sent!";
+        }
+      } else{
+        echo "field_usuario_gestion_compras=0";
       }
     // Fin
   break;
@@ -236,5 +289,9 @@ switch ($origen) {
     $result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
     mysql_free_result($result);
     mysql_close($link);
+  break;
+
+  case 'testdev':
+    
   break;
 }?>
