@@ -1,0 +1,413 @@
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);*/
+/*font-family: 'Open Sans', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Jaldi:400,700);
+/*font-family: 'Jaldi', sans-serif;*/
+
+.icono-like-edited:hover{
+opacity: 0.8;
+}
+.menu-mobile{
+display: none;
+}
+
+.icono-like-edited{
+height: 42px;
+line-height: 20px;
+background-image: url("http://especiales.elheraldo.co/feriainmobiliaria/themes/framework/images/like1.png");
+background-repeat: no-repeat;
+background-position: 0px -42px;
+position: absolute;
+top: 201px;
+right: 4px;
+width: 42px;
+display: block;
+}
+.menu-fijo {
+position: fixed;
+top: 0;
+width: 998px;
+z-index: 9999;
+}
+.icono-like-edited-visted{
+height: 42px;
+line-height: 20px;
+background-image: url("/themes/framework/images/like2.png");
+background-repeat: no-repeat;
+background-position: 0px -6px;
+position: absolute;
+top: 201px;
+right: 4px;
+width: 42px;
+display: block;
+}
+.titulo-proyectos a{
+width: 210px;
+padding: 12px 15px;
+display: inline-block;
+color: #fff;
+text-transform: uppercase;
+font: 600 18px/28px;
+margin-top: -3px;
+
+}
+.view-display-id-block_4 .views-row .titulo{
+color: #0073dc;
+}
+.view-display-id-block_4 .views-row .titulo a{
+font: 700 13px/15px;
+color: #0255A0;
+text-transform: uppercase;
+line-height: 27px;
+}
+.view-display-id-block_4 .views-row .descripcion p{
+font: 400 12px/17px;
+color: #333;
+margin-bottom: 2px;
+}
+h2.titulo-proyectos{
+margin: 0px;
+/*background: transparent linear-gradient(to bottom, #FFF 0%, #F6F6F6 100%) repeat scroll 0% 0%;*/
+background-color: #1e5e9e;
+}
+.box-tittle{
+width: 1000px;
+padding: 10px 0px;
+text-align: center;
+margin-bottom: 10px;
+}
+.box-tittle h2{
+width: 200px;
+margin: 0 auto;
+background-color: #E5357E;
+padding: 10px;
+color: #fff;
+font-family: "Dosis",sans-serif;
+font-size: 30px;
+font-weight: bold;
+}
+span.logo {
+position: absolute;
+bottom: 25px;
+right: 10px;
+}
+.pag-corto-left{
+display: inline-block;
+width: 43px;
+height: 170px;
+background: url(http://especiales.elheraldo.co/feriainmobiliaria/themes/framework/images/antes-slider2.png) no-repeat 100% 0;
+float: left;
+cursor: pointer;
+position: absolute;
+top: 60px;
+z-index: 1;
+float: left;
+opacity: 0.8;
+}
+.pagerEmpresas .item1, .pagerEmpresas-movil .item1 {
+background: #7D7D7D;
+border: 1px solid #7D7D7D;
+}
+.redes-footer{
+float: right;
+position: relative;
+top: 20px;
+}
+.empresas{
+width: 1000px;
+text-align: center;
+border-top: 1px solid rgba(204, 204, 204, 0.31);
+margin: 30px 0px 50px;
+padding-top: 25px;
+}
+.empresas .views-row .logo img {
+    width: 169px;
+    height: auto;
+    vertical-align: middle;
+}
+.logo a {
+height: 90px;
+display: block;
+line-height: 90px;
+}
+
+.pagerEmpresas li, .pagerEmpresas-movil li{
+background: #fff;
+border-radius: 8px;
+color: transparent;
+cursor: pointer;
+float: left;
+font-size: 0;
+height: 15px;
+margin-left: 10px;
+width: 15px;
+-webkit-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+border: 1px solid #ccc;
+}
+.pagerEmpresas ul,.pagerEmpresas-movil ul {
+position: relative;
+}
+.back-container-two{
+width: 100%;
+background: -moz-linear-gradient(left, rgb(25, 71, 111) 0%, rgb(34, 112, 158) 52%, rgb(25, 71, 111) 100%);;
+background: -webkit-linear-gradient(left, rgb(25, 71, 111) 0%, rgb(34, 112, 158) 52%, rgb(25, 71, 111) 100%);;
+padding: 50px 0px;
+}
+.pag-corto-left:hover, .pag-corto-right:hover{
+opacity: 1;
+}
+.view-display-id-block_4{
+width: 900px;
+overflow: hidden;
+position: relative;
+padding: 0px 50px;
+}
+.contenedor .view-display-id-block_4 .views-row-4,.contenedor .view-display-id-block_4 .views-row-8,.contenedor .view-display-id-block_4 .views-row-12,.contenedor .view-display-id-block_4 .views-row-16{
+margin-right: 52px;
+}
+.view-display-id-block_4 .view-content{
+width: 5000px;
+position: relative;
+left: 0px;
+-webkit-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+.view-display-id-block_4 .views-row{
+float: left;
+width: 200px;
+margin-right: 6px;
+display: inline-block;
+background-color: #fff;
+padding: 15px 10px;
+}
+.ver-mas, .ver-mas-dos{
+display: none;
+}
+.te-quedaste-corto{
+width: 1000px;
+margin: 0 auto;
+}
+.pagerEmpresas {
+display: inline-block;
+margin-top: 0px;
+}
+.pagerEmpresas-movil {
+display: none;
+margin-top: 0px;
+}
+.sombra-empresas{
+width: 100%;
+display: inline-block;
+margin-top: 20px;
+}
+.pag-corto-right{
+display: inline-block;
+width: 43px;
+height: 170px;
+background: url(http://especiales.elheraldo.co/feriainmobiliaria/themes/framework/images/despues-slider2.png) no-repeat 100% 0;
+float: right;
+cursor: pointer;
+position: absolute;
+top: 60px;
+z-index: 1;
+right: 0px;
+opacity: 0.8;
+}
+#footer span{    
+float: left;
+color: #ccc;
+margin: 8px;
+font-family: "Dosis",sans-serif;
+line-height: 15px;
+}
+#footer{background: black; width: 100%;margin-bottom: -25px;padding: 3em 0;}
+#footer .contenedor { width: 1000px; margin: 0 auto;}
+#footer .logoFooter{background: url("http://especiales.elheraldo.co/feriainmobiliaria/themes/framework/images/logo-footer.png") no-repeat;
+height: 65px;
+width: 235px;
+background-size: 100%;
+padding-bottom: 10px;
+}
+/*#footer .linea{ border-bottom: 1px solid #515151;}*/
+
+.empresas .view-display-id-block_9,.empresas .view-id-view_term_empresas{
+width: 1000px;
+overflow: hidden;
+position: relative;
+} 
+.empresas .view-display-id-block_9 .view-content,.empresas .view-id-view_term_empresas .view-content {
+width: 5000px;
+position: relative;
+left: 0px;
+-webkit-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+.empresas .view-display-id-block_9 .views-row {
+float: left;
+width: 199px;
+border-right: 1px solid #EAEAEA;
+height: 90px;
+}
+.logo-areacaribe{
+background: url("http://especiales.elheraldo.co/feriainmobiliaria/themes/framework/images/logo-areacaribe.png") no-repeat;
+width: 120px;
+height: 70px;
+display: inline-block;
+float: right;
+margin-top: 30px;
+}
+.pagerNoticas {
+display: inline-block;
+margin-top: 16px;
+}
+.pagerNoticas ul{
+position: relative;
+}
+.box-pager-noticias{
+width: 1000px;
+text-align: center;
+}
+.pagerNoticas .item1 {
+background: #F5F53C;
+border: 1px solid #F5F53C;
+}
+#slider{
+margin-top: 0px;
+}
+.pagerNoticas li {
+background: #fff;
+border-radius: 8px;
+color: transparent;
+cursor: pointer;
+float: left;
+font-size: 0;
+height: 15px;
+margin-left: 10px;
+width: 15px;
+-webkit-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+border: 1px solid #ccc;
+}
+#owl-demo .views-field-field-titulo a,
+.view-display-id-block_1 .views-field-field-titulo a,
+.view-display-id-block_1 .views-field-title a{
+color: #3a4146;
+font-weight: bold;
+}
+.view-display-id-block_1{
+/*top: -3px; Se desactivo porque en noticias estaba afectando*/
+}
+.view-display-id-block_1 .views-field-field-titulo{
+position: absolute;
+top: 364px;
+left: 30px;
+font-family: "Dosis",sans-serif;
+background-color: rgba(255,253,253,0.85);
+width: 500px;
+font-size: 26px;
+line-height: 24px;
+padding: 23px;
+box-shadow: 0px 0px 30px rgba(159, 159, 159, 0.57);
+}
+.view-display-id-block_1 .views-field-field-titulo .field-content{
+width: 457px;
+}
+#owl-demo .views-field-nothing,
+.view-display-id-block_1 .views-field-nothing{
+position: absolute;
+bottom: 37px;
+left: 515px;
+}
+.te-quedaste-corto .contenedor{
+position: relative;
+}
+.view-display-id-block_9 .view-content{
+width: 5000px;
+position: relative;
+left: 0px;
+-webkit-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+#main-home{ width: 1000px; margin: 0 auto;}
+.back-container{ height: 795px; }
+#main-home .listado-proyectos{ width: 1000px; text-align: center; margin: 0 auto;}
+#main-home .listado-proyectos .views-row{ display: inline-block; margin: 0px 12px 50px; text-align: left;position: relative;font-family: "Dosis",sans-serif;width: 300px;}
+#main-home .listado-proyectos .imagen{ width: 320px; height: 200px; overflow: hidden; }
+#main-home .listado-proyectos .descripcion{
+color: #8E8C8C;
+background: transparent linear-gradient(to bottom, #FFF 0%, #eee 100%) repeat scroll 0% 0%;
+padding: 5px 15px 0px 15px;
+}
+#main-home .listado-proyectos .descripcion p{
+font: 400 14px/22px;
+padding: 10px 2px;
+border-bottom: 1px solid #e6e6e6;}
+#main-home .listado-proyectos .titulo{
+color: #0073DC;
+position: relative;
+top: 10px;
+left: 17px;
+}
+#main-home .listado-proyectos .logo img{ width: 100px; height: auto; vertical-align: bottom;}
+#main-home .listado-proyectos .fecha_entrega, #main-home .listado-proyectos .fecha_entrega_label { 
+font: 600 15px/24px;
+color: #29ABE2;
+background-color: rgba(204, 204, 204, 0.13);
+padding: 12px 15px 15px 15px;
+width: 270px;
+display: inline-block;
+}
+#main-home .te-quedaste-corto{ width: 100%; background-color: #6E6F73;overflow: hidden;}
+#main-home .te-quedaste-corto .contenedor{ width: 1000px; height: 390px; overflow: hidden; margin:40px auto 0; text-align: center;}
+#main-home .te-quedaste-corto .contenedor .views-row{ background-color: #fff; display: inline-block; width: 205px; margin: 0 10px; padding: 10px; text-align: left;}
+#main-home .te-quedaste-corto .contenedor .views-row img{ width: 100%; height: auto; }
+#main-home .te-quedaste-corto .contenedor .view-content{ margin-bottom: 10px;}
+.empresas .view-id-view_term_empresas .views-row{
+float: left;
+width: 199px;
+border-right: 1px solid #EAEAEA;
+height: 90px;
+}
+.empresas .view-id-view_term_empresas .views-row-5{
+border-right: none;
+}
+.sombra-title{
+background: url(http://especiales.elheraldo.co/feriainmobiliaria/themes/framework/images/sombra-title.png) no-repeat 100% 0;
+height: 23px;
+width: 100%;
+margin-top: -43px;
+padding-bottom: 28px;
+}
+.logo-heraldo{
+background: url(http://especiales.elheraldo.co/feriainmobiliaria/themes/framework/images/heraldo-footer.png) no-repeat 100% 0;
+width: 230px;
+color: #929292;
+line-height: 15px;
+float: right;
+font: 300 13px/18px;
+margin-top: 12px;
+}
+.container-menu{
+display: block;
+height: 48px;
+}
+@media (max-width: 700px) {
+#main-home .listado-proyectos{ width: 320px;}
+#main-home .te-quedaste-corto .contenedor{ width: 320px;}
+}

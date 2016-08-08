@@ -1,0 +1,2095 @@
+@import "reset.css";
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,300,500,700);
+
+
+.logo-menu a{background-image: url(http://areacaribe.calipso.com.co/themes/framework/images/icono-area-caribe-degradado.svg);}
+.left .view-general-taxonomy iframe{height: 560px;}
+body{
+font-family: "Dosis", sans-serif;
+}
+body ul.menu-feria li:nth-child(3){
+border-bottom: none;
+} 
+.anchox100porc{
+  width: 100% !important;
+}
+.div01{
+    width: 100%;
+    background: #fff;
+    height: 46px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #049ed4;
+}
+div#header{
+  display: none;
+}
+.google_redes{
+  float: right;
+  width: 300px;
+}
+.buscador_google{
+  float: right;
+  width: 273px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.logo-menu{ display: none;}
+.logo-menu img{ width: 80%;}
+.visible{ display: block;}
+.oculto{ display: none !important;}
+ul.menu-feria li{
+  font-family: "Dosis", sans-serif;
+  float: left;
+  list-style: none;
+  width: 165px;
+  text-align: center;
+  font-size: 18px;
+  border-right: 1px solid #ccc;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+ul.menu-feria li span {height: 27px;}
+ul.menu-feria li span a {
+    background: url("/themes/framework/images/logo-area-caribe-degradado.svg") no-repeat;
+    width: 90%;
+    height: 27px;
+    margin: 0 auto;
+    display: block;
+}
+/*
+.menu-fijo {
+    position: fixed;
+    top: 0;
+    width: 998px;
+    z-index: 9999;
+}*/
+  #nav_mobile{
+  display: none;
+  }
+  .bt-menu .list2{
+  background: url("/themes/framework/images/icon-menu-movil.svg") no-repeat center center / 100% auto transparent;
+  left: 12px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+  }
+  .menu-mobile{
+  width: 100%;
+  overflow: hidden;
+  height: 41px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  }
+  .altoUno{
+  height: 222px;
+  }
+  #nav_mobile li a{
+  color: #069;
+  font-weight: bold;
+  }
+  .menu-mobile .menu_bar{
+  width: 95%;
+  background-color: #fff;
+  height: 21px;
+  padding: 10px;
+  }
+ul.menu-feria li:last-child{
+  border-right: none;
+  border-bottom: none;
+}
+.logo-areacaribe{
+    background: url("http://especiales.elheraldo.co/feriainmobiliaria/themes/framework%205/images/logo-areacaribe.png") no-repeat;
+    width: 120px;
+    height: 70px;
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+}
+ul.menu-feria{
+    display: block;
+    width: 998px;
+    height: 38px;
+    margin: 0px auto;
+    padding: 4px 0px;
+    background-color: #fff;
+    border-bottom: 2px solid #049ed4;
+}
+ul.menu-fijo {
+  position: fixed !important;
+  top: 0;
+  width: 998px;
+  z-index: 9999;
+  margin-top: 0;
+}
+.front .empresas .box-tittle{
+  margin: 0 auto 30px;
+}
+ul.menu-feria li {
+    margin: 6px 0;
+    width: 165.5px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+ul.menu-feria li:hover {
+    box-shadow: 0 9px 0 #112b3a;
+    background-color: rgba(204, 204, 204, 0.2);
+}
+ul.menu-feria li a {
+    cursor: pointer;
+    color: #103D52;
+    font-weight: 400;
+    opacity: 1;
+    display: block;
+}
+ul.menu-feria li:hover a {color:#049ed4;}
+
+body {
+  background: #fff;
+  color: #222;
+  /*font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;*/
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.proyecto-de-empresa{
+    text-align: right;
+    width: 50%;
+    background-color: rgba(204, 204, 204, 0.19);
+    padding: 10px;
+    color: #222222;
+    padding-left: 17px;
+    float: left;
+    height: 39px;
+    line-height: 43px;
+}
+#main-home .listado-proyectos .descripcion img{
+    position: relative;
+    width: 100px;
+    height: 58px;
+}
+.redes-footer {
+    float: right;
+    position: relative;
+    top: 20px;
+}
+span.logo {
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+}
+.back-container-two{
+  display: inline-block;
+  width: 100%;
+  background: -moz-linear-gradient(left, rgb(25, 71, 111) 0%, rgb(34, 112, 158) 52%, rgb(25, 71, 111) 100%);
+  background: -webkit-linear-gradient(left, rgb(25, 71, 111) 0%, rgb(34, 112, 158) 52%, rgb(25, 71, 111) 100%);
+  padding: 50px 0px;
+}
+.pag-corto-left {
+    display: inline-block;
+    width: 43px;
+    height: 170px;
+    background: url(http://especiales.elheraldo.co/feriainmobiliaria/themes/framework%205/images/antes-slider2.png) no-repeat 100% 0;
+    float: left;
+    cursor: pointer;
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+    float: left;
+    opacity: 0.8;
+}
+.pag-corto-right {
+    display: inline-block;
+    width: 43px;
+    height: 170px;
+    background: url(http://especiales.elheraldo.co/feriainmobiliaria/themes/framework%205/images/despues-slider2.png) no-repeat 100% 0;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+    right: 0px;
+    opacity: 0.8;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+#main-home .listado-proyectos .views-row .foto-proyecto, #proyectos_detalle_empresa .view-display-id-block_4 .views-row .views-field-field-imagen-principal{
+    width: 300px;
+    height: 197px;
+}
+  .front.page-node #main-home, #main-home{ width: 1000px; margin: 0 auto;}
+  .not-front #main-home{ box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);}
+  
+  #main-home .listado-proyectos{ width: 1000px; text-align: center; margin: 0 auto;}
+  #main-home .listado-proyectos .views-row{ display: inline-block; margin: 0px 12px 50px; text-align: left; vertical-align: top;}
+  #main-home .listado-proyectos .imagen{ width: 320px; height: 200px; overflow: hidden; }
+  #main-home .listado-proyectos .descripcion, #proyectos_detalle_empresa .view-display-id-block_4 .views-row .views-field.views-field-body{ color: #8E8C8C;background: transparent linear-gradient(to bottom, #FFF 0%, #eee 100%) repeat scroll 0% 0%;padding: 0px 15px;margin-top: 10px; }
+#proyectos_detalle_empresa .view-display-id-block_4 .views-row .views-field.views-field-body{margin-top: 20px;}
+#proyectos_detalle_empresa .view-display-id-block_4 .views-row .views-field.views-field-body{height: 40%;}
+  #main-home .listado-proyectos .descripcion p{margin: 0;}
+  #main-home .listado-proyectos .titulo, #proyectos_detalle_empresa .view-display-id-block_4 .views-row .views-field-title span a{ color: #0073DC;font-weight: 600;position: relative;top: 10px;left: 17px;}
+  #main-home .listado-proyectos .logo img{ width: 40px; height: auto; vertical-align: bottom;}
+  #main-home .listado-proyectos .fecha_entrega, #main-home .listado-proyectos .fecha_entrega_label { color: #26B1DA; }
+  #main-home .te-quedaste-corto{ width: 100%; background-color: #6E6F73;overflow: hidden;}
+  #main-home .te-quedaste-corto .contenedor{ width: 1000px; height: 390px; overflow: hidden; margin:40px auto 0; text-align: center;}
+  #main-home .te-quedaste-corto .contenedor .views-row{ background-color: #fff; display: inline-block; width: 205px; margin: 0 10px; padding: 10px; text-align: left;}
+  #main-home .te-quedaste-corto .contenedor .views-row img{ width: 100%; height: auto; }
+  #main-home .te-quedaste-corto .contenedor .view-content{ margin-bottom: 10px;}
+
+h1, .h1 {
+  font-size: 2em;
+  line-height: 1.5;
+  margin-top: 0.75em;
+}
+
+h2, .h2 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-top: 1em;
+}
+
+h3, .h3 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-top: 1.2em;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 1.5em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 1.5em 0;
+}
+
+a { color: #069; text-decoration: none; }
+
+a:visited { color: #19476F; }
+
+a:hover, a:active, li a.active  { color: #39f; }
+
+a:focus { outline: 0; }
+
+a:hover, a:active { outline: 0; }
+
+/* apply common styling after reset.css */
+
+li ul, li ol {  margin: 0; }
+ul, ol {  margin: 0 1.5em 1.5em 0;  padding-left: 1.5em; }
+ul {  list-style-type: disc; }
+ol {  list-style-type: decimal; }
+dl {  margin: 0 0 1.5em 0; }
+dl dt {  font-weight: bold; }
+dd {  margin-left: 1.5em; }
+hr {  background: #666;  border: none;  clear: both;  float: none;  height: 1px;  margin: 0 0 1.4375em;  width: 100%; }
+fieldset {  border: 1px solid #ccc;  margin: 0 0 1.4375em;  padding: 1.5em; }
+table {  margin-bottom: 1.5em;  width: 100%; }
+th, tr, td {  vertical-align: middle; }
+th { padding-right: 1em; }
+.sticky-header th, .sticky-table th {  border-bottom: 3px solid #ccc;  padding-right: 1em;  text-align: left; }
+
+/**
+ * 2.LAYOUT
+ */
+.view-display-id-block_1 {
+    position: relative;
+    overflow: hidden;
+}
+.page-taxonomy-term-27 .view-display-id-block_1 {
+    height: 350px;
+    background: transparent;
+    margin: 70px 0 0;
+    overflow: visible;
+}
+#owl-demo.owl-empresas .owl-prev, #owl-demo.owl-empresas .owl-next{
+  display: none;
+}
+.view-display-id-block_1 .views-field-field-titulo, #owl-demo .views-field-field-titulo,
+#owl-demo .views-field-title{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-family: "Dosis",sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: auto;
+    font-size: 28px;
+    line-height: 30px;
+    padding: 23px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 30px rgba(159, 159, 159, 0.57);
+}
+#owl-demo .views-field-field-titulo a:after, #owl-demo .views-field-title a:after{
+    content: "+";
+    display: inline-block;
+    margin-left: 20px;
+    background-color: #FF0000;
+    color: #fff;
+    height: 40px;
+    line-height: 23.5px;
+    width: 40px;
+    text-align: center;
+    font-size: 52.5px;
+    border-radius: 3px;
+}
+#slider {
+    width: 1000px;
+    margin: 0 0 105px;
+    float: left;
+    position: relative;
+}
+.node-type-noticias #slider {
+    margin: 0;
+}
+.view-display-id-block_1 .view-content {
+    width: 5500px;
+    position: relative;
+    left: 0px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content {width: 80%;margin: 30px auto;}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row {float: left;width: 22%;position: relative;transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-ms-transition: all 0.2s ease-in-out;}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row:hover {z-index: 99;}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-1 {transform: rotate(-20deg);-ms-transform: rotate(-20deg);-webkit-transform: rotate(-20deg);margin: 70px -1% 0;}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-1:hover {transform: rotate(-20deg);-ms-transform: rotate(-20deg);-webkit-transform: rotate(-20deg);margin-top: 20px}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-2 {transform: rotate(-10deg);-ms-transform: rotate(-10deg);-webkit-transform: rotate(-10deg);margin: 30px -1% 0;}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-2:hover {transform: rotate(-10deg);-ms-transform: rotate(-10deg);-webkit-transform: rotate(-10deg);margin-top: -20px;}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-3 {margin: 15px -1% 0;}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-3:hover {margin-top: -50px;}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-4 {transform: rotate(10deg);-ms-transform: rotate(10deg);-webkit-transform: rotate(10deg);margin: 30px -1% 0;}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-4:hover {transform: rotate(10deg);-ms-transform: rotate(10deg);-webkit-transform: rotate(10deg);margin-top: -20px;}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-5 {transform: rotate(20deg);-ms-transform: rotate(20deg);-webkit-transform: rotate(20deg);margin: 70px -1% 0;}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-5:hover {transform: rotate(20deg);
+    -ms-transform: rotate(20deg);-webkit-transform: rotate(20deg);margin-top: 20px}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row img {width: 100%;height: auto;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-ms-transition: all 0.2s ease-in-out;}
+.page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row:hover img{width: 120%;}
+.owl-theme .owl-controls.clickable .owl-buttons .owl-prev, .paginadores .pag-left {
+    left: 0;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    background: url(images/anterior1.png) no-repeat 100% 0 #FFF;
+    background-position: 0px center;
+    float: left;
+    cursor: pointer;
+    position: absolute;
+    top: 245px;
+    z-index: 1;
+    float: left;
+    opacity: 0.9;
+    border-radius: 0 30px 30px 0;
+}
+.box-tittle h2 {
+    width: 100%;
+    margin: 0 auto;
+    background-color: red;
+    padding: 10px 0;
+    color: #fff;
+    font-family: "Dosis",sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+.owl-theme .owl-controls .owl-buttons div{
+  margin: 0;
+  padding: 0;
+  color: transparent;
+}
+.owl-theme .owl-controls.clickable .owl-buttons .owl-next, .paginadores .pag-right {
+    display: inline-block;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    background: url(images/siguiente1.png) no-repeat 100% 0 #FFF;
+    background-position: 0px center;
+    float: left;
+    cursor: pointer;
+    position: absolute;
+    top: 245px;
+    z-index: 1;
+    float: right;
+    opacity: 0.9;
+    right: 0px;
+    border-radius: 30px 0 0 30px;
+}
+.front .owl-theme .owl-controls.clickable .owl-buttons .owl-next, .front .owl-theme .owl-controls.clickable .owl-buttons .owl-prev {top: 37%;}
+.te-quedaste-corto .owl-theme .owl-controls.clickable .owl-buttons .owl-next, .te-quedaste-corto .owl-theme .owl-controls.clickable .owl-buttons .owl-prev {top: 200px;margin: -56px -65px;}
+.te-quedaste-corto .owl-theme .owl-controls.clickable .owl-buttons .owl-next{border-radius: 0 30px 30px 0;background-position: -7px center;}
+.te-quedaste-corto .owl-theme .owl-controls.clickable .owl-buttons .owl-prev{border-radius: 30px 0 0 30px;background-position: 7px center;}
+#slider .owl-theme .owl-controls{margin: 10px 0 0 0;}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+    background: #049ed4 !important;
+}
+.paginadores .pag-right:hover, .paginadores .pag-left:hover{
+  opacity: 1;
+}
+#container {
+  margin: 0 auto;
+  width: 100%;
+}
+.slider-block{
+    display:block;
+    width: 1000px;
+    margin: 0 auto;
+}
+.back-container{
+  background: url("http://especiales.elheraldo.co/feria-inmobiliaria/images/fondo-bienvenida3.jpg") no-repeat top center;
+  width: 100%;
+}
+.section-logos{
+  display:inline-block;
+  height: 100px;
+  position: relative;
+}
+.logo-feria {
+    background: url("/themes/framework/images/logo-area-caribe.svg") no-repeat;
+    width: 130px;
+    height: 75px;
+    display: inline-block;
+    margin: 0 30px;
+}
+.redes-sociales{
+  float: right;
+  display: inline-block;
+  /* position: absolute; */
+  right: 0px;
+  bottom: 0px;
+}
+.google_redes .redes-sociales{
+      margin-top: -10px;
+}
+.text-content .redes-sociales {
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0 0 15px;
+}
+.text-content .social-sharing a {height: 30px;width: 30px;background: transparent !important;margin: 0 20px 0 0;}
+.text-content span.share-count.is-loaded {display: none;}
+.text-content .field-name-body {float: left;border-top: 1px solid #ccc;padding: 15px 0 0;position: relative;}
+.text-content .field-name-body:after {
+    content: " ";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 50px 0;
+    position: absolute;
+}
+/**
+ * 3.MAIN
+ */
+
+/* 1 column: global values*/
+
+#main {
+  display: inline;
+  margin: 0;
+}
+
+/* 2 columns: sidebar-first */
+
+body.sidebar-first #main {
+  margin: 0;
+  padding: 0;
+  width: 700px;
+}
+
+/* 2 columns: sidebar-second */
+
+body.sidebar-second #main {
+  margin: 0;
+  padding: 0;
+  width: 700px;
+}
+
+/**
+ * 4.SIDEBARS
+ */
+
+/* 3 columns: sidebar-first */
+
+body.two-sidebars #sidebar-first {
+  margin: 0 0 0 -700px;
+  padding: 0;
+  width: 220px;
+}
+
+/* 3 columns: sidebar-second */
+
+body.two-sidebars #sidebar-second {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+}
+
+/* 2 columns: sidebar-first */
+
+body.sidebar-first #sidebar-first {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+}
+
+/* 2 columns: sidebar-second */
+
+body.sidebar-second #sidebar-second {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+}
+
+/**
+ * 5.HEADER
+ */
+
+#header {
+  margin: 0;
+  padding: 2.5em 0 0;
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+#header #logo {
+  float: left;
+  margin: 0 1em 1.5em 0;
+}
+
+#header #site-name-slogan {
+  float: left;
+  margin: 0 0 1.5em;
+}
+
+#header #site-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#header #site-name a:hover {
+  text-decoration: none;
+}
+
+#header #site-slogan {
+  margin: 0;
+}
+
+/**
+ * 6.NAVIGATION
+ */
+
+#navigation {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul#main-menu {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul#main-menu li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul#main-menu li a {
+  display: block;
+  padding: 0 2em 0 0;
+}
+
+#navigation ul#secondary-menu {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul#secondary-menu li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul#secondary-menu li a {
+  display: block;
+  padding: 0 2em 0 0;
+}
+
+.breadcrumb {
+  clear: both;
+  padding: 1.5em 0 0;
+}
+
+#skip-link {
+  position: absolute;
+}
+
+/* menus and item lists */
+
+.item-list ul {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+}
+
+.item-list ul li {
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+ul.inline {
+  clear: both;
+}
+
+ul.inline li {
+  margin: 0;
+  padding: 0 1em 0 0;
+}
+
+/* admin tabs */
+
+.tabs-wrapper {
+  border-bottom: 1px solid #333;
+  margin: 0 0 1.4375em;
+}
+
+ul.primary {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.primary li a {
+  background: none;
+  border: none;
+  display: block;
+  float: left;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0 1em;
+}
+
+ul.primary li a:hover, ul.primary li a.active {
+  background: #666;
+  border: none;
+  color: #fff;
+}
+
+ul.primary li a:hover {
+  background: #888;
+  text-decoration: none;
+}
+
+ul.secondary {
+  background: #666;
+  border-bottom: none;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+ul.secondary li {
+  border-right: none;
+}
+
+ul.secondary li a, ul.secondary li a:link {
+  border: none;
+  color: #ccc;
+  display: block;
+  float: left;
+  line-height: 1.5em;
+  padding: 0 1em;
+}
+
+ul.secondary li a:hover, ul.secondary li a.active {
+  background: #888;
+  color: #fff;
+  text-decoration: none;
+}
+
+ul.secondary a.active {
+  border-bottom: none;
+}
+
+/**
+ * 7.NODES
+ */
+
+.node {
+  margin-bottom: 1.5em;
+}
+
+/* tags */
+
+.field-name-field-tags {
+  margin: 0 0 1.5em;
+}
+.titulo-proyectos a {
+    width: 210px;
+    padding: 12px 15px;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font: 600 18px/28px;
+    margin-top: -3px;
+}
+
+.field-name-field-tags .field-item {
+  margin: 0 1em 0 0;
+}
+
+.field-name-field-tags div {
+  display: inline;
+}
+h2.titulo-proyectos {
+    margin: 0px;
+    /* background: transparent linear-gradient(to bottom, #FFF 0%, #F6F6F6 100%) repeat scroll 0% 0%; */
+    background-color: #1e5e9e;
+}
+
+/* profile */
+
+.profile {
+  margin: 1.5em 0;
+}
+
+.profile h3 {
+  border: none;
+}
+
+.profile dt {
+  margin-bottom: 0;
+}
+
+.profile dd {
+  margin-bottom: 1.5em;
+}
+
+.password-parent {
+  width: 36em;
+}
+
+/**
+ * 8.COMMENTS
+ */
+
+#comments {
+  clear: both;
+  margin-top: 1.5em;
+}
+
+.comment {
+  margin-bottom: 1.5em;
+}
+
+.comment .new {
+  color: red;
+  text-transform: capitalize;
+  margin-left: 1em;
+}
+
+/**
+ * 9.BLOCKS
+ */
+
+.block {
+  margin-bottom: 1.5em;
+}
+
+/**
+ * 10.FOOTER
+ */
+
+body.sidebar-second #sidebar-second{display: none;}
+div#footer{display: none;}
+#footer{
+  background: black;
+  width: 100%;
+}
+/*#footer .linea {
+    border-bottom: 1px solid #515151;
+}*/
+footer .contenedor > a {
+    width: 240px;
+    display: block;
+    margin: 0 auto;
+}
+footer .contenedor > a .logo-heraldo {
+    background: url('http://stage.elheraldo.co/sites/default/themes/eh/images/logo-heraldo-blanco.svg') no-repeat;
+    background-position: 100%;
+    width: 240px;
+    color: #525252;
+    line-height: 15px;
+    float: right;
+    font: 300 13px/18px;
+    margin-top: 12px;
+}
+
+#footer a.feed-icon {
+  position: absolute;
+  right: 0;
+  top: 1.5em;
+}
+
+/**
+ * 11.CSS SUPPORT
+ *
+ * Built-in classes:
+ * .clearfix                            | contain floats
+ * .element-invisible                   | hide element visually
+ * .element-invisible.element-focusable | allow element to be focusable when navigated to via keyboard
+ * .element-hidden                      | hide visually and from screenreaders
+ */
+ 
+/* clear floats */
+.clear { clear: both; }
+
+/* display block */
+.display-block { display: block; }
+
+
+
+
+/*Custon CSS old */
+ul.menu-feria li:last-child {
+  border-right: none;
+  border-bottom: none;
+}
+#navigation{
+display: none;
+}
+#site-name{
+display: none;
+}
+h1.title{
+display: none;
+}
+#breadcrumb{
+display: none;
+}
+.messages{
+display: none;
+}
+body.sidebar-first #main{
+float: none !important;
+}
+.icono-like-edited{
+height: 42px;
+line-height: 32px;
+background-image: url("http://especiales.elheraldo.co/feriainmobiliaria/themes/framework%205/images/like.png");
+background-repeat: no-repeat;
+background-position: 0px -48px;
+position: absolute;
+top: 203px;
+right: 5px;
+width: 42px;
+display: block;
+    cursor: pointer;
+}
+.titulo-proyectos a{
+width: 270px;
+padding: 20px 15px;
+display: inline-block;
+background-color: rgba(204, 204, 204, 0.5);
+color: #0073dc;
+text-transform: uppercase;
+font-size: 17px;
+font-family: "Dosis",sans-serif;
+}
+.view-display-id-block_4 .views-row .titulo{
+font-family: "Dosis",sans-serif;
+color: #0073dc;
+}
+.view-display-id-block_4 .views-row .titulo a{
+color: #0073dc;
+text-transform: uppercase;
+}
+.view-display-id-block_4 .views-row .descripcion p{
+font-family: "Dosis",sans-serif;
+line-height: 1.3em;
+font-weight: 100;
+font-size: 16px;
+margin-top: 16px;
+}
+h2.titulo-proyectos{
+margin: 0px;
+}
+.box-tittle{
+width: 1000px;
+padding: 10px 0px;
+text-align: center;
+margin-bottom: 10px;
+}
+.front .box-tittle {
+    width: 250px;
+    margin: 10px auto;
+}
+.page-taxonomy-term-19 .encabezado .box-tittle {
+    width: 250px;
+    margin: 120px auto 0;
+}
+span.logo{
+position: absolute;
+bottom: 5px;
+right: 10px;
+}
+.pag-corto-left{
+display: inline-block;
+width: 50px;
+height: 100px;
+background: url(http://especiales.elheraldo.co/feriainmobiliaria/themes/framework%205/images/anterior.png) no-repeat 100% 0;
+float: left;
+cursor: pointer;
+position: absolute;
+top: 80px;
+z-index: 1;
+float: left;
+background-size: 50px;
+opacity: 0.8;
+}
+.pagerEmpresas .item1 {
+background: #7D7D7D;
+border: 1px solid #7D7D7D;
+}
+.empresas{
+width: 1000px;
+text-align: center;
+border-top: 1px solid rgba(204, 204, 204, 0.31);
+margin: 30px 0px;
+padding-top: 50px;
+}
+.pagerEmpresas li{
+background: #fff;
+border-radius: 8px;
+cursor: pointer;
+float: left;
+font-size: 0;
+height: 15px;
+margin-left: 10px;
+width: 15px;
+-webkit-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+border: 1px solid #ccc;
+}
+.pagerEmpresas ul {
+position: relative;
+}
+.back-container-two{
+width: 100%;
+background-color: #5A5A5A;
+padding: 50px 0px;
+}
+.pag-corto-left:hover, .pag-corto-right:hover{
+opacity: 1;
+}
+.view-display-id-block_4{
+width: 900px;
+overflow: hidden;
+position: relative;
+padding: 0px 50px;
+}
+.view-display-id-block_4 .view-content{
+width: 5000px;
+position: relative;
+left: 0px;
+-webkit-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+.view-display-id-block_4 .views-row{
+float: left;
+/*width: 200px;*/
+width: 190px;
+margin-right: 6px;
+display: inline-block;
+background-color: #fff;
+padding: 15px;
+height: 311px;
+}
+.view-display-id-block_4 .views-row .foto-proyecto img{
+  width: 100%;
+}
+#proyectos_detalle_empresa {
+    width: 1000px;
+    background: #FFF;
+    margin: 360px auto 50px;
+}
+#proyectos_detalle_empresa .box-tittle {
+    width: 250px;
+    margin: 0 auto 10px;
+}
+#proyectos_detalle_empresa .view-display-id-block_4 {
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#proyectos_detalle_empresa .view-display-id-block_4 .view-content{
+    width: 100%;
+}
+#slider .view-display-id-block_1 .views-row {
+    z-index: 1;
+    width: 960px;
+    overflow: hidden;
+    float: left;
+    margin: 20px;
+    position: relative;
+    padding: 0;
+}
+#slider .view-display-id-block_1 .views-row .views-field.views-field-name {
+    box-shadow: none;
+    background: #049ED4;
+    width: 338px;
+    padding: 17.5px 15px;
+    margin: 0 0 0;
+    border: none;
+    float: none;
+    display: block;
+    position: absolute;
+}
+#slider .view-display-id-block_1 .views-row .views-field-name h1 {
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+    margin: 0;
+    color: #FFF;
+}
+.slider-block .infoGaleria .info .nombre{
+    box-shadow: none;
+    background: #049ED4;
+    width: 480px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 15px auto 0;
+    float: none;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+    color: #FFF;
+}
+#slider .view-display-id-block_1 .views-row > div:nth-child(2) {
+    width: 368px;
+    height: 168px;
+    margin: 56px 0 0;
+    float: none;
+    position: absolute;
+}
+#slider .view-display-id-block_1 .views-row > div:nth-child(2) .logo img {
+    width: auto;
+    max-height: 100px;
+    margin: 32.5px auto;
+    display: block;
+}
+#slider .view-display-id-block_1 .views-row .views-field {
+    width: 555px;
+    padding: 15px 0 15px 15px;
+    border: 2px solid #eee;
+    border-top: none;
+    border-right: 0;
+    margin: 0px auto;
+    text-align: left;
+    float: right;
+}
+#slider .view-display-id-block_1 .views-row .views-field:first-child{border-top:0;}
+#slider .view-display-id-block_1 .views-row .views-field:last-child {border-bottom: none;}
+#slider .view-display-id-block_1 .views-row .views-label {
+    color: #6F6F6F;
+    margin-right: 5px;
+    display: inline-block;
+    text-align: center;
+}
+#slider .view-display-id-block_1 .views-row .views-field div {
+    display: inline-block;
+}
+.ruta, .slider-block .infoGaleria .info .url {
+    width: 1000px;
+    margin:0 auto !important;
+    background: #112B3A;
+}
+.ruta nav, .slider-block .infoGaleria .info .url {
+    padding: 4px 20px;
+}
+.ruta nav a{color: #bbb;}
+.ruta nav a span{margin: 0 5px;}
+.ruta nav > span{color: #FFF;}
+.te-quedaste-corto{
+width: 1000px;
+margin: 0 auto;
+}
+.pagerEmpresas {
+display: inline-block;
+margin-top: 25px;
+}
+.sombra-empresas{
+width: 100%;
+display: inline-block;
+margin-top: 20px;
+}
+.pag-corto-right{
+display: inline-block;
+width: 50px;
+height: 100px;
+background: url(http://especiales.elheraldo.co/feriainmobiliaria/themes/framework%205/images/siguiente.png) no-repeat 100% 0;
+float: right;
+cursor: pointer;
+position: absolute;
+top: 80px;
+z-index: 1;
+right: 0px;
+background-size: 50px;
+opacity: 0.8;
+}
+#footer span{    
+float: left;
+color: #ccc;
+margin: 8px;
+font-family: "Dosis",sans-serif;
+line-height: 15px;
+}
+#footer{background: black; width: 100%;}
+#footer .contenedor{ width: 1000px; margin: 0 auto;}
+#footer .contenedor .text-evento-footer{text-align: center; color: #525252;}
+#footer .logoFooter{background: url("http://especiales.elheraldo.co/feriainmobiliaria/themes/framework%205/images/logo-footer.png") no-repeat;
+height: 85px;
+width: 316px;
+background-size: 100%;
+padding-bottom: 10px;
+}
+footer .section-logos {
+    margin: 0 auto;
+    width: 200px;
+    height: 60px;
+    display: block !important;
+}
+footer .section-logos a {margin: 0 auto;display: block;}
+/*#footer .linea{ border-bottom: 1px solid white;}*/
+.empresas .view-view-term-empresas{
+width: 1000px;
+overflow: hidden;
+position: relative;
+}
+.view-display-id-block_8 .views-field-field-titulo .field-content{
+width: 400px;
+}
+.view-display-id-block_8 .views-field-nothing{
+position: absolute;
+top: 396px;
+left: 492px;
+}
+.te-quedaste-corto .contenedor{
+position: relative;
+}
+.empresas .view-view-term-empresas .view-content{
+width: 5000px;
+position: relative;
+left: 0px;
+-webkit-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+.empresas #demo .owl-carousel .owl-wrapper-outer {box-shadow: -1px 0 0 #ccc inset;}
+.empresas #demo .owl-item {box-shadow: 1px 0px 0px #ccc inset;}
+.back-container{ height:auto; overflow: hidden;}
+.front #main-home .listado-proyectos, #main-home .listado-proyectos{ width: 1000px; text-align: center; margin: 80px auto 0;border-top: 1px solid #ccc;padding: 40px 0 0;}
+#main-home .listado-proyectos .views-row, #proyectos_detalle_empresa .view-display-id-block_4 .views-row{ display: inline-block; margin: 0px 12px 50px; text-align: left;position: relative;font-family: "Dosis",sans-serif;width: 300px;}
+#proyectos_detalle_empresa .view-display-id-block_4 .views-row{padding: 0;height: 400px;margin: 0px 16px 50px;}
+#main-home .listado-proyectos .views-field-field-logo{display: table; height: 61px; padding: 0 7px;}
+#main-home .listado-proyectos .views-field-field-logo .field-content{display: table-cell; vertical-align: middle;}
+#main-home .listado-proyectos .imagen{ width: 320px; height: 200px; overflow: hidden; }
+#main-home .listado-proyectos .descripcion p, #proyectos_detalle_empresa .view-display-id-block_4 .views-row .views-field.views-field-body p{margin: 0;color: #666;line-height: 1.3em;}
+#main-home .listado-proyectos .descripcion p .views-more-link {display: block;width: 100%;padding: 5px 17px; margin: 10px -17px 0;color: rgb(25, 71, 111);text-align: center;font-weight: 500;letter-spacing: 1px;position: relative;}
+.page-buscador #main-home .listado-proyectos .descripcion p .views-more-link{display: none;}
+#main-home .listado-proyectos .descripcion p .views-more-link:hover {color: #049ed4;}
+#main-home .listado-proyectos .descripcion p .views-more-link:before, #main-home .listado-proyectos .descripcion p .views-more-link:after {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 30%;
+    top: 15px;
+    position: absolute;
+    background: #19476F;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#main-home .listado-proyectos .descripcion p .views-more-link:before {box-shadow: 40px 0 #049ed4 inset;}
+#main-home .listado-proyectos .descripcion p .views-more-link:after {right: 17px;box-shadow: -40px 0 #049ed4 inset;}
+#main-home .listado-proyectos .descripcion p .views-more-link:hover:before, #main-home .listado-proyectos .descripcion p .views-more-link:hover:after {background: #049ed4;}
+#main-home .listado-proyectos .titulo{ color: #0073DC;font-weight: 600;-webkit-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-ms-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+#main-home .listado-proyectos .titulo a:hover {color: #049ed4;}
+#main-home .listado-proyectos .logo img{ width: 100px; height: auto; vertical-align: bottom;}
+#main-home .listado-proyectos .fecha_entrega, #main-home .listado-proyectos .fecha_entrega_label { 
+  color: #26B1DA;
+  background-color: rgba(204, 204, 204, 0.13);
+  padding: 5px 15px 15px 15px;
+  width: 270px;
+  display: inline-block;
+ }
+#main-home .te-quedaste-corto{ width: 100%; background-color: #6E6F73;overflow: hidden;}
+#main-home .te-quedaste-corto .contenedor{ width: 1000px; height: 390px; overflow: hidden; margin:40px auto 0; text-align: center;}
+#main-home .te-quedaste-corto .contenedor .views-row{ background-color: #fff; display: inline-block; width: 205px; margin: 0 10px; padding: 10px; text-align: left;}
+#main-home .te-quedaste-corto .contenedor .views-row img{ width: 100%; height: auto; }
+#main-home .te-quedaste-corto .contenedor .view-content{ margin-bottom: 10px;}
+.empresas .view-id-view_term_empresas .views-row{
+  float: left;
+  width: 199px;
+  border-right: 1px solid #EAEAEA;
+  height: 90px;
+}
+.empresas .view-id-view_term_empresas .views-row-5{
+  border-right: none;
+}
+.owl-theme .owl-controls .owl-page span{background: #0875A0 !important;}
+.cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row .imagen{overflow: hidden; width: 300px; height: 340px;}
+
+#demo .owl-tequedastecorto .views-row {
+    float: left;
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+    background-color: #fff;
+    padding: 15px;
+    height: 300px;
+    border-radius: 4px;
+}
+#demo .owl-tequedastecorto .views-row .titulo a {font-weight: 500;margin: 0 auto 10px;display: block;text-align: center;}
+#demo .owl-tequedastecorto .views-row .descripcion p {line-height: 1.3em;text-align: justify;}
+.search-form input {font-size: 16px;}
+
+
+.page-buscador #main-home .listado-proyectos{margin: 0 auto; padding: 20px; width: auto;}
+.page-buscador #main-home .listado-proyectos h1 {
+    background: #049ED4;
+    width: 480px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 0 auto 25px;
+    float: none;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+    color: #FFF;
+}
+.page-buscador .content-filtro {
+    display: inline-block;
+    width: 311px;
+}
+.page-buscador .filtro {display: inline-block;width: 249px;padding: 20px;border: 1px solid #bbb;border-radius: 4px;box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);margin: 0 20px 0 0;}
+.page-buscador .ui-state-default, .ui-widget-content .ui-state-default, .page-buscador .ui-widget-header .ui-state-default {
+    background: #F00 !important;
+    border-radius: 50%;
+    height: 30px !important;
+    width: 30px !important;
+    margin: -8px -15px !important;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    border: 0 !important;
+    outline: none !important;
+    cursor: pointer !important;
+}
+.page-buscador .ui-widget-content {
+    border: 0 !important;
+    background: #ccc !important;
+    height: 5px !important;
+}
+.page-buscador .ui-widget-header {background: #19476F !important;}
+.page-buscador .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {background: #F00 !important;}
+.ui-slider-pips .ui-slider-pip {
+    height: 24px !important;
+    color: #666 !important;
+    background: transparent;
+    border-radius: 3px;
+}
+.page-buscador .ui-slider-pips .ui-slider-pip-label .ui-slider-label {font-weight: 500;}
+.page-buscador .ui-slider-pips [class*=ui-slider-pip-selected] {
+    font-weight: 500 !important;
+    color: #FFFFFF !important;
+    background: #F00 !important;
+    height: 24px !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+.page-buscador .ui-slider-pips .ui-slider-line {
+    width: 6px !important;
+    height: 6px !important;
+    transform: rotate(45deg);
+    left: 40% !important;
+    top: -3px;
+    background: #eee !important;
+}
+.page-buscador .ui-slider-pips [class*=ui-slider-pip-selected] .ui-slider-line {background: #F00 !important;}
+.page-buscador .views-exposed-form .views-exposed-widget {padding: 0;}
+.page-buscador .ui-slider-horizontal.ui-slider-pips {margin: 15px !important;}
+.page-buscador .views-exposed-form .views-exposed-widget .form-submit, .node-type-noticias .views-exposed-form .views-exposed-widget .form-submit {
+    background: #f00;
+    border: 0;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 5px 20px;
+    margin: 0 auto!important;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer !important;
+    outline: none !important;
+}
+.page-buscador input#edit-title, .node-type-noticias input#edit-title {
+    width: 228px;
+    padding: 7px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #666;
+    text-transform: capitalize;
+}
+.node-type-noticias input#edit-title {width: 90%;padding: 5px 2% 5px 7%;}
+.page-buscador .result-search {display: inline-block;width: 644px;vertical-align: top;border-left: 1px solid #ccc;}
+.page-buscador #main-home .listado-proyectos .views-row {margin: 0px 0px 50px 20px;box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);border-radius: 0 0 4px 4px;}
+.node-type-noticias .views-exposed-form .views-exposed-widget, .page-buscador .views-exposed-form .views-exposed-widget {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    margin: 0 !important;
+    width: 100%;
+    float: left;
+}
+.node-type-noticias .views-exposed-form .views-submit-button {border-bottom: 0;}
+#edit-field-estrato-value-wrapper, #edit-field-garaje-value-wrapper, #edit-field-numero-de-habitaciones-value-wrapper, #edit-field-numero-de-banos-value-wrapper {
+    margin: 0 2% !important;
+    width: 46%;
+    float: left;
+}
+.page-buscador #edit-field-apartamentos-desde-value-wrapper, .node-type-noticias #edit-field-apartamentos-desde-value-wrapper {height: 120px;}
+.page-buscador .views-exposed-form label span, .node-type-noticias .views-exposed-form label span {
+    background: #19476f;
+    color: #FFF;
+    font-weight: 400;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: inline-block;
+}
+.node-type-noticias .noUi-target {width: 90%;margin: 15px auto;}
+.page-buscador #main-home .listado-proyectos .views-field-field-apartamentos-desde {
+    background: #19476f;
+    text-align: center;
+    color: #FFF;
+    padding: 5px;
+    border-radius: 0 0 4px 4px;
+}
+.page-buscador .views-exposed-form .form-item .form-select, .node-type-noticias .views-exposed-form .form-item .form-select {
+    width: 100%;
+    background: #FFF;
+    height: 35px;
+    font-size: 14px;
+    color: #666;
+}
+.page-buscador .filtro .filtro-movil{display: none;}
+.node-type-noticias .result-search {display: none;}
+.page-buscador .views-exposed-form label {
+    font-weight: 600;
+    padding: 0 ;
+    font-size: 15px;
+}
+.node-type-noticias #main-home{width: 100%;}
+.node-type-noticias #main-home .listado-proyectos {
+    padding: 0;
+    border-top: 0;
+    width: 100%;
+}
+.node-type-noticias #main-home .listado-proyectos .content-filtro {width: 90%;margin: 0 auto;}
+.node-type-noticias #main-home .listado-proyectos h1, .node-type-noticias #main-home .listado-proyectos button.filtro-movil{display: none;}
+.right .box-buscar {
+    width: 120%;
+    margin: 0 -10%;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    float: left;
+}
+
+.right .box-buscar h2 {
+    margin: 5% 5% 0;
+    background: #F00;
+    color: #FFF;
+    padding: 10px;
+    font-size: 24px;
+    line-height: 1.2em;
+    font-weight: 500;
+    text-align: center;
+}
+.right .derecha-bottom {float: left;margin: 20px 0 0;}
+.node-type-noticias .right .box-buscar #main-home{box-shadow: none;}
+.right .box-buscar .search-form input {
+    width: 70%;
+    padding: 7px 8% 7px 20%;
+    border: 2px solid;
+    border-radius: 50px;
+}
+#main-home .listado-proyectos .titulo:after, #proyectos_detalle_empresa .view-display-id-block_4 .views-row .views-field-title span a:after {
+    content: " ";
+    height: 2px;
+    width: 60px;
+    background: #006699;
+    display: block;
+    box-shadow: -30px 0px 0 #049ed4 inset;
+    transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+}
+#main-home .listado-proyectos .views-row:hover .titulo:after {
+    width: 120px;
+    box-shadow: -60px 0px 0 #049ed4 inset;
+}
+.sombra-title {display: none;}
+.box-tittle {position: relative;}
+.node-type-noticias .field-name-field-titulo .field-item {
+    color: #069;
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-size: 28px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+footer .logo-feria {
+    background: url("/themes/framework/images/logo-area-caribe-mobile.svg") no-repeat;
+    width: 200px;
+    height: 35px;
+}
+div#views_infinite_scroll-ajax-loader {margin: 0 0 60px;}
+
+/*--------------------------------MEDIA QUERIES-----------------------------------*/
+
+@media (max-width: 1099px) {
+    #header {width: 100%;}
+    .section-logos {height: auto;margin: 0 30px 30px;}
+    .logo-feria {margin: 0;}
+    .google_redes {margin: 0 30px 30px;}
+    .ruta, .slider-block .infoGaleria .info .url {width: 100%;}
+    #slider {width: 100%;}
+    .owl-theme .owl-controls .owl-buttons {display: none;}
+    .owl-theme.owl-principal .owl-controls .owl-buttons {display: block;}
+    .slider-block.box-constructoras {width: 90%;}
+    .slider-block.box-constructoras .view-display-id-block_1 .view-content{width:100%;}
+    #slider .view-display-id-block_1 .views-row {width: 94%;margin: 20px 3%;}
+    #slider .view-display-id-block_1 .views-row .views-field.views-field-name {width: 36%;padding: 17.5px 2%;}
+    #slider .view-display-id-block_1 .views-row > div:nth-child(2) {width: 40%;}
+    #slider .view-display-id-block_1 .views-row .views-field {width: 55%;padding: 15px 0 15px 2%;}
+    .node-type-noticias .slider-block {width: 90%;height: auto;float: left;margin: 0 5%;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);}
+    .node-type-noticias .right .box-buscar {width: 100%;margin: 0;}
+    .node-type-noticias .right .derecha-bottom {width: 90%;margin: 20px 5% 0;}
+    .node-type-noticias .slider-block #slider {width: 94%;margin: 0;padding: 20px 3%;}
+    .node-type-noticias .field-items div img {width: 100%;height: auto;}
+    .node-type-noticias .text-content .left {position: relative;}
+    .node-type-noticias .left .field-name-field-titulo {top: -140px;left: -8%;right: -10%;}
+    .node-type-noticias .text-content .left {padding: 0 3% 0 0;}
+    .node-type-noticias .text-content .right {width: 33.7%;padding: 0 0 0 3%;}
+    .node-type-noticias #main-home .listado-proyectos {margin: 0 auto;}
+    .node-type-noticias .box-tittle {padding: 0;}
+    .node-type-noticias .text-content .right .view-display-id-block_10 .views-row a:first-child img {width: 100%;height: auto;}
+    .page-taxonomy-term-30 .slider-block, .node-type-edicion-impresa .slider-block {width: 960px;}
+    .page-taxonomy-term-30 .left .view-general-taxonomy iframe, .node-type-edicion-impresa .left .view-general-tipos-contenido iframe {width: 910px;}
+    .page-taxonomy-term-30 .box-tittle, .node-type-edicion-impresa .box-tittle {width: 100%;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row {width: 288px;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe {width: 100%;}
+    .page-taxonomy-term-27 .slider-block {width: 90%;}
+    .page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-4 {margin: 30px -1.5% 0;}
+    .page-buscador #main-home {width: 960px;}
+    .page-buscador .content-filtro {width: 280px;margin: 0 20px 0 0;}
+    .page-buscador .filtro {width: 90%;padding: 20px 5%;}
+    .page-buscador input#edit-title {width: 90%;padding: 7px 4.5%;}
+    .page-buscador .result-search {width: 615px;}
+    .page-buscador #main-home .listado-proyectos .views-row {width: 285px;}
+    .page-buscador #main-home .listado-proyectos .views-row img {width: 100%;height: auto;}
+    .noUi-target {width: 90%;margin: 15px auto !important;}
+}
+
+@media only screen and (max-width:991px) { 
+    .logo-feria {width: 150px;height: 90px;}
+    ul.menu-feria {padding: 0 0px;height: 50px;width: 100%;}
+    ul.menu-feria li {margin: 7px 0;width: 14.1%;padding: 5px 11.9px;height: 26px;}
+    .container-menu {height: 52px;}
+    #slider {margin: 0 0 50px;}
+    .empresas {width: 100%;margin: 15px 0;}
+    .empresas .views-row .logo img {width: 150px;}
+    .owl-theme .owl-controls .owl-page span {height: 8px;width: 8px;}
+    #main-home .listado-proyectos .views-row {margin: 2px 12px 10px;}
+    .slider-block, #main-home, #main-home .listado-proyectos, .te-quedaste-corto, #footer .contenedor {width: 100%;}
+    #proyectos_detalle_empresa {width: 667px;}
+    #proyectos_detalle_empresa .view-display-id-block_4 {width: 100%;}
+    .page-taxonomy-term-19 .slider-block .encabezado {width: 100%;}
+    .page-taxonomy-term-19 .content .view-display-id-block_1 {margin: 0;width: 60%;padding: 20px 2%;box-shadow: -1px 0 0 #ddd inset;}
+    .page-taxonomy-term-19 .view-id-general_tipos_contenido.view-display-id-block {margin: 0;width: 32%;padding: 20px 2%;height: 450px;}
+    .page-taxonomy-term-19 .view-display-id-block_1 .view-content {width: 100%;}
+    .page-taxonomy-term-19 .encabezado .content .view-display-id-block .view-content .views-row-1, .page-taxonomy-term-19 .encabezado .content .view-display-id-block .view-content .views-row {width: 100%;}
+    .page-taxonomy-term-19 .encabezado .content .view-display-id-block .view-content .views-row div:first-child {width: 100%;}
+    .page-taxonomy-term-19 .encabezado .content .view-display-id-block .view-content .views-row div:first-child a img {width: 100%;}
+    .page-taxonomy-term-19 .view-id-general_tipos_contenido.view-display-id-block_2 {margin: 90px auto 0;width: 100%;padding: 0;float: left;}
+    .page-taxonomy-term-19 .view-id-general_tipos_contenido.view-display-id-block_2 .view-content .views-row {margin: 0px 1.6% 30px !important;width: 25% !important;padding: 2.5% !important;}   
+    .page-taxonomy-term-19 .view-display-id-block_2 .views-row a img {width: 100%;height: auto !important;}
+    .node-type-noticias .left .field-name-field-titulo {padding: 20px 20px 20px 40px;}
+    .node-type-noticias .field-name-field-titulo .field-item {font-size: 24px;}
+    .page-taxonomy-term-30 .slider-block, .node-type-edicion-impresa .slider-block {width: 90%;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 {width: 672px;margin: 0 auto;}
+    .page-taxonomy-term-30 .left .view-general-taxonomy iframe, .node-type-edicion-impresa .left .view-general-tipos-contenido iframe {width: 94%;padding: 20px 3%;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row {width: 300px;margin: 15px 7px !important;}
+    .page-taxonomy-term-27 .encabezado .left .texto {margin: 0px 140px;}
+    .page-buscador #main-home {width: 94%;}
+    .page-buscador .content-filtro {width: 30%;margin: 0 2% 0 0;}
+    .page-buscador .result-search {width: 67.5%;border-left: 0;box-shadow: 1px 0 0 #ccc inset;}
+    .page-buscador #main-home .listado-proyectos .views-row {width: 46.5%;margin: 0 0 50px 3%;}
+}
+
+@media only screen and (max-width:979px) { 
+    .te-quedaste-corto {width: 800px;}
+    #demo .owl-tequedastecorto .views-row {float: none;width: 80%;margin: 10px auto;display: block;}
+    #demo .owl-tequedastecorto .views-row .foto-proyecto img {width: 100%;height: auto;}
+}
+
+@media only screen and (max-width:959px) { 
+    ul.menu-feria {height: 50px;width: 860px;}
+    ul.menu-feria li {padding: 5px 25.6px;width: auto;}
+    ul.menu-feria li span {width: 41px;}
+    ul.menu-feria li span a {background: url("/themes/framework/images/icono-area-caribe-degradado.svg") no-repeat;width: 30px; height: 40px; margin: -8px auto;}
+}
+
+
+@media only screen and (max-width:899px) { 
+    ul.menu-feria {width: 760px;}
+    ul.menu-feria li {padding: 5px 17.2px;}
+    #slider {margin: 0 0 5px;}
+    .page-taxonomy-term-19 .content .view-display-id-block_1 {margin: 0 11%;width: 74%;}
+    .page-taxonomy-term-19 .content .view-display-id-block_1 .views-row img {width: 100%;height: auto;}
+    .page-taxonomy-term-19 .view-id-general_tipos_contenido.view-display-id-block {margin: 12% 5% 0;width: 86%;height: auto;}
+    .page-taxonomy-term-19 .encabezado .content .view-display-id-block .view-content .views-row-1, .page-taxonomy-term-19 .encabezado .content .view-display-id-block .view-content .views-row {width: 46%;margin: 0 2%;float: left;}
+    .page-taxonomy-term-19 .view-display-id-block_1 .views-row h2.titulo {top: 70%;}
+    .page-taxonomy-term-19 .view-display-id-block_1 .views-row .views-field-field-sumario {top: inherit;bottom: 0;}
+    .page-taxonomy-term-30 .left .view-general-taxonomy iframe, .node-type-edicion-impresa .left .view-general-tipos-contenido iframe {height: 540px;}
+    .page-taxonomy-term-27 .view-display-id-block_1 {height: 300px;}
+    .page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row:hover{z-index: inherit;}
+    .page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-1:hover{margin-top: 70px;}
+    .page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-2:hover{margin-top: 30px;}
+    .page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-3:hover{margin-top: 15px;}
+    .page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-4:hover{margin-top: 30px;}
+    .page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-5:hover{margin-top: 70px;}
+    .page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row:hover img{width: 100%;}
+    .page-taxonomy-term-27 .encabezado .left .texto { margin: 0px 110px;}
+}
+
+@media only screen and (max-width: 819px){
+    .te-quedaste-corto {width: 700px;}
+    .page-taxonomy-term-19 .view-id-general_tipos_contenido.view-display-id-block {margin: 10% 5% 0;}
+    .page-taxonomy-term-19 .back-container {background-position: center -40px;}
+    .node-type-noticias .text-content {margin: 0;}
+    .node-type-noticias .text-content .left {width: 100%;padding: 0;border: 0;border-bottom: 1px solid #ccc;}
+    .node-type-noticias .left .field-name-field-titulo {padding: 20px 3%;position: relative;left: 0;top: -40px;margin: -20px 0 0;box-shadow: 0px 0px 13px rgba(159, 159, 159, 0.3);border-radius: 30px;}
+    .node-type-noticias .left .field-name-field-titulo:before {display: none;}
+    .node-type-noticias .field-name-field-titulo .field-item {text-align: center;}
+    .node-type-noticias .text-content .right {width: 100%;padding: 0;margin: 40px 0;}
+    .node-type-noticias .text-content .right .view-display-id-block_10 .views-row {width: 46%;height: 240px; margin: 0 2% 30px;float: left;}
+    .sombra-title { background: url(http://especiales.elheraldo.co/feriainmobiliaria/themes/framework%205/images/sombra-title.png) no-repeat top center !important;}
+    .page-taxonomy-term-30 .left .view-general-taxonomy iframe, .node-type-edicion-impresa .left .view-general-tipos-contenido iframe {height: 470px;}
+    #slider .view-display-id-block_1 .views-row > div:nth-child(2) .logo img {width: 100%;height: auto;}
+    #slider .view-display-id-block_1 .views-row .views-label {display: block;}
+    #slider .view-display-id-block_1 .views-row .views-field div {display: block;text-align: center;}
+    #proyectos_detalle_empresa {background: transparent;margin: 420px auto 50px;}
+    #slider .view-display-id-block_1 .views-row > div:nth-child(2) .logo img {margin: 81.5px auto;}
+    .text-content .field-name-body:after, .right .box-buscar .search-form input {display: none;}
+}
+
+@media(max-width: 768px){
+    ul.menu-feria, .box-pager-noticias, .view-display-id-block_1 .views-row, #slider, .slider-block, #footer .contenedor, .box-tittle, #header, .front #main-home .listado-proyectos, .front.page-node #main-home, .empresas .view-view-term-empresas{width: 100%;overflow: hidden;}
+    .te-quedaste-corto{width: 95%;}
+    ul.menu-feria{border:0; width: 695px; display: block;margin: 0 auto;overflow: hidden;}
+    ul.menu-feria li{width: auto; padding: 5px 11.9px;}
+    .back-container{padding-bottom:0px; background-position-y: -50px;}
+    .owl-theme.owl-principal .owl-controls .owl-buttons {display: none;}
+    .empresas{width: 690px; margin: 0 auto;}
+    .view-display-id-block_4 .views-row{height: 311px; width: 190px;}
+    .container-menu{background: #fff;position: relative;}
+    .section-logos{height: 75px;}
+    .logo-feria {width: 120px;height: 75px;}
+    .google_redes{margin: 10px 0; width: auto;}
+    .text-content .social-sharing a {margin: 0 35px 20px 0;}
+    .redes-sociales{margin: 0 10px;}
+    .icon-facebook {background: url('http://especiales.elheraldo.co/feriainmobiliaria/themes/framework%205/images/icofacebook.png') no-repeat -1px center / 11px auto transparent;}
+    .search-form{margin-bottom: 0px;}
+    .share-title{display: none;}
+    .buscador_google {margin: 3px 30px 0 0;border-radius: 20px;}
+    .container-menu {height: 52px;}
+    .ruta nav, .slider-block .infoGaleria .info .url {padding: 10px 5%;width: 90%;}
+    .logo-menu a{background-image: url(http://areacaribe.calipso.com.co/themes/framework/images/icono-area-caribe-degradado.svg);}
+    #slider .view-display-id-block_1 .views-row {width: 94%;margin: 20px 3% 0;}
+    #slider .view-display-id-block_1 .views-row .views-field.views-field-name {margin: 0;}
+    #slider .view-display-id-block_1 .views-row > div:nth-child(2) {margin: 30px auto;}
+    #proyectos_detalle_empresa {margin: 50px auto;}
+    .page-taxonomy-term-19 .back-container {background-position: center -90px;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 {width: 100%;margin: 0 auto 30px;float: left;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row {width: 44%;float: left;margin: 10px 1.25% !important;}
+    .page-taxonomy-term-27 .view-display-id-block_1 {height: 280px;}
+    .page-taxonomy-term-27 .encabezado .left .texto {margin: 0px 80px;}
+    .page-buscador .content-filtro {width: 40%;margin: 0 2%;}
+    .page-buscador .result-search {width: 54%;box-shadow: none;}
+    .page-buscador #main-home .listado-proyectos .views-row {width: 80%;margin: 0 2% 40px;float: right;display: block;}
+    .page-buscador .views-exposed-form .views-exposed-widget .form-submit {width: 100%;padding: 5px 0;text-align: center;}
+}
+    
+@media (max-width: 700px) {
+    #nav_mobile .search-form input {border: 2px solid #19476f;}
+    #header {padding: 62px 0 0;}
+    body .section-logos {display: none;}
+    .menu-mobile {display: block;position: fixed;top: 0;z-index: 9999;height: 62px;}
+    .menu-mobile .menu_bar {width: 100%;background-color: rgba(7, 46, 64, 0.95);height: 40px; padding: 10px 0;border-bottom: 2px solid #0482B4;}
+    .menu-mobile .menu_bar .bt-menu {background: rgba(255, 0, 0, 0.76);width: 50px;float: left;height: 60px;display: block;margin: -10px 0;}
+    .menu-mobile .menu_bar #btn_redes {height: 45px;width: 45px;background: url("/themes/framework/images/compartir-blanco.svg") no-repeat center center / 100% auto transparent;float: right;margin: -3px 6px;color: transparent;}
+    .menu-mobile .menu_bar .bt-menu .list2 {width: 30px;height: 30px;margin: 15px 10px;}
+    #nav_mobile {position: fixed;top: 52px;box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);width: 100%;background: #FFF;z-index: 9;}
+    #nav_mobile ul {margin: 10px 20px;padding: 0;}
+    #nav_mobile li {list-style: none;border-bottom: 1px solid #ccc;margin: 10px 0px;padding: 15px; text-align: center;}
+    #nav_mobile li:last-child {border-bottom: 0;}
+    #nav_mobile li a {font-weight: 500;font-size: 20px;}
+    .logo-feria {background: url("/themes/framework/images/logo-area-caribe-mobile.svg") no-repeat;width: 220px;height: 35px;display: block;margin: 2px auto;}
+    .container-menu{display: none;}
+    .google_redes {display: none;position: fixed;z-index: 99999;box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);margin: 0px;right: 10px;border-radius: 4px;background: #FFF;}
+    .google_redes:before {content: " ";display: block;width: 20px;height: 20px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);background: #FFF;position: absolute;right: 10px;top: -7px;}
+    .buscador_google{display: none;}
+    .view-display-id-block_1 .views-field-field-titulo, #owl-demo .views-field-field-titulo {left: 20px;font-size: 21px;padding: 15px;line-height: 37px;}
+    #owl-demo .views-field-field-titulo a, .view-display-id-block_1 .views-field-field-titulo a {display: block;}
+    #owl-demo .views-field-field-titulo a:after {display: block;float: right;}
+    #main-home .te-quedaste-corto .contenedor{ width: 320px;}
+    .empresas {width: 100%;}
+    .back-container {background-position: center -180px;}
+    .page-taxonomy-term-19 .back-container {background-position: center -220px;}
+    .page-taxonomy-term-19 .content .view-display-id-block_1 {margin: 0px 6%;width: 84%;}
+    .page-taxonomy-term-19 .view-id-general_tipos_contenido.view-display-id-block_2 .view-content .views-row {margin: 0px 3.6% 30px !important;width: 37.8% !important;}
+    #proyectos_detalle_empresa {margin: 20px auto;}
+    .page-buscador .content-filtro {width: 80%;margin: 0 auto;float: none;display: block;}
+    .page-buscador .result-search {width: 100%;margin: 20px auto 0;}
+    .page-buscador #main-home .listado-proyectos .views-row {width: 44%;margin: 20px 3%;}
+    .page-buscador .filtro .filtro-movil{display: block;background: #19476f;border: 0;padding: 10px 15px;color: #FFF;font-size: 14px;text-transform: uppercase;letter-spacing: 1px;border-radius: 4px;margin: 0 auto;box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);}
+    .page-buscador .filtro .view-filters {display: none;}
+    .page-buscador #main-home .listado-proyectos .descripcion {height: 160px;}
+}
+
+@media only screen and (max-width: 667px){
+    #proyectos_detalle_empresa {width: 330px;}
+    #proyectos_detalle_empresa .view-display-id-block_4 .views-row {margin: 20px 5px;}
+    #slider .view-display-id-block_1 .views-row .views-field-name h1 {font-weight: 400;}
+    .slider-block.box-constructoras {border: 3px solid #049ED4;border-top: 0;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);border-radius: 0 0 20px 20px;background: #FFF;}
+    #slider .view-display-id-block_1 .views-row .views-field.views-field-name {width: 94%;padding: 10px 3%;position: relative;}
+    #slider .view-display-id-block_1 .views-row > div:nth-child(2) {width: 50%;float: none;position: relative;height: auto;margin: 0 auto;}
+    #slider .view-display-id-block_1 .views-row > div:nth-child(2) .logo img {margin: 20px auto;}
+    #slider .view-display-id-block_1 .views-row .views-field {width: 48.6%;padding: 15px 0;margin: 1px 0.3%;border: 2px solid #eee;float: left;}
+    #slider .view-display-id-block_1 .views-row .views-field:last-child {border-bottom: 2px solid #eee;}
+    .page-taxonomy-term-19 .back-container {background-position: center -260px;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row {height: 375px;width: 43.8%;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe {height: 340px;}
+    .page-buscador #main-home .listado-proyectos .descripcion {height: 180px;}
+}
+
+@media only screen and (max-width: 599px){
+    .page-taxonomy-term-19 .view-display-id-block_1 .views-row .views-field-field-sumario .field-content {font-size: 15px;}
+    .page-taxonomy-term-19 .back-container, .node-type-noticias .back-container {background: #FFF;}
+    .node-type-noticias .slider-block {width: 94%;margin: 0 3%;}
+    .page-taxonomy-term-19 .content .view-display-id-block_1 {margin: 0;width: 94%;padding: 20px 3%;box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);}
+    .page-taxonomy-term-19 .view-id-general_tipos_contenido.view-display-id-block {width: 90%;margin: 3% 3% 0;}
+    .page-taxonomy-term-19 .view-id-general_tipos_contenido.view-display-id-block_2 {margin: 20px auto 0;padding: 40px 0 0;border-top: 1px solid #eee;}
+    .page-taxonomy-term-19 .encabezado .content .view-display-id-block .view-content .views-row div:first-child { height: auto;}
+    .page-taxonomy-term-19 .encabezado .content .view-display-id-block .view-content .views-row div:first-child a img {height: auto;}
+    .page-taxonomy-term-19 .view-display-id-block .views-row h2.titulo {position: relative;background-color: #FFF;}
+    .page-taxonomy-term-30 .encabezado .left h1, .node-type-edicion-impresa .encabezado .left h1 {width: 100%;margin: 7px 0 0 0;}
+    .page-taxonomy-term-30 .encabezado .left h2, .node-type-edicion-impresa .encabezado .left h2 {text-align: center;display: block;margin: 30px auto 10px;border: 3px solid #fff;width: 200px;padding: 10px 0;}
+    .page-taxonomy-term-30 .slider-block, .node-type-edicion-impresa .slider-block {width: 100%;}
+    .page-taxonomy-term-30 .back-container, .node-type-edicion-impresa .back-container {background: #FFF;}
+    .page-taxonomy-term-30 .left .view-general-taxonomy iframe {height: 400px;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row { width: 60%;height: 295px;margin: 10px 18%!important;padding: 10px 2%;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe, .node-type-edicion-impresa .cuerpo ..cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe {height: 260px;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row .views-field-field-link-revista , .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row .views-field-field-link-revista {overflow: hidden;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row .leer_mas, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row .leer_mas {margin: 24% auto;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe {height: 260px;}
+    #slider .view-display-id-block_1 .views-row .views-field {width: 90%;padding: 10px 0;margin: 1px auto;border: 0;border-top: 2px solid #eee;float: none;}
+    .page-taxonomy-term-27 .view-display-id-block_1 {height: 250px;margin: 30px 0 0;}
+    .page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row {width: 26%;margin-left: -3%;margin-right: -3%;}
+    .page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row-4 {width: 26%;margin-left: -3.5%;margin-right: -3.5%;}
+    .page-taxonomy-term-27 .encabezado .left .texto {margin: 0px 40px;}
+    .page-buscador #main-home .listado-proyectos .descripcion {height: 200px;}
+}
+
+@media screen and (max-width: 480px) {
+    header#header {padding: 60px 0 0;}
+    .not-front .back-container {background-position: center -250px;}
+    .node-type-proyectos .back-container {background: #FFF;}
+    .front .back-container {height: 350px; background-size: 1220px;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 {width: 100%;}
+  .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row .imagen, .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row .imagen{width: auto; height: auto;}
+  .back-container-two{padding: 20px 0px;}
+  .box-tittle h2{width: 90%;}
+  .view-display-id-block_4 .views-row{padding: 15px 10px;}
+  .owl-principal.owl-carousel .owl-wrapper-outer {position:  relative;width:  100%;height: auto;padding: 0 0 40px;}
+  .owl-principal#owl-demo .views-field-field-titulo  {
+    border-radius: 0;
+  left:  0;
+  bottom:  0;
+  font-size:  16px;
+  padding:  4px 8px;
+  margin:  0 0 -38px;
+  width:  100%;
+  background:  #FFF ;
+  }
+  .owl-controls .clickable{display: none;}
+  #owl-demo .views-field-field-titulo{left: 0; bottom: 0; font-size: 14px; padding: 4px 8px;}
+  #owl-demo .views-field-field-titulo a:after{display: none;}
+  header#header{
+  width: auto;
+  }
+  body footer .section-logos{
+  height: auto;
+  width: 100%;
+  display: block;
+  margin: 0 auto 30px;
+  }
+  body .logo-areacaribe{
+  display: inline-block;
+  margin: 0 auto;
+  width: 240px;
+  }
+  body .slider-block{
+  width: 100%;
+  }
+    body .redes-sociales {
+        float: right;
+        text-align: center;
+        margin: 0 auto;
+        width: 200px;
+        height: 70px;
+        border-radius: 4px;
+        background: #FFF;
+    }
+    body .text-content .redes-sociales{width: auto;height: 50px;margin: 0 0 20px;}
+    .social-sharing {
+        height: 50px !important;
+        margin: 10px 5px !important;
+    }
+    .text-content .social-sharing {margin: 0 !important;}
+    .social-sharing a {margin: 0 5px !important;}
+    .text-content .social-sharing a {margin: 0 35px 20px 0 !important;}
+  body ul.menu-feria li:last-child{
+  display: none;
+  }
+  body ul.menu-feria li:nth-child(3){
+  border-bottom: none;
+  }
+  body .logo-feria{
+  width: 55%;
+      height: 40px;
+  background-size: 100%;
+  margin: 0 auto;
+  display: block;
+  }
+  body .pagerEmpresas li, .pagerEmpresas-movil li{
+  border-radius: 18px;
+  color: transparent;
+  cursor: pointer;
+  float: left;
+  font-size: 0;
+  height: 25px;
+  margin-left: 10px;
+  width: 25px;
+  }
+  body .listado-proyectos .view-display-id-block_3{
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+  }
+  body .pagerEmpresas{
+  display: none;
+  }
+  body .pagerEmpresas-movil{
+  display: inline-block;
+  margin-top: 20px;
+  }
+  body ul.menu-feria{
+  width: 100%;
+  border: none;
+  top: 20px;
+  background-color: transparent;
+  position: inherit;
+  }
+  body .empresas .view-display-id-block_9 .views-row{
+  width: 100%;
+  }
+  body .empresas .view-display-id-block_9{
+  width: 100%;
+  }
+  body .empresas .view-id-view_term_empresas .view-content{
+
+  }
+  body ul.menu-feria li{
+  width: 33%;
+  border-right: medium none;
+  height: 26px;
+  padding-top: 5px;
+  display: none;
+  }
+  body .empresas .view-id-view_term_empresas .views-row{
+  width: 360px;
+  border-right: none;
+  }
+  body .empresas .view-id-view_term_empresas{
+  width: 100%;
+  }
+  body .empresas{
+  width: 100%;
+  text-align: center;
+  margin: 0px 0px 30px;
+  padding-bottom: 0px;
+  border-top: 0px;
+  }
+  body #slider{
+  width: 90%;
+  margin: 0 auto;
+  float: none;
+  padding: 15px 5%;
+  }
+  body .view-display-id-block_1 .views-field-field-titulo .field-content{
+  width: 100%;
+  }
+  body .box-pager-noticias{
+  width: 100%;
+  display: none;
+  }
+  body .view-display-id-block_1 .views-field-field-titulo a{
+  color:#fff;
+  }
+  body .view-display-id-block_1{
+  background-color: transparent;
+  }
+  body .view-display-id-block_1 .view-content .views-row .views-field-field-foto-principal img{
+  width: 100%;
+  height: auto;
+
+  }
+  body .view-display-id-block_1 .view-content{
+  width: 100%;
+  }
+  body .view-display-id-block_1 .views-row{
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  }
+  body .paginadores{
+  display: none;
+  }
+  body #main-home{
+  width: 100%;
+  }
+  body #main-home .listado-proyectos{
+  width: 100%;
+  }
+  body .te-quedaste-corto{
+  width: 90%;
+  }
+  body .box-tittle{
+  width: 100%;
+  }
+  body .view-display-id-block_4 .view-content{
+  width: 100%;
+  }
+  body #footer .contenedor{
+  width: 100%;
+  text-align: center;
+  }
+  body .redes-footer{
+  display: none;
+  }
+  body .empresas .box-tittle{display: block;width: 100%;}
+  .front .box-tittle {width: 100%;margin: 10px auto;}
+  body .logo-heraldo{
+  float: none;
+  width: 240px;
+  text-align: left;
+  margin: 15px auto;
+  }
+  body #footer span{
+  float: none;
+  }
+  body .text-evento-footer{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  }
+  body #footer .logoFooter{
+  display: inline-block;
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 15px;
+  background-size: auto;
+  }
+  body .view-display-id-block_1 .views-field-field-titulo{
+  position: initial;
+  width: 92%;
+  padding: 15px;
+  background-color: rgba(175, 211, 230, 0.6);
+  margin-top: 20px;
+  }
+  body .sombra-title{
+  display: none;
+  }
+  body .view-display-id-block_4 .views-row{
+  width: 92%;
+  float: none;
+  text-align: center;
+  margin-right: 0px;
+  }
+  body .view-display-id-block_4 .views-row .descripcion p{
+  text-align: center;
+  }
+  body .foto-proyecto{
+  text-align: center;
+  }
+  body .sombra-empresas{
+  display: none;
+  border-bottom: 2px solid #ccc;
+  }
+  body .view-display-id-block_4{
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+  }
+  body .paginadores-corto{
+  display: none;
+  }
+  .ver-mas, .ver-mas-dos{
+  display: none;
+  }
+  .owl-theme.owl-principal .owl-controls{display: none !important;}/*Movil*/
+  .owl-theme .owl-controls {margin-top: 10px !important;}
+  .owl-theme .owl-controls .owl-page span {height: 6px !important;width: 6px !important;margin: 5px;}
+    #demo .owl-tequedastecorto .views-row .titulo a {font-weight: 600;}
+    #slider .view-display-id-block_1 .views-row .views-field-name h1 {font-size: 24px;}
+    .page-taxonomy-term-19 .view-id-general_tipos_contenido.view-display-id-block_2 .view-content .views-row {margin: 0px 23% 30px !important;width: 50% !important;}
+    .page-taxonomy-term-30 .left .view-general-taxonomy iframe, .node-type-edicion-impresa .left .view-general-taxonomy.view-display-id-block_n1 iframe {height: 460px;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row {height: 375px;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe {height: 340px;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row .leer_mas, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row .leer_mas {margin: 44% auto;}
+    .page-buscador .back-container {background: #FFF;}
+    .page-buscador #main-home {width: 100%;}
+    .page-buscador #main-home .listado-proyectos h1 {width: 100%;padding: 10px 0;}
+    .page-buscador #main-home .listado-proyectos .views-row {width: 90%;margin: 10px auto 30px;float: none;}
+    .page-buscador #main-home .listado-proyectos .descripcion {height: auto;}
+}
+@media screen and (max-width: 420px){
+    .page-taxonomy-term-19 .view-id-general_tipos_contenido.view-display-id-block_2 .view-content .views-row {margin: 0px 18% 30px !important;width: 60% !important;}
+    .page-taxonomy-term-19 .encabezado .content .view-display-id-block .view-content .views-row-1, .page-taxonomy-term-19 .encabezado .content .view-display-id-block .view-content .views-row {width: 80%;margin: 0 10% 30px;}
+    .node-type-noticias .field-name-field-titulo .field-item {font-size: 21px;}
+    .node-type-noticias .text-content .right .view-display-id-block_10 .views-row {width: 96%;}
+    .page-taxonomy-term-30 .encabezado .left h1, .node-type-edicion-impresa .encabezado .left h1 {text-align: center;padding: 5px 0;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row {width: 70%;margin: 10px 13%!important;}
+    .page-taxonomy-term-27 .slider-block {width: 100%;}
+    .page-taxonomy-term-27 .encabezado .left {border-radius: 0;}
+    .page-taxonomy-term-27 .encabezado .left h3 {width: 100%;margin: 9px 0 0;padding: 10px 0 10px 0;text-align: center;}
+    .page-taxonomy-term-27 .cuerpo {margin: 0;}
+    .page-taxonomy-term-27 .view-display-id-block_1 {height: 230px;}
+    .page-buscador #main-home .listado-proyectos h1 {font-size: 21px;}
+}
+@media only screen and (max-width: 379px){
+    header#header {padding: 57px 0 0;}
+    .front .back-container {height: 325px;}
+    .owl-carousel.owl-empresas {width: 90%;margin: 0 auto;}
+    .empresas .views-row .logo img {width: 90%;}
+    #slider .view-display-id-block_1 .views-row > div:nth-child(2), #slider .view-display-id-block_1 .views-row > div:nth-child(2) .logo img{ width: 100%;max-height: inherit;height: auto;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe  {height: 290px;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row {height: 335px;}
+    .page-taxonomy-term-30 .left .view-general-taxonomy iframe, .node-type-edicion-impresa .left .view-general-taxonomy.view-display-id-block_n1 iframe {height: 420px;}
+    .page-taxonomy-term-30 .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe, .node-type-edicion-impresa .cuerpo .view-general-taxonomy.view-display-id-block_n1 .views-row iframe {height: 300px;}
+    .page-taxonomy-term-30 .encabezado .left h1, .node-type-edicion-impresa .encabezado .left h1{font-size: 27px;}
+    .page-taxonomy-term-27 .view-display-id-block_1 {height: 220px;}
+    .page-taxonomy-term-27 .encabezado .left .texto {margin: 0px 30px;font-size: 1em;padding: 30px;}
+    .page-taxonomy-term-27 .encabezado .left .texto:before {height: 4px;margin: -25px 0 20px;}
+    .page-buscador .content-filtro { width: 90%;}
+}
+@media screen and (max-width: 350px) {
+    #nav_mobile li {padding: 10px;}
+    #nav_mobile .search-form input {width: 195px;}
+    .node-type-noticias .back-container{height: auto;}
+    .back-container{height: 435px;}
+    #main-home .listado-proyectos .views-row {margin: 2px auto 10px;}
+    .front .box-tittle {margin: 5px auto 0;}
+    .front .empresas .box-tittle {padding: 5px 0;}
+    .node-type-noticias .left .field-name-field-titulo {padding: 13px 3%;top: -35px;margin:0;border-radius: 0 0 10px 10px;}
+    .node-type-noticias .field-name-field-sumario .field-item {font-size: 18px;text-align: justify;}
+    .page-taxonomy-term-30 .left .view-general-taxonomy iframe, .node-type-edicion-impresa .left .view-general-taxonomy.view-display-id-block_n1 iframe {height: 340px;}
+    .page-taxonomy-term-27 .view-display-id-block_1 {height: 190px;}
+    .page-taxonomy-term-27 .encabezado .left h3 {margin: 7px 0 0;font-size: 28px;}
+    .page-taxonomy-term-27 .encabezado .left .texto {margin: 0px 20px;padding: 30px 20px;}
+    .page-buscador .back-container {height: auto;}
+    #proyectos_detalle_empresa {width: 280px;}
+    #proyectos_detalle_empresa .view-display-id-block_4 .views-row {margin: 20px 0;width: 280px;}
+    #proyectos_detalle_empresa .view-display-id-block_4 .views-row .views-field-field-imagen-principal, #proyectos_detalle_empresa .view-display-id-block_4 .views-row .views-field-field-imagen-principal img {width: 100%;height: auto;}
+    .page-taxonomy-term-27 .view-display-id-block_1 .view-content .views-row:last-child{margin-left: -4%;}
+}
+@media screen and (max-width: 350px) and (max-height: 500px) {
+    #nav_mobile li {margin: 0px;padding: 5px 15px;}
+}
