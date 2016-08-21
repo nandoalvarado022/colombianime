@@ -101,7 +101,7 @@ body{
     vertical-align: top;
   }
   html body .container.scrollDifrCro{
-    padding-top: 105px;
+    /*padding-top: 105px;*/
   }
   #apertura-video{
     display: inline-block;
@@ -1047,6 +1047,118 @@ text-align: center;
     width: 1200px;
   }
 }
+
+/*Despliegue vendedor*/
+  .node-type-vendedor .productos_destacados h2{
+    margin-bottom: 10px;
+  }
+  .node-type-vendedor #info_nvendedor{
+    float: left;
+  }
+  .node-type-vendedor .views-field-field-boletas, .node-type-vendedor .views-field-field-url-adicional{
+    display: inline-block;
+    padding: 10px 10px;
+    background: #6CC6D9;
+    font-size: 23px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "BebasNeue-regular";
+    margin: 10px 10px 0 0;
+  }
+  .node-type-vendedor .section > h1{display: none;
+  }
+  .node-type-vendedor .eventos_nvendedor{
+    float: right;
+  }
+  .node-type-vendedor .descripcion_nvendedor p{
+    margin: 15px 0;
+  }
+  .node-type-vendedor .header_nvendedor{
+      margin:20px 30px 0;
+      overflow: hidden;
+  }
+  .node-type-vendedor .logo_nvendedor{
+      float:left;
+  }
+  .node-type-vendedor .descripcion_nvendedor{
+      float:left;
+      margin-left:20px;
+      font-family: 'Anaheim', sans-serif;
+      font-size:20px;
+  }
+  .node-type-vendedor .header_nvendedor h1{
+      padding:10px 10px;
+      background:#6CC6D9;
+      font-weight:bold;
+      font-size:30px;
+      text-decoration:none;
+      display:inline-block;
+      font-family:"BebasNeue-regular";   
+  }
+  .node-type-vendedor .header_nvendedor h2{
+      padding:10px 10px;
+      background:#E7E013;
+      font-weight:bold;
+      font-size:25px;
+      text-decoration:none;
+      display:inline-block;
+      font-family:"BebasNeue-regular";
+  }
+  .node-type-vendedor .noticias_destacadas h2{
+    padding: 10px 10px;
+    background: #E7E013;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "BebasNeue-regular";
+    margin-bottom: 20px;
+  }
+  .node-type-vendedor .productos_destacados h2{
+      padding:10px 10px;
+      background:#E7E013;
+      font-weight:bold;
+      font-size:25px;
+      text-decoration:none;
+      display:inline-block;
+      font-family:"BebasNeue-regular";
+      padding-top: 3px;
+  }
+  .node-type-vendedor .productos_destacados{
+    float: left;
+    width: 320px;
+    margin-top: 50px;
+  }
+  .node-type-vendedor .noticias_destacadas{
+    float: right;
+    clear: both;
+    width: 400px;
+    text-align: center;
+    margin: 30px 50px 0 0;
+  }
+  .node-type-vendedor .noticias_destacadas .views-row{
+    margin-bottom: 20px;
+  }
+  .node-type-vendedor .social_nvendedor{
+    float: left;
+    margin-right: 10px;
+  }
+  .social_nvendedor img{
+      height: 40px;
+      width: 40px;
+      float: right;
+      padding:3px;
+  }
+  .node-type-vendedor h2{
+      padding:10px 10px;
+      background:#E7E013;
+      font-weight:bold;
+      font-size:25px;
+      text-decoration:none;
+      display:inline-block;
+      font-family:"BebasNeue-regular";  
+  }
+/*Fin*/
 
 /*Fin style.css*/
 
