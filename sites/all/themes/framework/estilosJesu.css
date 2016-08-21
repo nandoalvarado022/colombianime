@@ -1,49 +1,123 @@
 body{
-
+ 
+height: 900px;
+    
 }
 .view-id-node_vendedor.view-display-id-block_1 {
+   
 
 }
-.Header_nvendedor{
+.header_nvendedor{
 	margin:10px;
-	width:1200px;
-	height:300px;
-	padding:10px 10px
+	width:1500px;
+	height:500px;
+	padding:10px 10px;
 }
 
-.Logo_nvendedor{
-	float:left
+.logo_nvendedor{
+	float:left;
 }
 
-.Descripcion_nvendedor{
+.descripcion_nvendedor{
 	float:left;
 	margin-left:20px;
 	font-family: 'Anaheim', sans-serif;
 	font-size:23px;
+    height: 500px;
+   
 }
-.Header_nvendedor h1{
+.header_nvendedor h1{
 	padding:10px 10px;
 	background:#6CC6D9;
 	font-weight:bold;
 	font-size:30px;
 	text-decoration:none;
 	display:inline-block;
-	font-family:"Bebas Neue";
+	font-family:"BebasNeue-regular";
+    
 }
-.Header_nvendedor h2{
+.header_nvendedor h2{
 	padding:10px 10px;
 	background:#E7E013;
 	font-weight:bold;
-	font-size:30px;
+	font-size:25px;
 	text-decoration:none;
 	display:inline-block;
-	font-family:"Bebas Neue";
+	font-family:"BebasNeue-regular";
+    
+    
 }
+
+.noticias_destacadas h2{
+	padding:10px 10px;
+	background:#E7E013;
+	font-weight:bold;
+	font-size:25px;
+	text-decoration:none;
+	display:inline-block;
+	font-family:"BebasNeue-regular";
+    padding-top: 3px;
+    
+}
+
+.productos_destacados h2{
+	padding:10px 10px;
+	background:#E7E013;
+	font-weight:bold;
+	font-size:25px;
+	text-decoration:none;
+	display:inline-block;
+	font-family:"BebasNeue-regular";
+    padding-top: 3px;
+    
+}
+
+.productos_destacados 
+{
+    
+    width: 600px;
+    height: 0px; 
+    margin-left:80px;
+     
+}
+
+.noticias_destacadas
+{
+    width:300px;
+    height: 100px;
+    float:right;
+    margin-right:7px; 
+    margin-bottom:500px;
+    
+}
+
 .Social_nvendedor{
-	float: bottom; 
- 	/*-margin-left:5px;*/
+  margin-left:60px;
+    float: left;
 }
+
 .Social_nvendedor img{
-    width:40px;
-	height:40px;
+    height: 40px;
+    width: 40px;
+    float: right;
+    padding:3px;
+      
+    
+}
+
+
+
+
+h2 
+
+{
+    
+    padding:10px 10px;
+	background:#E7E013;
+	font-weight:bold;
+	font-size:25px;
+	text-decoration:none;
+	display:inline-block;
+	font-family:"BebasNeue-regular";
+    
 }
