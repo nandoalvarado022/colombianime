@@ -246,6 +246,7 @@ body{
 	text-transform: uppercase;
 	font-size: 30px;
 	padding:20px 0;
+  height: 65px;
 	}
 	#galeria-apertura-home .view-header p a{
 	padding-bottom: 10px;
@@ -256,7 +257,7 @@ body{
 	}
 	#galeria-apertura-home .view-header p:nth-child(2){
 	font-size: 18px;
-	margin: 10px 0 0 0px;
+	margin: 0px 0 0 0px;
 	text-align: center;
 	}
 	#galeria-apertura-home .view-header p:nth-child(3){
@@ -1113,8 +1114,33 @@ text-align: center;
     display: inline-block;
     font-family: "BebasNeue-regular";
     margin-bottom: 20px;
+    float: left;
   }
-  .node-type-vendedor .productos_destacados h2{
+  .node-type-vendedor .noticias_destacadas .views-row{
+    clear: both;
+  }
+  .node-type-vendedor .noticias_destacadas .views-field-field-imagenes{
+    float: left;
+  }
+  .node-type-vendedor .noticias_destacadas .views-field-title{
+    float: right;
+    width: 230px;
+  }
+  .view-id-vendedor.view-display-id-block_4{
+    clear: both;
+  }
+  .view-id-vendedor.view-display-id-block_4 .views-field-title a{
+    color: #7c7c7c;
+    font-size: 16px;
+    float: left;
+    text-align: left;
+    margin-left: 15px;
+  }
+  .view-id-vendedor.view-display-id-block_5 .view-content{
+    width: 670px;
+    margin-top: 20px;
+  }
+  .node-type-vendedor .productos_destacados h2, .node-type-vendedor .view-id-vendedor.view-display-id-block_5 h2{
       padding:10px 10px;
       background:#E7E013;
       font-weight:bold;
@@ -1122,22 +1148,28 @@ text-align: center;
       text-decoration:none;
       display:inline-block;
       font-family:"BebasNeue-regular";
-      padding-top: 3px;
+      padding: 10px;
   }
   .node-type-vendedor .productos_destacados{
     float: left;
     width: 320px;
-    margin-top: 50px;
+    margin-top: -90px;
+  }
+  .node-type-vendedor .listado_productos{
+    clear: both;
+    float: left;
+    margin-top: -160px;
   }
   .node-type-vendedor .noticias_destacadas{
     float: right;
     clear: both;
-    width: 400px;
+    width: 450px;
     text-align: center;
-    margin: 30px 50px 0 0;
+    margin: 30px 0px 0 0;
   }
   .node-type-vendedor .noticias_destacadas .views-row{
     margin-bottom: 20px;
+    overflow: hidden;
   }
   .node-type-vendedor .social_nvendedor{
     float: left;

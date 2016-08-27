@@ -48,17 +48,21 @@ $ruta_imagen1=image_style_url('220x220', $file_foto);?>
     
 
 	<div style="" class='eventos_nvendedor'>
-        <h2>Próximos eventos:</h2> <br><br>
+        <h2>Próximos eventos</h2> <br><br>
         <?php print views_embed_view('vendedor','block_2');?>
 	</div>
 
     <div class='noticias_destacadas'>
-        <h2>Noticias destacadas:</h2>
+        <h2>Noticias destacadas</h2>
         <?php print views_embed_view('vendedor','block_4');?>
     </div>
 
     <div class='productos_destacados'>
-        <h2>Productos destacados:</h2>
+        <h2>Producto estrella</h2>
        <?php print views_embed_view('vendedor','block_3');?>
+    </div>
+
+    <div class="listado_productos">
+       <?php print views_embed_view('vendedor','block_5');?>
     </div>
 </div>
