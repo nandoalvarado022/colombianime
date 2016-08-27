@@ -10,19 +10,19 @@ $ruta_imagen1=image_style_url('220x220', $file_foto);?>
             <img style="" src=" <?php echo $ruta_imagen1 ?>"/>
             <div class='social_nvendedor'>
                 <div>
-                    <a target="_blank"  href="http://www.twitter.com/"> 
+                    <a target="_blank"  href="<?php echo $node->field_twitter['und'][0]['value']?>"> 
                         <img style=" height: 40px ; width: 40px;" src="/sites/all/themes/framework/img/twitter_boton.png"> 
                     </a>
                 </div>
                 
                 <div>
-                    <a target="_blank"  href="http://www.youtube.com/">
+                    <a target="_blank"  href="<?php echo $node->field_youtube['und'][0]['value']?>">
                         <img style=" height: 40px; width: 40px;" src="/sites/all/themes/framework/img/youtube_boton.png">
                     </a>
                 </div>
                 
                 <div>
-                    <a target="_blank"  href="http://www.facebook.com/">
+                    <a target="_blank"  href="<?php echo $node->field_facebook['und'][0]['value']?>">
                     <img style=" height: 40px; width: 40px;"src="/sites/all/themes/framework/img/facebook_boton.png"></a>
                 </div>
             </div>
