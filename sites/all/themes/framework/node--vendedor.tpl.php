@@ -16,7 +16,7 @@ $og_description = array(
 drupal_add_html_head($og_description, 'description');
 
 $imagen = $node->field_foto["und"][0]["uri"];
-$imagen=image_style_url('220x220', $imagen);
+$imagen=image_style_url('200x200', $imagen);
 
 $og_image = array(
 '#tag' => 'meta',
