@@ -1,3 +1,30 @@
+<?php
+// echo "<pre>";print_r($node);echo "</pre>";
+$description = array(
+'#tag' => 'meta',
+'#attributes' => array(
+'property' => 'description',
+'content' => "Lo mejor de los productos Anime en Colombia, tiendas como: Dnk Cute Shop, Taiyou Anime, Hiroshima Boom ¡ya estan aquí!",
+));
+drupal_add_html_head($description, 'description');
+
+$og_description = array(
+'#tag' => 'meta',
+'#attributes' => array(
+'property' => 'og:description',
+'content' => $node->body["und"][0]["value"]));
+drupal_add_html_head($og_description, 'description');
+
+$imagen = $node->field_foto["und"][0]["uri"];
+$imagen=image_style_url('220x220', $imagen);
+
+$og_image = array(
+'#tag' => 'meta',
+'#attributes' => array(
+'property' => 'og:image',
+'content' => $imagen)); 
+drupal_add_html_head($og_image, 'og:image');?>
+
 <!--<link rel="stylesheet" href="/sites/all/themes/framework/css/estilos_vendedor.css">-->
 <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
 <?php 

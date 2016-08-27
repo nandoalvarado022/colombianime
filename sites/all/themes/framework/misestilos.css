@@ -154,6 +154,7 @@ body{
 	.precio{
 	color: #f49401;
 	font-weight: 500;
+  display: block;
 	}
 	.Anu320x100{display: none;}
 	#ultimos-productos-noticias{display: inline-block;}
