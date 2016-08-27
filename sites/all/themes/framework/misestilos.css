@@ -1051,7 +1051,7 @@ text-align: center;
 
 /*Despliegue vendedor*/
   .node-type-vendedor .productos_destacados h2{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .node-type-vendedor #info_nvendedor{
     float: left;
@@ -1113,7 +1113,6 @@ text-align: center;
     text-decoration: none;
     display: inline-block;
     font-family: "BebasNeue-regular";
-    margin-bottom: 20px;
     float: left;
   }
   .node-type-vendedor .noticias_destacadas .views-row{
@@ -1124,10 +1123,12 @@ text-align: center;
   }
   .node-type-vendedor .noticias_destacadas .views-field-title{
     float: right;
-    width: 230px;
+    width: 190px;
   }
   .view-id-vendedor.view-display-id-block_4{
-    clear: both;
+        clear: both;
+    border: solid 7px #e7e013;
+    padding: 10px;
   }
   .view-id-vendedor.view-display-id-block_4 .views-field-title a{
     color: #7c7c7c;
@@ -1158,7 +1159,7 @@ text-align: center;
   .node-type-vendedor .listado_productos{
     clear: both;
     float: left;
-    margin-top: -160px;
+    margin-top: -290px;
   }
   .node-type-vendedor .noticias_destacadas{
     float: right;
