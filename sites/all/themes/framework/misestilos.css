@@ -1082,11 +1082,19 @@ text-align: center;
   .node-type-vendedor .logo_nvendedor{
       float:left;
   }
+  .node-type-vendedor .view-id-vendedor.view-display-id-block_2{
+    width: 450px;
+    height: 270px;
+  }
   .node-type-vendedor .descripcion_nvendedor{
+    background: #fff;
       float:left;
       margin-left:20px;
       font-family: 'Anaheim', sans-serif;
       font-size:20px;
+  }
+  .node-type-vendedor .descripcion_nvendedor p{
+    margin: 20px 10px;
   }
   .node-type-vendedor .header_nvendedor h1{
       padding:10px 10px;
@@ -1127,7 +1135,8 @@ text-align: center;
     width: 190px;
   }
   .view-id-vendedor.view-display-id-block_4{
-        clear: both;
+    background: #fff;
+    clear: both;
     border: solid 7px #e7e013;
     padding: 10px;
   }
