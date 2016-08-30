@@ -1,7 +1,7 @@
 <?php
   foreach($_POST as $nombre_campo => $valor){
-     $asignacion = "\$" . $nombre_campo . "='" . $valor . "';";
-     eval($asignacion);
+   $asignacion = "\$" . $nombre_campo . "='" . $valor . "';";
+   eval($asignacion);
   }
 
   if (isset($origen)) {
@@ -78,7 +78,7 @@
       <link href="/files/owl-carousel/owl.theme.css" rel="stylesheet">
       <script src="/files/owl-carousel/owl.carousel.js"></script>
 
-      <link rel="stylesheet" href="/sites/all/themes/framework/css/estilosJesu.css" />
+      <!-- <link rel="stylesheet" href="/sites/all/themes/framework/css/estilosJesu.css" /> -->
 
       <link rel="stylesheet" href="/sites/all/themes/framework/misestilos.css?update=<?= time()?>" />
       <link rel="stylesheet" type="text/css" href="/sites/all/themes/framework/misestilos-movil.css" media="screen and (max-width:480px)">

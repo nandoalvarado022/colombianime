@@ -122,6 +122,8 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
+    
+    <?php print render($page['nvendedor_eventos']); ?>
 
     <?php if ($main_menu): ?>
       <div id="main-menu" class="navigation">
