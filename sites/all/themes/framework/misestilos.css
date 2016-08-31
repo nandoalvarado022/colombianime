@@ -1,4 +1,4 @@
-@import "reset.css";
+@import "reset.css"; 
 @font-face {
   font-family: 'Agency_fb';
   src: url('fonts/agency_fb.ttf'); /* IE9 Compat Modes */
@@ -546,7 +546,7 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
     margin: 30px 0 0 0;
     background-repeat: no-repeat;
     background-size: 100%;
-    left: 115px;
+    left: 65px;
   }
   html body .container section.col-der h2{
   /*font-weight: 500;*/
