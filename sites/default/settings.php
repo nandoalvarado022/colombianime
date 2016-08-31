@@ -217,10 +217,10 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'colombianime',
-      'username' => 'root',
-      'password' => '',
-      'host' => 'localhost',
+      'database' => 'u588046194_bd',
+      'username' => 'u588046194_bd',
+      'password' => 'nandito2007',
+      'host' => 'mysql.hostinger.co',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
