@@ -34,7 +34,7 @@ $ruta_imagen1=image_style_url('220x220', $file_foto);?>
 
 <?php 
 // $verPedidos=false;
-// echo "if (".$user->uid."==".$node->field_usuario_gestion_compras["und"][0]["value"];
+echo "if (".$user->uid."==".$node->field_usuario_gestion_compras["und"][0]["value"];
 if ($user->uid==$node->field_usuario_gestion_compras["und"][0]["value"]) {
     $verPedidos=true;
 }
