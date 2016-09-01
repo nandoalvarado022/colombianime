@@ -73,13 +73,9 @@ $verEvento=$node->field_mostrar_proximo_evento["und"][0]["value"];
     	<div class='descripcion_nvendedor'>
             <h1><?php echo $node->title ?></h1>
             <p>
-    		  <strong>Dirección:</strong> <?php echo $node->field_direccion["und"][0]["value"] ?>
-            </p>
-            <p>
-    		  <strong>Teléfono:</strong> <?php echo $node->field_telefono["und"][0]["value"] ?>
-            </p>
-            <p>
-                <strong>Horario:</strong> 08:00 am - 20 pm
+                <?php
+                print_r($node->body["und"][0]["value"]);
+                ?>
             </p>
             <!-- <strong>Instagram:</strong> <?php // echo $node->field_instagram["und"][0]["value"] ?> <br><br><br> -->
             <!--<strong>Twitter:</strong>  echo $node->field_twitter["und"][0]["value"] <br><br>-->

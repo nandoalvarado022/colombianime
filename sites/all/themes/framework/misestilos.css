@@ -1101,6 +1101,7 @@ text-align: center;
       margin-left:20px;
       font-family: 'Anaheim', sans-serif;
       font-size:20px;
+      width: 370px;
   }
   .node-type-vendedor .descripcion_nvendedor p{
     margin: 20px 10px;
