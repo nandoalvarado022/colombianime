@@ -21,6 +21,15 @@
 @import url(https://fonts.googleapis.com/css?family=Titan+One);*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,700);
 
+.view-id-vendedor.view-display-id-block_6{
+  margin: 20px;
+}
+.view-id-vendedor.view-display-id-block_6 td, .view-id-vendedor.view-display-id-block_6 th{
+  padding: 10px;
+}
+.view-id-vendedor.view-display-id-block_6 th{
+  font-weight: bold;
+}
 .view-id-frontpage.view-display-id-block_12 .subtitulo{
   margin: 10px 0;
 }

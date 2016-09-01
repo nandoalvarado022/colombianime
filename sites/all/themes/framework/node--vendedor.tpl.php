@@ -31,6 +31,21 @@ drupal_add_html_head($og_image, 'og:image');?>
 //Cargamos la imagen (logo) del vendedor
 $file_foto = $node->field_foto["und"][0]["uri"];
 $ruta_imagen1=image_style_url('220x220', $file_foto);?>
+
+<?php 
+// $verPedidos=false;
+// echo "if (".$user->uid."==".$node->field_usuario_gestion_compras["und"][0]["value"];
+if ($user->uid==$node->field_usuario_gestion_compras["und"][0]["value"]) {
+    $verPedidos=true;
+}
+$verEvento=$node->field_mostrar_proximo_evento["und"][0]["value"];
+
+// echo "<pre>"; print_r($user); echo "</pre>";
+?>
+<div id="admin_vendedor">
+    <?php 
+    if (isset($verPedidos)){ print views_embed_view('vendedor','block_6');}?>
+</div>
 <div class='header_nvendedor'> 
     <div id="info_nvendedor">
 	    <div class='logo_nvendedor'>
@@ -73,11 +88,14 @@ $ruta_imagen1=image_style_url('220x220', $file_foto);?>
         </div>
     </div>
     
-
-	<div style="" class='eventos_nvendedor'>
-        <h2>Próximos eventos</h2> <br><br>
-        <?php print views_embed_view('vendedor','block_2');?>
-	</div>
+    <?php
+    if ($verEvento) {?>
+    	<div style="" class='eventos_nvendedor'>
+            <h2>Próximos eventos</h2> <br><br>
+            <?php print views_embed_view('vendedor','block_2');?>
+    	</div>
+        <?php
+    }?>
 
     <div class='noticias_destacadas'>
         <h2>Noticias destacadas</h2>
@@ -93,3 +111,19 @@ $ruta_imagen1=image_style_url('220x220', $file_foto);?>
        <?php print views_embed_view('vendedor','block_5');?>
     </div>
 </div>
+
+<?php
+    if (!$verEvento) {?>
+        <style>
+            .node-type-vendedor .noticias_destacadas{
+                clear: none;
+            }
+            .node-type-vendedor .productos_destacados{
+                margin-top: 20px;
+            }
+            .node-type-vendedor .listado_productos{margin-top: 0;}
+            .view-id-vendedor.view-display-id-block_5 .view-content{width: auto;}
+        </style>
+        <?php 
+    }
+?>
