@@ -1,4 +1,8 @@
 <?php
+
+//echo "<pre>"; print_r($variables); echo "</pre>";
+//hide($content['main_front']);
+
 // echo "<pre>";print_r($node);echo "</pre>";
 $description = array(
 '#tag' => 'meta',
@@ -39,13 +43,26 @@ if ($user->uid==$node->field_usuario_gestion_compras["und"][0]["value"]) {
     $verPedidos=true;
 }
 $verEvento=$node->field_mostrar_proximo_evento["und"][0]["value"];
-
+$galeria=$node->field_galeria["und"][0]["nid"];
 // echo "<pre>"; print_r($user); echo "</pre>";
+if (isset($verPedidos)){?>
+    <div id="admin_vendedor">
+        <ul class="opciones">
+            <li>
+                <a href="/node/add/galeria" target="_BLANK">Crear galeria</a>
+                <a href="/node/add/productos" target="_BLANK">Crear producto</a>
+            </li>
+        </ul>
+        <?php
+        print views_embed_view('vendedor','block_7');
+        print views_embed_view('vendedor','block_6');?>
+    </div>
+    <?php
+}
+
+
+// echo "La galeria es:".$idGaleria;
 ?>
-<div id="admin_vendedor">
-    <?php 
-    if (isset($verPedidos)){ print views_embed_view('vendedor','block_6');}?>
-</div>
 <div class='header_nvendedor'> 
     <div id="info_nvendedor">
 	    <div class='logo_nvendedor'>
@@ -109,6 +126,10 @@ $verEvento=$node->field_mostrar_proximo_evento["und"][0]["value"];
 </div>
 
 <?php
+    if (isset($galeria)){//Imprimiendo la galeria
+        print views_embed_view('vendedor','block_8');
+    }
+
     if (!$verEvento) {?>
         <style>
             .node-type-vendedor .noticias_destacadas{
