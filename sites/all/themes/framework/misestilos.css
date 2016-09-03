@@ -20,14 +20,22 @@
 @import url(https://fonts.googleapis.com/css?family=Jaldi:400,700);
 @import url(https://fonts.googleapis.com/css?family=Titan+One);*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,700);
+.view-id-vendedor.view-display-id-block_7{
+  width: 500px;
+  margin: 0 auto;
 
-.view-id-vendedor.view-display-id-block_6{
+}
+.style-tabla-01 .pager{
+  margin-top: 20px;
+}
+.style-tabla-01{
   margin: 20px;
 }
-.view-id-vendedor.view-display-id-block_6 td, .view-id-vendedor.view-display-id-block_6 th{
+.style-tabla-01 td, .style-tabla-01 th{
   padding: 10px;
+  vertical-align: middle;
 }
-.view-id-vendedor.view-display-id-block_6 th{
+.style-tabla-01 th{
   font-weight: bold;
 }
 .view-id-frontpage.view-display-id-block_12 .subtitulo{
@@ -1060,8 +1068,37 @@ text-align: center;
 }
 
 /*Despliegue vendedor*/
+  .view-id-focus_.view-display-id-block_1 .views-field-title{
+    border-bottom: 5px solid #e7e013;
+    margin: 10px;
+    text-align: center;
+  }
+  .view-id-focus_.view-display-id-block_1 h2{
+    
+  }
+  .view-id-focus_.view-display-id-block_1 .views-field-field-imagenes{
+    /*width: 900px;*/
+    column-count: 3;
+    column-gap: 8px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    /*padding: 5px;*/
+    /*background: #6cc6d9;*/
+    padding: 5px 8px 5px 0px;
+  }
+  .view-id-focus_.view-display-id-block_1 img{
+    /*float: left;*/
+    border: #6cc6d9 6px inset;
+  }
+  .view-id-focus_.view-display-id-block_1 img:nth-child(1), .view-id-focus_.view-display-id-block_1 img:nth-child(4n){
+    
+  }
+  .view-id-focus_.view-display-id-block_1 img:nth-child(3n){
+    
+  }
   .node-type-vendedor .productos_destacados h2{
-    margin-bottom: 20px;
+    
   }
   .node-type-vendedor #info_nvendedor{
     float: left;
@@ -1147,7 +1184,7 @@ text-align: center;
   .view-id-vendedor.view-display-id-block_4{
     background: #fff;
     clear: both;
-    border: solid 7px #e7e013;
+    border: solid 5px #e7e013;
     padding: 10px;
   }
   .view-id-vendedor.view-display-id-block_4 .views-field-title a{
@@ -1210,6 +1247,7 @@ text-align: center;
       text-decoration:none;
       display:inline-block;
       font-family:"BebasNeue-regular";  
+      color: #1b2c3f;
   }
 /*Fin*/
 

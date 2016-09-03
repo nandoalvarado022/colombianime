@@ -311,9 +311,9 @@
             </div>
           <!-- Fin Popup suscripcion -->
 
-        <?php print $page_top; ?>
+        <?php //print $page_top; ?>
         <?php print $page; ?>
-        <?php print $page_bottom;?>
+        <?php // print $page_bottom;?>
         <?php //echo "La variable es:".$_GET["q"];?>
         <!-- chat -->
           <?php

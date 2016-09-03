@@ -9,7 +9,6 @@ regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
 regions[sidebar_second] = Second Sidebar
-regions[nvendedor_eventos] = Node vendedor Eventos
 regions[footer]         = Footer
 regions[header_front]   = Header front
 regions[main_front]     = Main front
