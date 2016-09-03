@@ -1076,7 +1076,7 @@ text-align: center;
   .view-id-vendedor.view-display-id-block_8 h2{
     
   }
-  .view-id-vendedor.view-display-id-block_8 .views-field-field-imagenes{
+  .view-id-vendedor.view-display-id-block_8 .views-field-field-imagenes .field-content{
     /* width: 900px; */
     column-count: 3;
     column-gap: 8px;
@@ -1207,6 +1207,7 @@ text-align: center;
       display:inline-block;
       font-family:"BebasNeue-regular";
       padding: 10px;
+      margin-bottom: 20px;
   }
   .node-type-vendedor .productos_destacados{
     float: left;
