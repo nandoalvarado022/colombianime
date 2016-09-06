@@ -79,11 +79,15 @@
     </div>
   <!-- Fin-->
 
+  <?php $view = views_get_view('frontpage'); print $view->preview('block_14'); ?>
+
   <!-- Galeria apertura home  -->
     <section id="galeria-apertura-home">
       <?php $view = views_get_view('nodequeue_5'); print $view->preview('block'); ?>
     </section>
   <!-- Fin -->
+
+  <?php $view = views_get_view('frontpage'); print $view->preview('block_15'); ?>
 
   <!-- Espacio aquarella -->
     <section id="esp-awuarella">

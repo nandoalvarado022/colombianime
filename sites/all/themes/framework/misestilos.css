@@ -20,6 +20,22 @@
 @import url(https://fonts.googleapis.com/css?family=Jaldi:400,700);
 @import url(https://fonts.googleapis.com/css?family=Titan+One);*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,700);
+.view-id-frontpage.view-display-id-block_15{
+  margin: 0 auto 60px;
+  text-align: center;
+}
+.view-id-frontpage.view-display-id-block_14{
+  margin: 0 auto;
+  text-align: center;
+}
+.view-id-frontpage.view-display-id-block_14 .view-header,
+.view-id-frontpage.view-display-id-block_15 .view-header{
+  margin: 60px 0 40px;
+}
+.view-id-frontpage.view-display-id-block_14 .item-producto,
+.view-id-frontpage.view-display-id-block_15 .item-producto{
+  margin: 0 30px;
+}
 #user-login{
   float: right;
   display: none;
@@ -872,6 +888,7 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   .columna-node-producto .field-name-field-precio{
   color: #1b2c3f; 
   font-size: 24px;
+  width: 140px;
   }
   .columna-node-producto .field-name-field-precio:before {
   content: "$";
@@ -1094,13 +1111,9 @@ text-align: center;
   bottom: -30px;
   right: 0;
 }
-
-@media (min-width: 1200px) {
-  html body .container, .bloque-info-sup, html body header, html body header ul{
-    width: 1200px;
-  }
+html body .container, .bloque-info-sup, html body header, html body header ul{
+  width: 1200px;
 }
-
 /*Despliegue vendedor*/
   .view-id-vendedor.view-display-id-block_8 .views-field-title{
     border-bottom: 5px solid #e7e013;

@@ -1,6 +1,13 @@
+iframe{
+	max-width: 100%;
+}
 /*Home*/
+	html body header{
+		width: 100%;
+		height: 60px;
+	}
 	html body .container{padding-top: 53px;}
-	.view-id-frontpage.view-display-id-block_13{
+	.view-id-frontpage.view-display-id-block_13, .bloque-info-sup{
 		display: none;
 	}
   	#apertura-video{
