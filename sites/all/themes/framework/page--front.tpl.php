@@ -22,16 +22,6 @@
   'content' => "http://colombianime.com/files/images/colombianimeLogoFacebook2.png",
   ));
   drupal_add_html_head($var, 'og:image');?>
-  <section>
-    <div class="bloque-info-sup">
-      <a href="https://www.facebook.com/colombianimeCO/?fref=ts" target="_BLANK">
-      Bienvenido :D, recuerda seguir todas nuestras noticias, sorteos y mas cosas que tenemos para tí en nuestra fanpage aquí
-      </a>
-    </div>  
-  </section>
-
-  
-  
   <!--
   <section id="streaming-home">
       <div class="video">

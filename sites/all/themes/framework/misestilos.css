@@ -20,6 +20,32 @@
 @import url(https://fonts.googleapis.com/css?family=Jaldi:400,700);
 @import url(https://fonts.googleapis.com/css?family=Titan+One);*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,700);
+#user-login{
+  float: right;
+  display: none;
+}
+#user-login #edit-actions{
+  display: inline-block;
+  margin:0;
+}
+#user-login #edit-name, #user-login #edit-pass{
+  letter-spacing: 1px;
+  vertical-align: top;
+  font-size: 18px;
+  border: none;
+  border-bottom: 2px solid #e7e013;
+  outline: none;
+  text-align: center;
+  width: 200px;
+  font-family: "BebasNeue-regular";
+  line-height: 27px;
+  margin: 8px 5px 0 5px;
+}
+#btnsalir, #btn_ingreso_tiendas{
+  float: right;
+  margin: 0px 20px 0 5px;
+  cursor: pointer;
+}
 .view-id-vendedor.view-display-id-block_7{
   width: 500px;
   margin: 0 auto;
@@ -43,7 +69,7 @@
 }
 span.subtitulo{
   font-family: BebasNeue-regular;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 1px;
   background: #e6e10c;
   padding: 5px 20px;
@@ -454,15 +480,14 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   margin-top: 6px;
   }
   .bloque-info-sup{
-  background: url(/files/images/bg-linea-info-sup.png);
-  background-color: 000080;
-  /*margin-bottom: 20px;*/
-  width: 785px;
-  z-index: 999;
-  /*position: fixed;*/
-  padding: 10px 0;
-  background-size: contain;
-  font-weight: bold;
+    z-index: 999;
+    padding: 10px 0;
+    background-size: initial;
+    font-weight: bold;
+    height: 40px;
+    background-repeat-y: no-repeat;
+    background-position: 40px 20px;
+    background-color: #7f8893;
   }
   .bloque-info-sup a{
   color: #fff;
@@ -1156,20 +1181,11 @@ text-align: center;
       padding:10px 10px;
       background:#E7E013;
       font-weight:bold;
-      font-size:25px;
+      font-size:22px;
       text-decoration:none;
       display:inline-block;
       font-family:"BebasNeue-regular";
-  }
-  .node-type-vendedor .noticias_destacadas h2{
-    padding: 10px 10px;
-    background: #E7E013;
-    font-weight: bold;
-    font-size: 25px;
-    text-decoration: none;
-    display: inline-block;
-    font-family: "BebasNeue-regular";
-    float: left;
+      letter-spacing: 1px;
   }
   .node-type-vendedor .noticias_destacadas .views-row{
     clear: both;
@@ -1240,10 +1256,11 @@ text-align: center;
       padding:3px;
   }
   .node-type-vendedor h2{
-      padding:10px 10px;
+    letter-spacing: 1px;
+      padding:10px 15px;
       background:#E7E013;
       font-weight:bold;
-      font-size:25px;
+      font-size:22px;
       text-decoration:none;
       display:inline-block;
       font-family:"BebasNeue-regular";  

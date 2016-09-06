@@ -8,6 +8,13 @@ function numberWithCommas(x) {
 
 
 $(document).ready(function(){
+	$("#btn_ingreso_tiendas").click(function(){
+		$(this).hide();
+		$("form#user-login").fadeIn();
+	});
+	$(".bloque-info-sup").addClass('animated zoomInLeft', "", function(){
+	});
+	$(".bloque-info-sup a").fadeIn();
 	// Popup suscripcion
 		if($("body").width()>=1000){
 			cookieSuscripcion=getCookie("suscripcion");
