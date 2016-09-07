@@ -208,7 +208,7 @@
         html="\
         <p><b>Detalle de la compra:</b></p>\
         <p><strong>Producto</strong> <?php echo $title ?></p>\
-        <p><strong>Tipo de entrega</strong> Personal</p><strong>Valor total</strong> $"+numberWithCommas(precioTotal)+"\
+        <p><strong>Tipo de entrega</strong> "+$("[name='field_tipo_entrega']:checked").val()+"</p><strong>Valor total</strong> $"+numberWithCommas(precioTotal)+"\
         <p>* Recordar presentar documento de identidad a la hora de realizar la compra.</p>\
         <p>* El valor del domicilio no esta incluido en la compra.</p>";
         $(".popup-detalle-contacto .nota-2").html(html);

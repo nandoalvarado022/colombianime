@@ -183,7 +183,7 @@ switch ($origen) {
       //valor
       // link producto
       // recibo $id_producto
-      $id_producto=164;
+      //$id_producto=164;
       $nodeDetails=node_load($id_producto);
       $precio=$nodeDetails->field_precio["und"][0]["value"];
       $precio=number_format($precio);
@@ -220,7 +220,7 @@ switch ($origen) {
         $mail->SMTPAuth = true;
         $mail->Username = "ventas.colombianime@gmail.com";
         $mail->Password = "nandito2007";
-        $mail->setFrom('ventas.colombianime@gmail.com', 'Colombianime');
+        $mail->setFrom($correo_vendedor, 'Colombianime');
         $mail->addReplyTo('ventas.colombianime@gmail.com', 'Elen Colombianime');
         $mail->addAddress('nandoalvarado022@gmail.com', 'Hernando Alvarado');
         $mail->Subject = 'Elen de Colombianime: Felicidades, se ha registrado una venta!';
@@ -235,7 +235,7 @@ switch ($origen) {
             </tr>
             <tr>
               <td>
-                '.$nombre." ".$apellidos." esta interesado en: ".$nombre_producto.'
+                '.$nombre." ".$apellidos." esta interesado en: <strong>".$nombre_producto.'<strong>
               </td>
             </tr>
             <tr>

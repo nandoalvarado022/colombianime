@@ -50,12 +50,6 @@ $galeria=$node->field_galeria["und"][0]["nid"];
 // echo "<pre>"; print_r($user); echo "</pre>";
 if ($usuarioAdmin==true){?>
     <div id="admin_vendedor">
-        <ul class="opciones">
-            <li>
-                <a href="/node/add/galeria" target="_BLANK">Crear galeria</a>
-                <a href="/node/add/productos" target="_BLANK">Crear producto</a>
-            </li>
-        </ul>
         <?php
         print views_embed_view('vendedor','block_7');
         print views_embed_view('vendedor','block_6');?>
