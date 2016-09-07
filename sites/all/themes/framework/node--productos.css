@@ -1,0 +1,157 @@
+/*.close{
+margin-top: -45px;
+font-size: 18px;
+color: #607D8B;
+padding: 5px 11px;
+border: none;
+border-radius: 5px;
+outline: none;
+position: relative;
+height: 35px;
+width: 74px;
+float: right;
+}
+.close:after{
+content: "Cerrar";
+position: absolute;
+margin: -9px 0px 0px -92px;
+font-size: 18px;
+z-index: 2;
+background: #7dbebd;
+color: #fff;
+padding: 5px 9px;
+border: none;
+border-radius: 5px;
+outline: none;
+cursor: pointer;
+font-family: 'Raleway', sans-serif;
+font-weight: 100;
+left: 92px;
+top: 9px;
+}*/
+.popup-detalle-contacto .nota-2{
+display: none;
+text-align: left;
+background: #fadc5a;
+padding: 10px;
+margin: 20px 0px 0px 0;
+border-radius: 5px;
+}
+.popup-detalle-contacto .views-field-field-foto{
+float: left;
+margin-right: 15px;
+}
+.popup{
+animation:0.5s;
+position: fixed;
+top: 52px;
+left: -3px;
+right: 0;
+margin: 0 auto;
+width: 430px;
+height: 150px;
+z-index: 1000;
+padding: 5px;
+box-shadow: 4px 4px 21px -5px rgba(0,0,0,0.75);
+border-radius: 5px;
+background: rgba(83, 95, 109, 0.23);
+color: #1b2c3f;
+}
+
+.fondo_blanco{
+padding: 10px;
+margin: 0 auto;
+background: #fff;
+height: 148px;
+z-index: -1;
+border: solid 1px #AAB7C5;
+border-radius: 5px;
+}
+.popup-detalle-contacto span{
+display: block;
+margin: 0px 0 8px 60px;
+height: 30px;
+}
+.popup-detalle-contacto .views-field-title-1{
+font-size: 20px;
+  padding: 0px 10px 0px;
+text-align: right;
+}
+.popup-detalle-contacto .views-field-field-title-1:after{
+content: "¡Comunicate ya!";
+display: block;
+font-size: 18px;
+}
+.popup-detalle-contacto .views-field-field-telefono a{
+background: url(/files/images/icon-w.png);
+background-repeat: no-repeat;
+padding: 5px 0 10px 38px;
+}
+.popup-detalle-contacto .views-field-field-direccion a{
+background: url(/files/images/icon-map.png);
+background-repeat: no-repeat;
+padding: 5px 0 5px 38px; 
+display: inline-block;
+width: auto;
+}
+.popup-detalle-contacto .views-field-field-facebook a{
+/*color: transparent;*/
+background: url(/files/images/icon-facebook.png);
+background-repeat: no-repeat;
+background-size: 30px 30px;
+padding: 5px 0 7px 38px; 
+background-position: 0px -1px;
+}
+.popup-detalle-contacto .views-field-field-youtube a{
+color: transparent;
+background: url(/files/images/icon-you.png);
+background-repeat: no-repeat;
+padding: 5px 5px 5px 38px;
+background-size: 41px;
+}
+
+#page-wrapper{
+overflow: hidden;
+}
+.messages.error{display: none;}
+.col-der .title-columna{
+margin-top: 0;
+}
+.field-label{display: none;}
+.field-name-field-precio{}
+h1.title{
+margin: 15px 0 20px;
+color: #1b2c3f;
+font-size: 18px;
+margin-left: 30px;
+font-weight: 600;
+text-transform: uppercase;
+}
+.share-twitter{
+margin-bottom: 15px !important;
+}
+html body .container section.col-izq{width: 455px;}
+html body .container section.col-der{width: 514px;}
+.owl-carousel .owl-item img{
+border: solid 1px #AAB7C5;
+padding: 2px;
+}
+.foto-vendedor img{margin-bottom: 10px;}
+.foto-vendedor .views-row{text-align: center;}
+.columna-node-producto .foto-vendedor{vertical-align: top;}
+.columna-node-producto .espacio-accion{margin: 0px 0 0 100px;}
+.view-display-id-block_1 .views-field-title-1 span.field-content {
+font-size: 14px;
+background: rgba(230,143,9,0.5);
+color: #404040;
+padding: 5px 10px;
+display: block;
+border-radius: 5px;
+}
+.view-display-id-block_1 .views-field-title-1 span.field-content:before {
+content: "Un producto de:";
+display: block;
+}
+.popup{
+display: none;
+}
