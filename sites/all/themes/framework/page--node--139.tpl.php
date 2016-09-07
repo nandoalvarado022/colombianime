@@ -220,9 +220,11 @@ switch ($origen) {
         $mail->SMTPAuth = true;
         $mail->Username = "ventas.colombianime@gmail.com";
         $mail->Password = "nandito2007";
-        $mail->setFrom($correo_vendedor, 'Colombianime');
-        $mail->addReplyTo('ventas.colombianime@gmail.com', 'Elen Colombianime');
-        $mail->addAddress('nandoalvarado022@gmail.com', 'Hernando Alvarado');
+        // $mail->setFrom($correo_vendedor, 'Colombianime');
+        // $mail->addReplyTo('ventas.colombianime@gmail.com', 'Elen Colombianime');
+        $mail->addAddress('ventas@colombianime.com', 'Colombianime');
+        $mail->addAddress('nandoalvarado022@gmail.com', 'Colombianime');
+        $mail->addAddress($correo_vendedor, 'Colombianime');
         $mail->Subject = 'Elen de Colombianime: Felicidades, se ha registrado una venta!';
         $html = '<html>
         <head>
