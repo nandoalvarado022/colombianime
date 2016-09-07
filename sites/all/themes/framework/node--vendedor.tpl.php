@@ -37,17 +37,18 @@ $file_foto = $node->field_foto["und"][0]["uri"];
 $ruta_imagen1=image_style_url('220x220', $file_foto);?>
 
 <?php 
-// $verPedidos=false;
+// $usuarioAdmin=false;
 // echo "if (".$user->uid."==".$node->field_usuario_gestion_compras["und"][0]["value"];
-if ($user->uid==$node->field_usuario_gestion_compras["und"][0]["value"]) {
-    $verPedidos=true;
+$usuarioAdmin=false;
+if ($user->uid !=0 and $user->uid==$node->field_usuario_gestion_compras["und"][0]["value"]) {
+    $usuarioAdmin=true;
 } else{
-    $verPedidos=false;
+    $usuarioAdmin=false;
 }
 $verEvento=$node->field_mostrar_proximo_evento["und"][0]["value"];
 $galeria=$node->field_galeria["und"][0]["nid"];
 // echo "<pre>"; print_r($user); echo "</pre>";
-if (isset($verPedidos)){?>
+if ($usuarioAdmin==true){?>
     <div id="admin_vendedor">
         <ul class="opciones">
             <li>
