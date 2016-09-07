@@ -188,5 +188,34 @@
   require_once("sites/all/themes/framework/no-tienes-cuenta.html");
   ?>
 </div><!-- container que abro en html.tpl-->
-
+<script>
+  var precioTotal=<?php echo $node->field_precio["und"][0]["value"]?>;
+  var productoID=<?php echo $node->nid?>;
+  var tiendaID=<?php echo $node->field_vendedor['und'][0]['nid']?>;
+  function enviar_compra(){
+    status_web("Guardando tu compra ...");
+    datos=$(".popup-detalle-contacto form#enviar_compra").serialize();
+    datos=datos+"&bonoVAL="+bonoVAL+"&bonoCODIGO="+bonoCODIGO;
+    $.ajax({
+      url:"/ajax-productos",
+      data:datos,
+      type:"POST",
+      success:function(res){
+        console.log(res);
+        status_web("Compra finalizada ^^");
+        $("#enviar_compra input[name='origen']").val("check_cliente");
+        $("#info_compra").fadeOut();
+        html="\
+        <p><b>Detalle de la compra:</b></p>\
+        <p><strong>Producto</strong> <?php echo $title ?></p>\
+        <p><strong>Tipo de entrega</strong> Personal</p><strong>Valor total</strong> $"+numberWithCommas(precioTotal)+"\
+        <p>* Recordar presentar documento de identidad a la hora de realizar la compra.</p>\
+        <p>* El valor del domicilio no esta incluido en la compra.</p>";
+        $(".popup-detalle-contacto .nota-2").html(html);
+        $(".popup-detalle-contacto .nota-2").addClass('animated tada').show();
+        //info_cliente();
+      }
+    });
+  }
+</script>
 <script type="text/javascript" src="sites\all\themes\framework/node--productos.js"></script>
