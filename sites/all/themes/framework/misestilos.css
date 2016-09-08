@@ -19,14 +19,46 @@
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 @import url(https://fonts.googleapis.com/css?family=Jaldi:400,700);
 @import url(https://fonts.googleapis.com/css?family=Titan+One);*/
+.div-twitter-timeline{
+  display: inline-block;
+  width: 300px;
+  margin-top: 50px;
+}
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,700);
 .view-id-frontpage.view-display-id-block_15{
   margin: 0 auto 60px;
   text-align: center;
 }
 .view-id-frontpage.view-display-id-block_14{
-  margin: 0 auto;
+  vertical-align: top;
+  margin: 0 0 0 40px;
   text-align: center;
+  width: 800px;
+  display: inline-block;
+  overflow: hidden;
+}
+.view-id-frontpage.view-display-id-block_14 .item-list:nth-child(3){
+  float: right;
+  margin: -150px 25px 0 0px;
+}
+.view-id-frontpage.view-display-id-block_14 .item-list:nth-child(2), .view-id-frontpage.view-display-id-block_14 .item-list:nth-child(3){
+  width: 400px;
+}
+.view-id-frontpage.view-display-id-block_14 .item-list:nth-child(2) h2, .view-id-frontpage.view-display-id-block_14 .item-list:nth-child(3) h2{
+  width: 210px;
+}
+.view-id-frontpage.view-display-id-block_14 .item-list:nth-child(2) .precio, .view-id-frontpage.view-display-id-block_14 .item-list:nth-child(3) .precio{
+  margin: 5px 90px;
+}
+.view-id-frontpage.view-display-id-block_14 .item-list:nth-child(2) > *, .view-id-frontpage.view-display-id-block_14 .item-list:nth-child(3) > *{
+  float: left;
+}
+.view-id-frontpage.view-display-id-block_14 .item-list:nth-child(2) img, .view-id-frontpage.view-display-id-block_14 .item-list:nth-child(3) img{
+  width: 150px;
+  height: auto;
+}
+.view-id-frontpage.view-display-id-block_14 .item-producto *{
+  
 }
 .view-id-frontpage.view-display-id-block_14 .view-header,
 .view-id-frontpage.view-display-id-block_15 .view-header{
@@ -34,7 +66,8 @@
 }
 .view-id-frontpage.view-display-id-block_14 .item-producto,
 .view-id-frontpage.view-display-id-block_15 .item-producto{
-  margin: 0 30px;
+  margin: 0 20px;
+  width: auto;
 }
 #user-login{
   float: right;

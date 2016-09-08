@@ -79,7 +79,12 @@
     </div>
   <!-- Fin-->
 
-  <?php $view = views_get_view('frontpage'); print $view->preview('block_14'); ?>
+  <section>
+    <?php $view = views_get_view('frontpage'); print $view->preview('block_14'); ?>
+    <div class="div-twitter-timeline">
+      <a class="twitter-timeline" data-lang="es" data-width="300" href="https://twitter.com/ColombianimeCOL">Tweets by ColombianimeCOL</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </section>
 
   <!-- Galeria apertura home  -->
     <section id="galeria-apertura-home">
