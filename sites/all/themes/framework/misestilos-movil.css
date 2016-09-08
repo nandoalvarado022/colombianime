@@ -10,6 +10,9 @@ iframe{
 	.view-id-frontpage.view-display-id-block_13, .bloque-info-sup{
 		display: none;
 	}
+	.view-id-frontpage.view-display-id-block_14 .item-list:nth-child(2), .view-id-frontpage.view-display-id-block_14 .item-list:nth-child(3){
+		width: auto;
+	}
 	.view-id-frontpage.view-display-id-block_14{
 		width: auto;
 		margin: 0 20px;
