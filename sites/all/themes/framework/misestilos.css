@@ -37,6 +37,9 @@
   display: inline-block;
   overflow: hidden;
 }
+.view-id-frontpage.view-display-id-block_14 .item-producto a:nth-child(2){
+  right: auto;
+}
 .view-id-frontpage.view-display-id-block_14 .item-list:nth-child(1){
   width: 300px;
 }
@@ -249,6 +252,8 @@ body{
   .item-producto a:nth-child(2){
     position: absolute;
     left: 0;
+    right: 0;
+    top: 0;
   }
 	.item-producto a:nth-child(2) img{
     position: absolute;
