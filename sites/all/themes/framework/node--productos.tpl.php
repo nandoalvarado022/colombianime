@@ -1,4 +1,3 @@
-  <link rel="stylesheet" type="text/css" href="/sites/all/themes/framework/misestilos-movil.css?update=<?= time()?>" media="screen and (max-width:480px)">  
   <?php
   // echo "<pre>";print_r($node);echo "</pre>";
   $description = array(
@@ -28,6 +27,7 @@
 
   $path="http://colombianime.com/".drupal_get_path_alias();?>
   <link rel="stylesheet" type="text/css" href="sites\all\themes\framework/node--productos.css">
+  <link rel="stylesheet" type="text/css" href="/sites/all/themes/framework/misestilos-movil.css?update=<?= time()?>" media="screen and (max-width:480px)">  
   <div class="popup popup-detalle-contacto">
     <div class="fondo_blanco">
       <button class="close" id="cboxClose" onclick="javascript:$('.popup').fadeOut();"></button>
