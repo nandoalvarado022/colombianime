@@ -37,9 +37,12 @@
   display: inline-block;
   overflow: hidden;
 }
+.view-id-frontpage.view-display-id-block_14 .item-list:nth-child(1){
+  width: 300px;
+}
 .view-id-frontpage.view-display-id-block_14 .item-list:nth-child(3){
   float: right;
-  margin: -150px 25px 0 0px;
+  margin: -170px 25px 0 0px;
 }
 .view-id-frontpage.view-display-id-block_14 .item-list:nth-child(2), .view-id-frontpage.view-display-id-block_14 .item-list:nth-child(3){
   width: 400px;
