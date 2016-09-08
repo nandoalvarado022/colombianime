@@ -246,14 +246,18 @@ body{
 	.item-producto{
 		position: relative;
 	}
+  .item-producto a:nth-child(2) a{
+    position: absolute;
+    left: 0;
+  }
 	.item-producto a:nth-child(2) img{
-		position: absolute;
-		top: 0;
-	    z-index: 1;
-	    left: 0;
-	    right: 0;
-	    transition: 0.8s;
-	    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    transition: 0.8s;
+    opacity: 0;
 	}
 	.precio{
 	color: #f49401;
