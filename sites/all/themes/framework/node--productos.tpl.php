@@ -1,3 +1,4 @@
+  <link rel="stylesheet" type="text/css" href="/sites/all/themes/framework/misestilos-movil.css?update=<?= time()?>" media="screen and (max-width:480px)">  
   <?php
   // echo "<pre>";print_r($node);echo "</pre>";
   $description = array(

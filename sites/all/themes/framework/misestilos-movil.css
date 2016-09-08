@@ -243,8 +243,8 @@ iframe{
 	}
 	h1.title{
 		width: auto;
-    margin: 15px 20px;
-    text-align: center;
+    	margin: 15px 20px;
+    	text-align: center;
 	}
 	.columna-node-producto .field-name-body{
 		text-align: center;
@@ -268,7 +268,6 @@ iframe{
     margin-bottom: 20px;	
 	}
 	.popup.popup-detalle-contacto{
-    display: block;
     width: auto;
     margin: 0 20px;
 	}
