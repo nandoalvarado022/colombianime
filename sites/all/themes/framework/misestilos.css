@@ -246,7 +246,7 @@ body{
 	.item-producto{
 		position: relative;
 	}
-  .item-producto a:nth-child(2) a{
+  .item-producto a:nth-child(2){
     position: absolute;
     left: 0;
   }
