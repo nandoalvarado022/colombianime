@@ -36,6 +36,7 @@
   </section>-->
 
   <section id="apertura-video">
+    <h3>Hiro Con Evolution 3.0</h3>
     <div class="banderines"></div>
     <!-- <img style="width:100%; height:auto;" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfl1/v/t1.0-9/13413515_1011270978992154_7323879543563251133_n.jpg?oh=0c655a0ee0169537b058f5eb7c2d176b&oe=58261EB0&__gda__=1475862517_1cc5cf5e45bfb6fa6ccdb0548792ecab">
      -->

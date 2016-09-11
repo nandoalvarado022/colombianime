@@ -209,13 +209,23 @@ body{
     vertical-align: top;
     position: relative;
   }
+  #apertura-video h3{
+  background-image: url(/files/images/overlay.png), url(/files/images/punto_repeat.png), url(https://i.ytimg.com/vi/nwtuAhHRu9I/maxresdefault.jpg);
+  padding: 40px;
+  font-size: 52px;
+  background-attachment: fixed;
+  color: #ffffff;
+  border-top: 2px solid #da9422;
+  font-family: BebasNeue-regular;
+  letter-spacing: 3px;
+  }
   #apertura-video iframe{
     width: 900px;
   }
   .banderines{
     background: url(/sites/all/themes/framework/img/banderines.png);
     position: absolute;
-    top: 0;
+    top: 100px;
     left: 0;
     width: 900px;
     height: 200px;
