@@ -136,6 +136,26 @@ body{
   overflow-x: hidden;
 }
 /*Home*/
+  #icon-page-facebook{
+    height: 30px;
+    width: 30px;
+    background: url(/files/images/icon-facebook-2.png) center;
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-color: #4a6ea9;
+  }
+  #icon-page-twitter{
+    height: 40px;
+    width: 40px;
+    background: url(/files/images/twitter-icon.png) center;
+    position: absolute;
+    top: 60px;
+    left: -50px;
+  }
+  #icon-page-instagram{}
   body.front #lista-productos h3{
     background-image: url(/files/images/overlay.png), url(/files/images/punto_repeat.png), url(/files/images/tiendas-anime.jpg);
   }
@@ -537,7 +557,7 @@ body{
   font-family: 'Raleway', sans-serif;
   line-height: 20px;
 }
-html body header{position:fixed; background: rgba(73,86,101,0.7); width: 100%; z-index: 999; left: 0; right: 0; margin: 0 auto; transition:0.5s; height: 190px; overflow: hidden;}
+html body header{position:fixed; background: rgba(73,86,101,0.7); width: 100%; z-index: 999; left: 0; right: 0; margin: 0 auto; transition:0.5s; height: 190px;}
 html body section.list-cosplayer{position: fixed; top: 0; z-index: -1; width: 100%;}
 html body section.list-cosplayer img{max-width: 100%;}
 html body section.list-cosplayer .izq{width: 15%; float: left;}
