@@ -1351,5 +1351,14 @@ html body .container, .bloque-info-sup, html body header, html body header ul{
 /*Fin style.css*/
 
 /*Generales*/
+  #header .watsapp{
+    clear: both;
+    display: inline-block;
+    width: 120px;
+    padding-left: 30px;
+    background: url(/files/images/whatsapp.png) no-repeat;
+    margin: 10px 0 0 10px;
+    color: #fff;
+  }
 	.movil{display: none;}
 /*Generales*/
