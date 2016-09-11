@@ -686,7 +686,7 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   .autor_inf .view-node-productos.view-display-id-block_4{
   float: right;
   margin: -95px 20px 40px 0;
-  width: 240px;
+  width: 140px;
   }
   .autor_inf .views-field-field-foto{
   display: inline-block;
@@ -717,7 +717,7 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
     margin: 30px 0 0 0;
     background-repeat: no-repeat;
     background-size: 100%;
-    left: 115px;
+    left: 90px;
   }
   html body .container section.col-der h2{
   /*font-weight: 500;*/
