@@ -136,7 +136,19 @@ body{
   overflow-x: hidden;
 }
 /*Home*/
-  body.front .especial-1{
+  body.front .especial-1 h3{
+    background-image: url(/files/images/overlay.png), url(/files/images/punto_repeat.png), url(/files/images/amor-amistad.jpg);
+  }
+  section h3{
+    padding: 40px;
+    font-size: 52px;
+    background-attachment: fixed;
+    color: #ffffff;
+    border-top: 2px solid #da9422;
+    font-family: BebasNeue-regular;
+    letter-spacing: 3px;
+  }
+  body.front .especial-1 h3{
 
   }
   #streaming-home{
@@ -205,19 +217,11 @@ body{
     /*padding-top: 105px;*/
   }
   #apertura-video{
-    display: inline-block;
     vertical-align: top;
     position: relative;
   }
   #apertura-video h3{
   background-image: url(/files/images/overlay.png), url(/files/images/punto_repeat.png), url(https://i.ytimg.com/vi/nwtuAhHRu9I/maxresdefault.jpg);
-  padding: 40px;
-  font-size: 52px;
-  background-attachment: fixed;
-  color: #ffffff;
-  border-top: 2px solid #da9422;
-  font-family: BebasNeue-regular;
-  letter-spacing: 3px;
   }
   #apertura-video iframe{
     width: 900px;
@@ -365,13 +369,6 @@ body{
 	}
   #galeria-apertura-home h3{
     background-image: url(/files/images/overlay.png), url(/files/images/punto_repeat.png), url(https://i.ytimg.com/vi/nwtuAhHRu9I/maxresdefault.jpg);
-    padding: 40px;
-    font-size: 52px;
-    background-attachment: fixed;
-    color: #ffffff;
-    border-top: 2px solid #da9422;
-    font-family: BebasNeue-regular;
-    letter-spacing: 3px;
   }
 	#galeria-apertura-home{
 	margin-top: 40px;/*Utilizar cuando no esta de primera en la home*/

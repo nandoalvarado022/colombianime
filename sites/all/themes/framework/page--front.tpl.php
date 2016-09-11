@@ -50,6 +50,7 @@
   </section>
 
   <section class="especial-1">
+    <h3>Amor y amistad</h3>
     <?php $view = views_get_view('frontpage'); print $view->preview('block_14'); ?>
     <div class="div-twitter-timeline">
       <a class="twitter-timeline" data-lang="es" data-width="300" data-height="430" href="https://twitter.com/ColombianimeCOL">Tweets by ColombianimeCOL</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
