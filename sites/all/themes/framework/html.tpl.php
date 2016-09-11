@@ -215,6 +215,8 @@
             <img src="/files/images/bg-07.jpg" alt="">
             <img src="/files/images/bg-02.jpg" alt="">
             <img src="/files/images/bg-03.jpg" alt="">
+            <img src="/files/images/bg-09.jpg" alt="">
+            <img src="/files/images/bg-10.jpg" alt="">
           </article>    
           <article class="centro">
             Colombianime
@@ -224,6 +226,8 @@
             <img src="/files/images/bg-04.jpg" alt="">
             <img src="/files/images/bg-05.jpg" alt="">
             <img src="/files/images/bg-06.jpg" alt="">
+            <img src="/files/images/bg-11.jpg" alt="">
+            <img src="/files/images/bg-12.jpg" alt="">
           </article>    
         </section>
         <!-- FB -->
