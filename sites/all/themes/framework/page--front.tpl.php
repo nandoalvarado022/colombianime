@@ -100,6 +100,89 @@
 
   <?php $view = views_get_view('frontpage'); print $view->preview('block_15'); ?>
 
+  <!-- Columnas -->
+    <section id="lista-productos">
+      <h3>
+        Productos para ti ^^
+      </h3>
+      <div class="columnas">
+        <section class="col-izq">
+          <!--<article>
+            <p class="title-columna">
+            ¡Entérate!
+            </p>
+            <?php // view = views_get_view('nodequeue_1'); print $view->preview('block'); ?>
+          </article>-->
+
+          <article>
+            <p class="title-columna">
+            <span class="icon-star"></span>
+              <span class="productos-destacados subtitulo">
+                Productos destacados
+              </span>
+            </p>
+            <?php $view = views_get_view('frontpage'); print $view->preview('block_2'); ?>
+          </article>
+        </section>
+      
+        <section class="col-der">
+          <article class="anuncio">
+            <a href="https://www.facebook.com/dnkcuteshop/?fref=ts">
+            <img src="/files/images/anuncios/anuncio-dianik-shop.png" alt="">
+            </a>
+          </article>
+
+          <!-- Anuncio google-->
+            <article class="AnuncioGoogle Anu336x280">
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- Barra derecha -->
+              <ins class="adsbygoogle"
+                   style="display:inline-block;width:336px;height:280px"
+                   data-ad-client="ca-pub-4730353912478910"
+                   data-ad-slot="4411619983"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </article>
+          <!-- Fin anuncio -->
+
+          <!-- <article class="anuncio">
+            <a href="https://www.facebook.com/hiroshima.boom.7/?fref=ts">
+            <img src="/files/images/anuncios/anuncio_tai.jpg" alt="">
+            </a>
+          </article> -->
+
+          <!--<article>
+            <figure class="bloqueVideo" id="bloqueVideo">
+              <h2>Video: Softcombat - #Microhiro 2016</h2>
+              <iframe width="420" height="315" src="https://www.youtube.com/embed/3vGcblygcMA" frameborder="0" allowfullscreen style=""></iframe>
+              <div id="capaTv">  
+              </div>
+            </figure>
+          </article>-->
+        </section>
+
+        <section>
+          
+        </section>
+
+        <section id="listado-productos" class="listado-abajo" style="text-align:center;"><!--Noticias debajo-->
+          <span class="subtitulo" style="margin: 20px 0px 30px;">Productos para ti</span>
+          <?php $view = views_get_view('frontpage'); print $view->preview('block_9'); ?>
+        </section>
+        <div class="spacer" style="clear: both;"></div>
+      </div>
+    </section>
+  <!-- Columnas -->
+
+  <!-- Section enterate de lo ultimo y cosplayer -->
+    <section class="bloqueLoUltimo">
+      <?php $view = views_get_view('frontpage'); print $view->preview('block_10'); ?><!-- Ultimas notas  -->
+      <?php $view = views_get_view('frontpage'); print $view->preview('block_11'); ?><!-- Cosplayer   -->
+      <div style="clear: both;"></div>
+    </section>
+  <!-- Fin -->
+
   <!-- Espacio aquarella -->
     <section id="esp-awuarella">
       <div class="content">
@@ -112,88 +195,10 @@
     </section>
   <!-- Fin -->
 
-  <!-- Section enterate de lo ultimo y cosplayer -->
-    <section class="bloqueLoUltimo">
-      <?php $view = views_get_view('frontpage'); print $view->preview('block_10'); ?><!-- Ultimas notas  -->
-      <?php $view = views_get_view('frontpage'); print $view->preview('block_11'); ?><!-- Cosplayer   -->
-      <div style="clear: both;"></div>
-    </section>
-  <!-- Fin -->
+  
 
   <!-- No tienes cuenta -->
     <?php require_once("sites/all/themes/framework/no-tienes-cuenta.html");?>
-  
-  <!-- Columnas -->
-    <div class="columnas">
-      <section class="col-izq">
-        <article>
-          <p class="title-columna">
-          ¡Entérate!
-          </p>
-          <?php $view = views_get_view('nodequeue_1'); print $view->preview('block'); ?>
-        </article>
-
-        <article>
-          <p class="title-columna">
-          <span class="icon-star"></span>
-            <span class="productos-destacados subtitulo">
-              Productos destacados
-            </span>
-          </p>
-          <?php $view = views_get_view('frontpage'); print $view->preview('block_2'); ?>
-        </article>
-      </section>
-    
-      <section class="col-der">
-        <article class="anuncio">
-          <a href="https://www.facebook.com/dnkcuteshop/?fref=ts">
-          <img src="/files/images/anuncios/anuncio-dianik-shop.png" alt="">
-          </a>
-        </article>
-
-        <!-- Anuncio google-->
-          <article class="AnuncioGoogle Anu336x280">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- Barra derecha -->
-            <ins class="adsbygoogle"
-                 style="display:inline-block;width:336px;height:280px"
-                 data-ad-client="ca-pub-4730353912478910"
-                 data-ad-slot="4411619983"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-          </article>
-        <!-- Fin anuncio -->
-
-        <!-- <article class="anuncio">
-          <a href="https://www.facebook.com/hiroshima.boom.7/?fref=ts">
-          <img src="/files/images/anuncios/anuncio_tai.jpg" alt="">
-          </a>
-        </article> -->
-
-        <article>
-          <figure class="bloqueVideo" id="bloqueVideo">
-            <h2>Video: Softcombat - #Microhiro 2016</h2>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/3vGcblygcMA" frameborder="0" allowfullscreen style=""></iframe>
-            <div id="capaTv">  
-            </div>
-          </figure>
-        </article>
-
-
-      </section>
-
-      <section>
-        
-      </section>
-
-      <section id="listado-productos" class="listado-abajo" style="text-align:center;"><!--Noticias debajo-->
-        <span class="subtitulo" style="margin: 20px 0px 30px;">Productos para ti</span>
-        <?php $view = views_get_view('frontpage'); print $view->preview('block_9'); ?>
-      </section>
-      <div class="spacer" style="clear: both;"></div>
-    </div>
-  <!-- Columnas -->
 </div><!-- Container que abro en html.tpl-->
 
 <div class="fb-page" data-href="https://www.facebook.com/colombianimeCO" data-width="380" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">

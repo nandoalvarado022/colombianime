@@ -136,6 +136,9 @@ body{
   overflow-x: hidden;
 }
 /*Home*/
+  body.front #lista-productos h3{
+    background-image: url(/files/images/overlay.png), url(/files/images/punto_repeat.png), url(/files/images/tiendas-anime.jpg);
+  }
   body.front .especial-1 h3{
     background-image: url(/files/images/overlay.png), url(/files/images/punto_repeat.png), url(/files/images/amor-amistad.jpg);
   }
