@@ -304,7 +304,7 @@ body{
 		position: relative;
 	}
   .item-producto a:nth-child(2){
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     right: 0;
     top: 0;
