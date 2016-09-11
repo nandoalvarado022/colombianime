@@ -40,13 +40,20 @@
     <!-- <img style="width:100%; height:auto;" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfl1/v/t1.0-9/13413515_1011270978992154_7323879543563251133_n.jpg?oh=0c655a0ee0169537b058f5eb7c2d176b&oe=58261EB0&__gda__=1475862517_1cc5cf5e45bfb6fa6ccdb0548792ecab">
      -->
     <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhiroshima.boom.7%2Fvideos%2F799575976845723%2F&show_text=0&width=560" width="900" height="506" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+    <!-- Ultimos productos -->
+      <div style="width: 290px;" id="ultimos-productos-noticias">
+        <?php $view = views_get_view('frontpage'); print $view->preview('block_12'); ?>
+      </div>
+    <!-- Fin -->
   </section>
 
-  <!-- Ultimos productos -->
-    <section style="width: 290px;" id="ultimos-productos-noticias">
-      <?php $view = views_get_view('frontpage'); print $view->preview('block_12'); ?>
-    </section>
-  <!-- Fin -->
+  <section class="especial-1">
+    <?php $view = views_get_view('frontpage'); print $view->preview('block_14'); ?>
+    <div class="div-twitter-timeline">
+      <a class="twitter-timeline" data-lang="es" data-width="300" data-height="430" href="https://twitter.com/ColombianimeCOL">Tweets by ColombianimeCOL</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </section>  
 
   <!-- Anuncio google-->
     <div class="AnuncioGoogle Anu728x90" id="Anu728x90-1">
@@ -80,15 +87,11 @@
     </div>
   <!-- Fin-->
 
-  <section>
-    <?php $view = views_get_view('frontpage'); print $view->preview('block_14'); ?>
-    <div class="div-twitter-timeline">
-      <a class="twitter-timeline" data-lang="es" data-width="300" href="https://twitter.com/ColombianimeCOL">Tweets by ColombianimeCOL</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-  </section>
-
   <!-- Galeria apertura home  -->
     <section id="galeria-apertura-home">
+      <h3>
+        ¿Que ha sucedido?
+      </h3>
       <?php $view = views_get_view('nodequeue_5'); print $view->preview('block'); ?>
     </section>
   <!-- Fin -->

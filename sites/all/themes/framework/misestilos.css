@@ -136,6 +136,9 @@ body{
   overflow-x: hidden;
 }
 /*Home*/
+  body.front .especial-1{
+
+  }
   #streaming-home{
     overflow: hidden;
     margin-bottom: 50px;
@@ -204,15 +207,17 @@ body{
   #apertura-video{
     display: inline-block;
     vertical-align: top;
-    width: 900px;
     position: relative;
+  }
+  #apertura-video iframe{
+    width: 900px;
   }
   .banderines{
     background: url(/sites/all/themes/framework/img/banderines.png);
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 900px;
     height: 200px;
     z-index: 1;
     background-size: 303px;
@@ -282,7 +287,7 @@ body{
   display: block;
 	}
 	.Anu320x100{display: none;}
-	#ultimos-productos-noticias{display: inline-block;}
+	#ultimos-productos-noticias{display: inline-block; vertical-align: top;}
 	.AnuncioGoogle{
 	margin: 0 auto;
 	}
@@ -348,6 +353,16 @@ body{
 	.view-frontpage.view-display-id-block_11 .owl-item{
 
 	}
+  #galeria-apertura-home h3{
+    background-image: url(/files/images/overlay.png), url(/files/images/punto_repeat.png), url(https://i.ytimg.com/vi/nwtuAhHRu9I/maxresdefault.jpg);
+    padding: 40px;
+    font-size: 52px;
+    background-attachment: fixed;
+    color: #ffffff;
+    border-top: 2px solid #da9422;
+    font-family: BebasNeue-regular;
+    letter-spacing: 3px;
+  }
 	#galeria-apertura-home{
 	margin-top: 40px;/*Utilizar cuando no esta de primera en la home*/
 	/*margin-top: -20px; Utilizar cuando esta de primera en la home**/

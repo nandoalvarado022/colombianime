@@ -214,8 +214,8 @@
             <figure class="bg"></figure>
             <img src="/files/images/bg-07.jpg" alt="">
             <img src="/files/images/bg-02.jpg" alt="">
-            <img src="/files/images/bg-03.jpg" alt="">
             <img src="/files/images/bg-09.jpg" alt="">
+            <img src="/files/images/bg-03.jpg" alt="">
             <img src="/files/images/bg-10.jpg" alt="">
           </article>    
           <article class="centro">
