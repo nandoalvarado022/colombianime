@@ -224,6 +224,7 @@
           <article class="der">
             <figure class="bg"></figure>
             <img src="/files/images/bg-04.jpg" alt="">
+            <img src="/files/images/bg-manu-1.jpg" alt="">
             <img src="/files/images/bg-05.jpg" alt="">
             <img src="/files/images/bg-06.jpg" alt="">
             <img src="/files/images/bg-11.jpg" alt="">

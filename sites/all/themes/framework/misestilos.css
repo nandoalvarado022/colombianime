@@ -1017,7 +1017,7 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   .columna-node-producto .espacio-accion *{
   margin-bottom: 20px;
   }
-  .columna-node-producto .btn-comprar, .btn-estilos-v1{
+  .columna-node-producto .btn-comprar, .btn-estilos-v1, .pager-load-more a{
     content: "Lo quiero!";
     /* position: absolute; */
     /* margin: -9px 0px 0px -92px; */
