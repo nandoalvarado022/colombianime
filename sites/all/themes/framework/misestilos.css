@@ -519,6 +519,7 @@ html body section.list-cosplayer .izq{width: 15%; float: left;}
 html body section.list-cosplayer .izq .bg, 
 html body section.list-cosplayer .der .bg{background: #fff; width: 15%; height: 100%; position: absolute; opacity: 0.5;}
 html body section.list-cosplayer .centro{float: left; width: 70%; color: transparent;}
+html body section.list-cosplayer .izq img{float: left; clear: both; margin-bottom: 5px;}
 html body section.list-cosplayer .der img{float: right; clear: both; margin-bottom: 5px;}
 html body section.list-cosplayer .der{width: 15%; float: right;}
 html body header ul{background-color: rgba(73,86,101,0.8); width: 1000px; height: 57px; margin: 0 auto;}
