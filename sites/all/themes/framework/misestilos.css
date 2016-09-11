@@ -400,7 +400,7 @@ body{
 	/*height: 0px;*/
 	transition:0.8s;
 	overflow: hidden;
-	height: 500px;
+	/*height: 500px;*/
 	margin-bottom: 30px;
 	}
 	#galeria-apertura-home .view-header{
@@ -409,7 +409,7 @@ body{
 	z-index: 1;
 	height: 45px;
 	background: rgba(0, 0, 0, 0.85);
-	margin: 340px auto 0;
+	margin: 497px auto 0;
 	right: 0;
 	left: 0;
 	color: #fff;
