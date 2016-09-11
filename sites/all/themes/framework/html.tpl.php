@@ -37,6 +37,16 @@
     <html class="" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"> <!--<![endif]-->
     <head>
       <?php print $head; ?>
+      <!--Start of Zopim Live Chat Script Atencion al cliente-->
+      <script type="text/javascript">
+      window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+      d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+      _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+      $.src="//v2.zopim.com/?4Ct2XjXXOI82AL7opacOwOrpiBMFLoLJ";z.t=+new Date;$.
+      type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+      </script>
+      <!--End of Zopim Live Chat Script-->
+
       <!-- Set the viewport width to device width for mobile -->
       <meta name="viewport" content="width=device-width" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -202,18 +212,18 @@
           <figure class="bg"></figure>
           <article class="izq">
             <figure class="bg"></figure>
-            <img src="/files/images/bg-07.png" alt="">
-            <img src="/files/images/bg-02.png" alt="">
-            <img src="/files/images/bg-03.png" alt="">
+            <img src="/files/images/bg-07.jpg" alt="">
+            <img src="/files/images/bg-02.jpg" alt="">
+            <img src="/files/images/bg-03.jpg" alt="">
           </article>    
           <article class="centro">
             Colombianime
           </article>
           <article class="der">
             <figure class="bg"></figure>
-            <img src="/files/images/bg-04.png" alt="">
-            <img src="/files/images/bg-05.png" alt="">
-            <img src="/files/images/bg-06.png" alt="">
+            <img src="/files/images/bg-04.jpg" alt="">
+            <img src="/files/images/bg-05.jpg" alt="">
+            <img src="/files/images/bg-06.jpg" alt="">
           </article>    
         </section>
         <!-- FB -->
@@ -288,7 +298,7 @@
         <div class="container">
           <div class="AnuncioCol Anu1200x100"></div>
           <!-- Popup suscripcion -->
-            <div style="display:none;">
+            <!--<div style="display:none;">
               <div id="formSuscribetePOPUP">
                 <div class="letrero-ama">
                   <span>¡Suscribete!</span>
@@ -308,7 +318,7 @@
                 </form>
                 <div style="clear:both;"></div>
               </div>
-            </div>
+            </div>-->
           <!-- Fin Popup suscripcion -->
 
           <!-- Login -->

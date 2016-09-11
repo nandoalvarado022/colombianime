@@ -16,33 +16,33 @@ $(document).ready(function(){
 	});
 	$(".bloque-info-sup a").fadeIn();
 	// Popup suscripcion
-		if($("body").width()>=1000){
-			cookieSuscripcion=getCookie("suscripcion");
-			if (cookieSuscripcion!="true") {
-				setTimeout(function(){
-					$(document).colorbox({inline:true, href:"#formSuscribetePOPUP", open:true, onComplete:function(){
-						$(".letrero-ama").addClass('animated tada');		
-						setCookie("suscripcion", "true", "1");
-					}});
-				}, 5000);
-			}
+		// if($("body").width()>=1000){
+		// 	cookieSuscripcion=getCookie("suscripcion");
+		// 	if (cookieSuscripcion!="true") {
+		// 		setTimeout(function(){
+		// 			$(document).colorbox({inline:true, href:"#formSuscribetePOPUP", open:true, onComplete:function(){
+		// 				$(".letrero-ama").addClass('animated tada');		
+		// 				setCookie("suscripcion", "true", "1");
+		// 			}});
+		// 		}, 5000);
+		// 	}
 
 
-			$("#formSuscribetePOPUP form button").click(function(e){
-				e.preventDefault();
-				datos=$("form#datos").serialize();
-				$.ajax({
-					url:"/sites/all/themes/framework/enviar-correo-suscripcion.php",
-					data:datos,
-					type:"POST",
-					success:function(res){
-						console.log(res);
-						setCookie("suscripcion", "true", "30");
-					}
-				});
-				$(".letrero-verde").css("display", "block");
-			});
-		}
+		// 	$("#formSuscribetePOPUP form button").click(function(e){
+		// 		e.preventDefault();
+		// 		datos=$("form#datos").serialize();
+		// 		$.ajax({
+		// 			url:"/sites/all/themes/framework/enviar-correo-suscripcion.php",
+		// 			data:datos,
+		// 			type:"POST",
+		// 			success:function(res){
+		// 				console.log(res);
+		// 				setCookie("suscripcion", "true", "30");
+		// 			}
+		// 		});
+		// 		$(".letrero-verde").css("display", "block");
+		// 	});
+		// }
 	// Fin popup suscripcion
 	$(window).on('scroll', function() {
 		if (isMobile!="1") {
