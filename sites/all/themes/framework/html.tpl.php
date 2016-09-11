@@ -301,6 +301,9 @@
                 <?php // include("social_buttons_new.tpl.php"); ?>
               </li>-->
             </ul>  
+          <a id="icon-page-facebook" href="https://www.facebook.com/colombianimeCO/?fref=ts" target="_BLANK"></a>
+          <a id="icon-page-twitter" href="https://twitter.com/ColombianimeCOL" target="_BLANK"></a>
+          <a id="icon-page-instagram"></a>
         </header> <!-- /#header -->
         <div class="container">
           <div class="AnuncioCol Anu1200x100"></div>
