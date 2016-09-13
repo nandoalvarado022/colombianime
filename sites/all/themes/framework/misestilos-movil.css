@@ -214,8 +214,13 @@ iframe{
 /*Fin Home*/
 
 /*Article*/
+	#header .watsapp{
+		position: absolute;
+		left: 0px;
+		top: 30px;
+	}
 	body.node-type-article table{
-		width: auto;
+		width: auto !important;
 	}
 	html body.node-type-productos .container section.col-der{
 		margin: 0px 15px 0;
