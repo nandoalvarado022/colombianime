@@ -2,6 +2,10 @@ iframe{
 	max-width: 100%;
 }
 /*Home*/
+	section h3{
+		margin-bottom: 20px;
+		padding: 30px;
+	}
 	.banderines{
 		width: 100%;
 	}
