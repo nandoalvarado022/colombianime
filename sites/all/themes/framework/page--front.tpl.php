@@ -36,11 +36,10 @@
   </section>-->
 
   <section id="apertura-video">
-    <h3>Hiro Con Evolution 3.0</h3>
+    <h3>Wakkishonen 2.0</h3>
     <div class="banderines"></div>
-    <!-- <img style="width:100%; height:auto;" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfl1/v/t1.0-9/13413515_1011270978992154_7323879543563251133_n.jpg?oh=0c655a0ee0169537b058f5eb7c2d176b&oe=58261EB0&__gda__=1475862517_1cc5cf5e45bfb6fa6ccdb0548792ecab">
-     -->
-    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhiroshima.boom.7%2Fvideos%2F799575976845723%2F&show_text=0&width=560" width="900" height="506" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+    <img style="width: 900px; height: auto; margin-top: 60px;" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14045778_603437169836409_8991861492947177831_n.jpg?oh=1c730d66eccacae8e2ebf34f5e0c3ae9&oe=5872F163">
+    
 
     <!-- Ultimos productos -->
       <div style="width: 290px;" id="ultimos-productos-noticias">
