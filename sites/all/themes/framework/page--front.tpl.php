@@ -38,8 +38,14 @@
   <section id="apertura-video">
     <h3>Wakkishonen 2.0</h3>
     <div class="banderines"></div>
-    <img style="width: 900px; height: auto; margin-top: 60px;" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14045778_603437169836409_8991861492947177831_n.jpg?oh=1c730d66eccacae8e2ebf34f5e0c3ae9&oe=5872F163">
-    
+    <div class="imagenes" style="width: 900px; display: inline-block !important; margin-top: 40px;">
+      <div class="content">
+        <img style="width: 900px; height: auto; margin-top: 60px;" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14045778_603437169836409_8991861492947177831_n.jpg?oh=1c730d66eccacae8e2ebf34f5e0c3ae9&oe=5872F163">
+        <img style="width: 900px; height: auto; margin-top: 60px;" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14364737_290567541328801_2531733397392589166_n.jpg?oh=521ceaf04c04702579ec3352139e84b8&oe=5880C81C">
+        <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14457288_290551571330398_1119939201881545755_n.jpg?oh=9c780e06ba02b0b7737afbcd0ef4e4fd&oe=587C4205">
+        <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14446121_290559591329596_2740420187307656433_n.jpg?oh=63c9fc2937c1dfb9e2d35c0e61678bb7&oe=587FF37E">
+      </div>
+    </div>
 
     <!-- Ultimos productos -->
       <div style="width: 290px;" id="ultimos-productos-noticias">
@@ -203,6 +209,14 @@
 <div class="fb-page" data-href="https://www.facebook.com/colombianimeCO" data-width="380" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">
 
 <script>
+  $("#apertura-video .imagenes .content").owlCarousel({
+    autoPlay: 3000,
+    items : 1
+    //itemsDesktop : [480,1],
+    //itemMobile:[300, 1]
+    //itemsDesktopSmall : [979,1]
+  });
+
   $(".item-producto").mouseenter(function(){
     $(this).find("a:nth-child(2) img").addClass("opacity-1");
   }).mouseleave(function(){
