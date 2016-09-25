@@ -237,12 +237,12 @@ body{
     margin-top: 0px;
   }
   .banderines{
-    background: url(/sites/all/themes/framework/img/banderines.png);
+    background: url(/sites/all/themes/framework/img/banderines-2.png);
     position: absolute;
     top: 460px;
     left: 0;
     width: 900px;
-    height: 200px;
+    height: 70px;
     z-index: 1;
     background-size: 303px;
     background-repeat-y: no-repeat;
