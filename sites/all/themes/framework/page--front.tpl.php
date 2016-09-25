@@ -40,8 +40,8 @@
     <div class="banderines"></div>
     <div class="imagenes">
       <div class="content">
-        <img style="width: 900px; height: auto; margin-top: 60px;" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14045778_603437169836409_8991861492947177831_n.jpg?oh=1c730d66eccacae8e2ebf34f5e0c3ae9&oe=5872F163">
-        <img style="width: 900px; height: auto; margin-top: 60px;" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14364737_290567541328801_2531733397392589166_n.jpg?oh=521ceaf04c04702579ec3352139e84b8&oe=5880C81C">
+        <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14045778_603437169836409_8991861492947177831_n.jpg?oh=1c730d66eccacae8e2ebf34f5e0c3ae9&oe=5872F163">
+        <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14364737_290567541328801_2531733397392589166_n.jpg?oh=521ceaf04c04702579ec3352139e84b8&oe=5880C81C">
         <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14457288_290551571330398_1119939201881545755_n.jpg?oh=9c780e06ba02b0b7737afbcd0ef4e4fd&oe=587C4205">
         <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14446121_290559591329596_2740420187307656433_n.jpg?oh=63c9fc2937c1dfb9e2d35c0e61678bb7&oe=587FF37E">
       </div>
@@ -107,6 +107,9 @@
 
   <!-- Columnas -->
     <section id="lista-productos">
+      <div class="listado_tiendas">
+        
+      </div>
       <h3>
         Productos para ti ^^
       </h3>
@@ -210,8 +213,9 @@
 
 <script>
   $("#apertura-video .imagenes .content").owlCarousel({
-    autoPlay: 3000,
-    items : 1
+    //autoPlay: 3000,
+    items : 1,
+    pagination: false
     //itemsDesktop : [480,1],
     //itemMobile:[300, 1]
     //itemsDesktopSmall : [979,1]

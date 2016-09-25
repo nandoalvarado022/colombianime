@@ -234,12 +234,12 @@ body{
   #apertura-video .imagenes{
     width: 900px;
     display: inline-block !important;
-    margin-top: 40px;
+    margin-top: 0px;
   }
   .banderines{
     background: url(/sites/all/themes/framework/img/banderines.png);
     position: absolute;
-    top: 100px;
+    top: 460px;
     left: 0;
     width: 900px;
     height: 200px;
