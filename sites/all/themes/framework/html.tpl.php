@@ -244,7 +244,7 @@
           </script>
         <!-- Fin FB -->
         <header id="header" class="region-header" role="banner" class="clearfix">
-          <?php print views_embed_view('frontpage','block_13'); ?>
+          <?php // print views_embed_view('frontpage','block_13'); ?>
           <figure class="content_logo" id="logo-colombianime">
             <a href="/">
               <img src="/files/images/logo-colombianime.png" alt="Logo Colombianime">
