@@ -2,6 +2,7 @@ iframe{
 	max-width: 100%;
 }
 /*Home*/
+	#listado_vendedores{display: none;}
 	.view-id-frontpage.view-display-id-block_14 .item-list:nth-child(2) > *, .view-id-frontpage.view-display-id-block_14 .item-list:nth-child(3) > *{
 		float: none;
 	}
