@@ -15,48 +15,7 @@ iframe{
 		text-align: center;
 		line-height: 45px;
 	}
-	/*Especial vendedor*/
-	body.node-type-vendedor h2, body.node-type-vendedor h1.title{
-		display: block !important;
-		text-align: center;
-		padding: 10px 10px;
-	    background: #6CC6D9;
-	    font-weight: bold;
-	    font-size: 30px;
-	    text-decoration: none;
-	    display: inline-block;
-	    font-family: "BebasNeue-regular";
-	}
-	body.node-type-vendedor .header_nvendedor h1{
-		display: none;
-	}
-	body.node-type-vendedor #especial_vendedor .fondo{
-		width: 100%;
-	}
-	body.node-type-vendedor #especial_vendedor .titulo{
-		right: 0;
-		text-align: center;
-	}
-	body.node-type-vendedor #especial_vendedor .titulo h2{
-		line-height: 40px;
-		font-size: 40px;
-	}
-	body.node-type-vendedor #especial_vendedor .titulo span{
-		margin-top: 0;
-	}
-	body.node-type-vendedor #especial_vendedor .views-row{
-		display: none;
-	}
-	body.node-type-vendedor .noticias_destacadas{
-		display: none;
-	}
-	body.node-type-vendedor .header_nvendedor{
-		margin: 20px 0px 0;
-	}
-	section h3{
-		margin-bottom: 20px;
-		padding: 30px;
-	}
+	
 	.banderines{
 		width: 100%;
 		height: 70px;
@@ -277,6 +236,48 @@ iframe{
 /*Fin Home*/
 
 /*Article*/
+	/*Especial vendedor*/
+	body.node-type-vendedor h2, body.node-type-vendedor h1.title{
+		display: block !important;
+		text-align: center;
+		padding: 10px 10px;
+	    background: #6CC6D9;
+	    font-weight: bold;
+	    font-size: 30px;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-family: "BebasNeue-regular";
+	}
+	body.node-type-vendedor .header_nvendedor h1{
+		display: none;
+	}
+	body.node-type-vendedor #especial_vendedor .fondo{
+		width: 100%;
+	}
+	body.node-type-vendedor #especial_vendedor .titulo{
+		right: 0;
+		text-align: center;
+	}
+	body.node-type-vendedor #especial_vendedor .titulo h2{
+		line-height: 40px;
+		font-size: 40px;
+	}
+	body.node-type-vendedor #especial_vendedor .titulo span{
+		margin-top: 0;
+	}
+	body.node-type-vendedor #especial_vendedor .views-row{
+		display: none;
+	}
+	body.node-type-vendedor .noticias_destacadas{
+		display: none;
+	}
+	body.node-type-vendedor .header_nvendedor{
+		margin: 20px 0px 0;
+	}
+	section h3{
+		margin-bottom: 20px;
+		padding: 30px;
+	}
 	body.page-node-355 table td:nth-child(1){
 		max-width: 80px;
 	    margin-right: 15px;
