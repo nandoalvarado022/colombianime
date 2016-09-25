@@ -38,6 +38,9 @@
   <section id="apertura-video">
     <h3>Wakkishonen 2.0</h3>
     <div class="banderines"></div>
+    <div id="listado_vendedores">
+      <?php $view = views_get_view('vendedor'); print $view->preview('block_10'); ?>
+    </div>
     <div class="imagenes">
       <div class="content">
         <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14045778_603437169836409_8991861492947177831_n.jpg?oh=1c730d66eccacae8e2ebf34f5e0c3ae9&oe=5872F163">
@@ -135,7 +138,7 @@
       
         <section class="col-der">
           <article class="anuncio">
-            <a href="https://www.facebook.com/dnkcuteshop/?fref=ts">
+            <a href="http://colombianime.com/dnk-cuteshop">
             <img src="/files/images/anuncios/anuncio-dianik-shop.png" alt="">
             </a>
           </article>
