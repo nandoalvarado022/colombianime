@@ -38,7 +38,7 @@
   <section id="apertura-video">
     <h3>Wakkishonen 2.0</h3>
     <div class="banderines"></div>
-    <div class="imagenes" style="width: 900px; display: inline-block !important; margin-top: 40px;">
+    <div class="imagenes">
       <div class="content">
         <img style="width: 900px; height: auto; margin-top: 60px;" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14045778_603437169836409_8991861492947177831_n.jpg?oh=1c730d66eccacae8e2ebf34f5e0c3ae9&oe=5872F163">
         <img style="width: 900px; height: auto; margin-top: 60px;" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14364737_290567541328801_2531733397392589166_n.jpg?oh=521ceaf04c04702579ec3352139e84b8&oe=5880C81C">

@@ -231,6 +231,11 @@ body{
   #apertura-video iframe{
     width: 900px;
   }
+  #apertura-video .imagenes{
+    width: 900px;
+    display: inline-block !important;
+    margin-top: 40px;
+  }
   .banderines{
     background: url(/sites/all/themes/framework/img/banderines.png);
     position: absolute;
