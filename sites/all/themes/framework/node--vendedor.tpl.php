@@ -1,33 +1,33 @@
 <?php
+    //echo "<pre>"; print_r($variables); echo "</pre>";
+    //hide($content['main_front']);
+    // echo "<pre>";print_r($node);echo "</pre>";
+    $description = array(
+    '#tag' => 'meta',
+    '#attributes' => array(
+    'property' => 'description',
+    'content' => "Lo mejor de los productos Anime en Colombia, tiendas como: Dnk Cute Shop, Taiyou Anime, Hiroshima Boom ¡ya estan aquí!",
+    ));
+    drupal_add_html_head($description, 'description');
 
-//echo "<pre>"; print_r($variables); echo "</pre>";
-//hide($content['main_front']);
+    $og_description = array(
+    '#tag' => 'meta',
+    '#attributes' => array(
+    'property' => 'og:description',
+    'content' => $node->body["und"][0]["value"]));
+    drupal_add_html_head($og_description, 'description');
 
-// echo "<pre>";print_r($node);echo "</pre>";
-$description = array(
-'#tag' => 'meta',
-'#attributes' => array(
-'property' => 'description',
-'content' => "Lo mejor de los productos Anime en Colombia, tiendas como: Dnk Cute Shop, Taiyou Anime, Hiroshima Boom ¡ya estan aquí!",
-));
-drupal_add_html_head($description, 'description');
+    $imagen = $node->field_foto["und"][0]["uri"];
+    $imagen=image_style_url('200x200', $imagen);
 
-$og_description = array(
-'#tag' => 'meta',
-'#attributes' => array(
-'property' => 'og:description',
-'content' => $node->body["und"][0]["value"]));
-drupal_add_html_head($og_description, 'description');
-
-$imagen = $node->field_foto["und"][0]["uri"];
-$imagen=image_style_url('200x200', $imagen);
-
-$og_image = array(
-'#tag' => 'meta',
-'#attributes' => array(
-'property' => 'og:image',
-'content' => $imagen)); 
-drupal_add_html_head($og_image, 'og:image');?>
+    $og_image = array(
+    '#tag' => 'meta',
+    '#attributes' => array(
+    'property' => 'og:image',
+    'content' => $imagen)); 
+    drupal_add_html_head($og_image, 'og:image');
+    $titulo_especial= isset($node->field_titulo_especial['und'][0]['value']) ? $node->field_titulo_especial['und'][0]['value'] : "";
+?>
 
 <!--<link rel="stylesheet" href="/sites/all/themes/framework/css/estilos_vendedor.css">-->
 <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
@@ -55,11 +55,31 @@ if ($usuarioAdmin==true){?>
         print views_embed_view('vendedor','block_6');?>
     </div>
     <?php
-}
+}?>
 
+<?php if($titulo_especial!=""){?>
+    <section id="especial_vendedor">
+        <img src="<?php print image_style_url('1200x510', $node->field_imagen_especial['und'][0]['uri'])?>" class="fondo">
+        <div class="titulo">
+        <h2>
+        <?php echo $node->field_titulo_especial['und'][0]['value']?>
+        </h2>
+        <span>
+        <?php echo $node->field_subtitulo_especial['und'][0]['value']?></span>
+        </div>
+        <?php 
+        $array = array($node->field_producto_especial["und"][0]["nid"]);
+        $view = views_get_view('vendedor');
+        $view->set_display("block_9");
+        $view->set_arguments($array);
+        $view->pre_execute();
+        $view->execute();
+        print $content = $view->render(); 
+        ?>
+    </section>
+    <?php
+}?>
 
-// echo "La galeria es:".$idGaleria;
-?>
 <div class='header_nvendedor'> 
     <div id="info_nvendedor">
 	    <div class='logo_nvendedor'>
@@ -91,10 +111,6 @@ if ($usuarioAdmin==true){?>
                 print_r($node->body["und"][0]["value"]);
                 ?>
             </p>
-            <!-- <strong>Instagram:</strong> <?php // echo $node->field_instagram["und"][0]["value"] ?> <br><br><br> -->
-            <!--<strong>Twitter:</strong>  echo $node->field_twitter["und"][0]["value"] <br><br>-->
-            <!--<strong>Facebookr:</strong> // echo $node->field_facebook["und"][0]["value"]  <br><br>-->
-            <!--<strong>Youtube:</strong>  echo $node->field_youtube["und"][0]["value"] <br><br> -->
         </div>
     </div>
     
@@ -141,3 +157,32 @@ if ($usuarioAdmin==true){?>
         <?php 
     }
 ?>
+<script src="/files/js/TweenMax.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(window).load(function() {
+            TweenMax.to("#especial_vendedor .titulo", 1, {
+              opacity:1,
+              x:0,
+              onComplete:function(){
+                TweenMax.to("#especial_vendedor .item-producto", 1, {
+                    top:"30px",
+                    ease:Back.easeOut,
+                  onComplete:function(){
+                    TweenMax.to("#especial_vendedor .item-producto img", 2, {
+                      opacity:1,
+                      rotation:360,
+                    }, 0.2);
+                    TweenMax.to("#especial_vendedor .item-producto .views-field-title", 2, {
+                      opacity:1,
+                    }, 0.2);
+                    TweenMax.to("#especial_vendedor .item-producto .views-field-field-precio", 2, {
+                      opacity:1,
+                    }, 0.2);
+                  }
+                }, 0.2);
+              }
+            }, 0.2);
+        });
+    });
+</script>

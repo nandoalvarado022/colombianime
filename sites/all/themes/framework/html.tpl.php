@@ -253,84 +253,10 @@
           <div class="watsapp">
             318 741 4972
           </div>
-          <ul style="display:none;">
-            <!-- <li>
-              <a href="">
-                <img src="sites/all/themes/framework/img/find.png" alt="" class="icon-find">
-              </a>
-              <input type="text" class="hide">
-            </li> -->
-            <li>
-              <a href="/paso-algo">CONTACTANOS</a>
-            </li>
-            <!-- <li>
-              <a href="">GALERIAS</a>
-            </li> -->
-            <li>
-              <a href="/#listado-productos" class="">LO QUE BUSCAS</a>
-            </li>
 
-            <li>
-              <a href="/" class="active">INICIO</a>
-            </li>
-
-            
-              <!--
-              <li class="logo">
-                <a href="http://colombianime.com">
-                  <img src="http://colombianime.com/files/images/colombia-anime.jpg" alt=""> 
-                </a>
-              </li>-->
-              
-              <!--<li class="buscador">
-                <script>
-                  (function() {
-                    var cx = '013354508874791541030:p0ok2em_l3q';
-                    var gcse = document.createElement('script');
-                    gcse.type = 'text/javascript';
-                    gcse.async = true;
-                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                        '//cse.google.com/cse.js?cx=' + cx;
-                    var s = document.getElementsByTagName('script')[0];
-                    s.parentNode.insertBefore(gcse, s);
-                  })();
-                </script>
-                <gcse:search></gcse:search>
-              </li>-->
-              <!--
-              <li class="redes-sociales">
-                <?php // include("social_buttons_new.tpl.php"); ?>
-              </li>-->
-            </ul>  
           <a id="icon-page-facebook" href="https://www.facebook.com/colombianimeCO/?fref=ts" target="_BLANK"></a>
           <a id="icon-page-twitter" href="https://twitter.com/ColombianimeCOL" target="_BLANK"></a>
           <a id="icon-page-instagram"></a>
-        </header> <!-- /#header -->
-        <div class="container">
-          <div class="AnuncioCol Anu1200x100"></div>
-          <!-- Popup suscripcion -->
-            <!--<div style="display:none;">
-              <div id="formSuscribetePOPUP">
-                <div class="letrero-ama">
-                  <span>¡Suscribete!</span>
-                </div>
-
-                <div class="letrero-verde animated bounceInLeft">
-                  <span>Ahora dale link y comparte</span>
-                </div>
-
-                  <div class="fb-page" data-href="https://www.facebook.com/colombianimeCO" data-width="380" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">
-                </div>
-
-                <form id="datos">
-                  <input type="text" name="nombre" placeholder="Dinos tu nombre">
-                  <input type="text" name="correo" placeholder="Correo electronico">
-                  <button>Enviar</button>
-                </form>
-                <div style="clear:both;"></div>
-              </div>
-            </div>-->
-          <!-- Fin Popup suscripcion -->
 
           <!-- Login -->
             <section>
@@ -367,7 +293,35 @@
                 }?>
               </div>
             </section>
-          <?php// Login?>
+          <!-- fin Login -->
+        </header> <!-- /#header -->
+        <div class="container">
+          <div class="AnuncioCol Anu1200x100"></div>
+          <!-- Popup suscripcion -->
+            <!--<div style="display:none;">
+              <div id="formSuscribetePOPUP">
+                <div class="letrero-ama">
+                  <span>¡Suscribete!</span>
+                </div>
+
+                <div class="letrero-verde animated bounceInLeft">
+                  <span>Ahora dale link y comparte</span>
+                </div>
+
+                  <div class="fb-page" data-href="https://www.facebook.com/colombianimeCO" data-width="380" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">
+                </div>
+
+                <form id="datos">
+                  <input type="text" name="nombre" placeholder="Dinos tu nombre">
+                  <input type="text" name="correo" placeholder="Correo electronico">
+                  <button>Enviar</button>
+                </form>
+                <div style="clear:both;"></div>
+              </div>
+            </div>-->
+          <!-- Fin Popup suscripcion -->
+
+          
           <?php print $page; ?>
           <?php // print $page_bottom;?>
           <?php //echo "La variable es:".$_GET["q"];?>

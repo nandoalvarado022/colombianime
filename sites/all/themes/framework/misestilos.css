@@ -78,6 +78,7 @@
 #user-login{
   float: right;
   display: none;
+  margin: -24px 10px 0 0;
 }
 #user-login #edit-actions{
   display: inline-block;
@@ -98,7 +99,7 @@
 }
 #btnsalir, #btn_ingreso_tiendas{
   float: right;
-  margin: 0px 20px 0 5px;
+  margin: -15px 20px 0 5px;
   cursor: pointer;
 }
 .view-id-vendedor.view-display-id-block_7{
@@ -216,25 +217,6 @@ body{
     width: 170px;
     height: auto;
     max-width: 170px;
-  }
-  #header.scrollDifrCro{
-    height: 65px;
-    
-  }
-  #header.scrollDifrCro .view-id-frontpage.view-display-id-block_13 .views-field-field-foto{
-    display: none;
-  }
-  #header.scrollDifrCro .view-id-frontpage.view-display-id-block_13 .views-row{
-    width: 270px;
-    height: 40px;
-    overflow: hidden;
-  }
-  #header.scrollDifrCro .view-id-frontpage.view-display-id-block_13 .view-header{
-    display: inline-block;
-  }
-  #header.scrollDifrCro .view-id-frontpage.view-display-id-block_13 .view-content{
-    display: inline-block;
-    vertical-align: top;
   }
   html body .container.scrollDifrCro{
     /*padding-top: 105px;*/
@@ -557,7 +539,7 @@ body{
   font-family: 'Raleway', sans-serif;
   line-height: 20px;
 }
-html body header{position:fixed; background: rgba(73,86,101,0.7); width: 100%; z-index: 999; left: 0; right: 0; margin: 0 auto; transition:0.5s; height: 190px;}
+html body header{position:fixed; background: rgba(73,86,101,0.7); width: 100%; z-index: 999; left: 0; right: 0; margin: 0 auto; transition:0.5s; height: 60px;}
 html body section.list-cosplayer{position: fixed; top: 0; z-index: -1; width: 100%;}
 html body section.list-cosplayer img{max-width: 100%;}
 html body section.list-cosplayer .izq{width: 15%; float: left;}
@@ -608,16 +590,6 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   height: auto;
   margin-top: 6px;
   }
-  .bloque-info-sup{
-    z-index: 999;
-    padding: 10px 0;
-    background-size: initial;
-    font-weight: bold;
-    height: 40px;
-    background-repeat-y: no-repeat;
-    background-position: 40px 20px;
-    background-color: #7f8893;
-  }
   .bloque-info-sup a{
   color: #fff;
   display: none;
@@ -629,7 +601,7 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
   width: 1000px;
   margin:0 auto;
   background: #fff;
-  padding-top: 190px;
+  padding-top: 60px;
   transition: 0.5s;
   }
   .columnas{/*No tiene margin top porque lo tiene el titulo de la columna*/}
@@ -1104,13 +1076,6 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
     margin: 10px 0;
     font-size: 14px;
   }
-
-
-/**/
-
-/*  .fb-like-colombianime {float: left;
-  left: 30px;
-  top: 14px;}*/
 /*Fin Node productos*/
 
 
@@ -1184,18 +1149,8 @@ li.logo{background: #fff; height: 100%; cursor: pointer;}
 /*Fin popup suscripcion*/
 
 .view-frontpage.view-display-id-block_12{
-text-align: center;
-/*margin-top: 50px;*/
+  text-align: center;
 }
-
-/*.view-frontpage.view-display-id-block_12 .view-header p, .view-frontpage.view-display-id-block_9 .view-header p{
-  font-size: 18px;
-  font-weight: 500;
-  color: #DA941C;
-  margin: 20px 0;
-  text-align: left;
-  text-transform: uppercase;
-}*/
 .view-frontpage.view-display-id-block_9 .view-header p{
   background: #e78e06;
   color: #fff;
@@ -1220,6 +1175,43 @@ html body .container, .bloque-info-sup, html body header, html body header ul{
   width: 1200px;
 }
 /*Despliegue vendedor*/
+  #especial_vendedor{
+    position:relative;
+  }
+  #especial_vendedor .titulo{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, 500, 0);
+  }
+  #especial_vendedor .titulo h2{
+    background: none;
+    color: #fff;
+    font-size: 80px;
+    padding: 0;
+  }
+  #especial_vendedor .titulo span{
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 8px;
+  }
+  #especial_vendedor .views-row{
+    position: absolute;
+    top: -250px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px 0px 10px;
+    left: 50px;
+  }
+  #especial_vendedor .views-field-title{
+      width: 170px;
+      margin: -4px auto 3px; opacity:0;
+  }
+  #especial_vendedor .views-field-field-precio{
+      opacity:0;
+  }
   .view-id-vendedor.view-display-id-block_8 .views-field-title{
     border-bottom: 5px solid #e7e013;
     margin: 10px;

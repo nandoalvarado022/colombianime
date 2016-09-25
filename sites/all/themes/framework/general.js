@@ -44,6 +44,7 @@ $(document).ready(function(){
 		// 	});
 		// }
 	// Fin popup suscripcion
+	/*
 	$(window).on('scroll', function() {
 		if (isMobile!="1") {
 			if($(window).scrollTop() > 0) {
@@ -55,6 +56,7 @@ $(document).ready(function(){
 			}
 		}
     });
+    */
 });
 
 
