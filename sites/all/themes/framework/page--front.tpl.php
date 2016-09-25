@@ -216,7 +216,7 @@
 
 <script>
   $("#apertura-video .imagenes .content").owlCarousel({
-    //autoPlay: 3000,
+    autoPlay: 3000,
     items : 1,
     pagination: false
     //itemsDesktop : [480,1],
