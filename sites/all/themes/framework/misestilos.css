@@ -1199,7 +1199,7 @@ html body .container, .bloque-info-sup, html body header, html body header ul{
   }
   #especial_vendedor .views-row{
     position: absolute;
-    top: -250px;
+    top: -320px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 20px 0px 10px;
