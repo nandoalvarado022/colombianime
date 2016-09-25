@@ -148,7 +148,9 @@ body{
   }
   #listado_vendedores .views-row img{
     border-radius: 50%;
-
+  }
+  #listado_vendedores .views-row .views-field-title{
+    text-align: center;
   }
   #icon-page-facebook{
     height: 30px;
