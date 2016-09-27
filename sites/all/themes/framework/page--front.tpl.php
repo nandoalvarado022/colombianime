@@ -230,7 +230,7 @@
 
   function initShazam(/*element*/) {
     $(window).on('scroll resize', function () {
-      var element = $('.especial-1');
+      var element = $('.view-id-vendedor.view-display-id-block_10');
       res=elementVisible(element);
       if (res==true) {
         mostrarListadoVendedores();
@@ -241,10 +241,11 @@
   function mostrarListadoVendedores(){
     left=40;
     for (var i = 1; i <= 5; i++) {
-      TweenMax.staggerTo("#listado_vendedores .views-row:nth-child("+i+")", 1, {
+      TweenMax.staggerTo("#listado_vendedores .views-row:nth-child("+i+")", 0.7, {
         "left": left+"px",
-        delay: i-1
-      }, 0.2);
+        delay: (i-1),
+        ease: Bounce.easeOut
+      }, 0.2  );
       left=left+170;
     }
   }
