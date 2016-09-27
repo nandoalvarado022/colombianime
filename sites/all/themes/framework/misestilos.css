@@ -144,7 +144,7 @@ body{
   }
   #listado_vendedores .views-row{
     display: inline-block;
-    margin-left: 40px;
+    margin-left: -170px;
     width: 136px;
     vertical-align: top;
   }

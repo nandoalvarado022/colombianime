@@ -157,7 +157,6 @@ if ($usuarioAdmin==true){?>
         <?php 
     }
 ?>
-<script src="/files/js/TweenMax.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $(window).load(function() {
