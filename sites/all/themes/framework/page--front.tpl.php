@@ -215,6 +215,41 @@
 <div class="fb-page" data-href="https://www.facebook.com/colombianimeCO" data-width="380" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">
 
 <script>
+  //Listado vendedores efecto:
+  function elementVisible(element) {
+    var visible = true;
+    var windowTop = $(document).scrollTop();
+    var windowBottom = windowTop + window.innerHeight;
+    var elementPositionTop = element.offset().top;
+    var elementPositionBottom = elementPositionTop + element.height();
+    if (elementPositionTop > windowBottom || elementPositionBottom < windowTop) {
+      visible = false;
+    }
+    return visible;
+  }
+
+  function initShazam(/*element*/) {
+    $(window).on('scroll resize', function () {
+      var element = $('.especial-1');
+      res=elementVisible(element);
+      if (res==true) {
+        mostrarListadoVendedores();
+      }
+    });
+  }
+
+  function mostrarListadoVendedores(){
+    TweenMax.staggerTo("#listado_vendedores .views-row", 2, {
+      "margin-left": "40px",
+      rotation:360,
+      delay:0.5
+    }, 0.5);
+  }
+
+  $(document).ready(function() {
+    initShazam();
+  });
+
   $("#apertura-video .imagenes .content").owlCarousel({
     autoPlay: 3000,
     items : 1,
