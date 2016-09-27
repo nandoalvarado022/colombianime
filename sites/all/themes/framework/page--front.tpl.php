@@ -239,11 +239,14 @@
   }
 
   function mostrarListadoVendedores(){
-    TweenMax.staggerTo("#listado_vendedores .views-row", 2, {
-      "margin-left": "40px",
-      rotation:360,
-      delay:0.5
-    }, 0.5);
+    left=40;
+    for (var i = 1; i <= 5; i++) {
+      TweenMax.staggerTo("#listado_vendedores .views-row:nth-child("+i+")", 1, {
+        "left": left+"px",
+        delay: i-1
+      }, 0.2);
+      left=left+170;
+    }
   }
 
   $(document).ready(function() {
