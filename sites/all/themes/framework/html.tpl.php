@@ -355,11 +355,12 @@
             }, 30000);
           </script>
         </div>
-
-        <script language="JavaScript" type="text/javascript">
-        TrustLogo("https://colombianime.com/img/comodo.png", "CL1", "none");
-        </script>
-        <a href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>
+        <div class="comodoTL">
+          <script language="JavaScript" type="text/javascript">
+          TrustLogo("https://colombianime.com/img/comodo.png", "CL1", "none");
+          </script>
+          <a href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>
+        </div>
       </body>
     </html>
     <?php
