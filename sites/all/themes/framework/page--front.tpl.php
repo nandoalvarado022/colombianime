@@ -1,3 +1,4 @@
+<img src="/img/comodo.png">
 <?php
   $description = array(
   '#tag' => 'meta',
