@@ -26,6 +26,8 @@
 
 $img=str_replace("<span>", "", $fields["uri"]->content);
 $img=str_replace("</span>", "", $img);
+$link=str_replace("<span>", "", $fields["path"]->content);
+$link=str_replace("</span>", "", $link);
 
 ?>
 
@@ -35,18 +37,22 @@ $img=str_replace("</span>", "", $img);
     <h2 class="mdl-card__title-text"><?php print $fields["title"]->content;?></h2>
   </div>
   <div class="mdl-card__supporting-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Mauris sagittis pellentesque lacus eleifend lacinia...
+	<?php print $fields["body"]->content;?>
   </div>
   <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="<?php print $link;?>">
+      Seguir leyendo
     </a>
   </div>
   <div class="mdl-card__menu">
-    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="menu-share-<?php echo $fields["nid"] ?>">
       <i class="material-icons">share</i>
     </button>
+
+	<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-share-<?php echo $fields["nid"] ?>">
+	  <li class="mdl-menu__item">Facebook</li>
+	  <li class="mdl-menu__item">Twitter</li>
+	</ul>
   </div>
 </div>
 
