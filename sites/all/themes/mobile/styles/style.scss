@@ -1,3 +1,17 @@
+header{
+	background-color: #7f8893;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    bottom: 0;
+    img{
+    	width: 200px;
+	    margin: 5px auto;
+	    display: block;
+    }
+}
 body.page-node{
 	.mdl-card{widows: 90%;}
 	#skip-link{display:none;}
