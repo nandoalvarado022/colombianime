@@ -44,27 +44,43 @@
   "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
 
-<head profile="<?php print $grddl_profile; ?>">
-  <?php // print $head; ?>
-  <title><?php print $head_title; ?></title>
-  <meta name="MobileOptimized" content="width">
-  <meta name="HandheldFriendly" content="true">
-  <meta name="viewport" content="width=device-width, target-densityDpi=160dpi, initial-scale=1, user-scalable=1">
-  <?php // print $styles; ?>
-  <?php // print $scripts; ?>
-  <!-- Material  -->
-  <link rel="stylesheet" href="<?php print path_to_theme()?>/material/material.min.css">
-  <script src="<?php print path_to_theme()?>/material/material.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="<?php print path_to_theme()?>/styles/style.css">
+  <head profile="<?php print $grddl_profile; ?>">
+    <?php // print $head; ?>
+    <title><?php print $head_title; ?></title>
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, target-densityDpi=160dpi, initial-scale=1, user-scalable=1">
+    <?php // print $styles; ?>
+    <?php // print $scripts; ?>
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Material  -->
+    <link rel="stylesheet" href="<?php print path_to_theme()?>/material/material.min.css">
+    <script src="<?php print path_to_theme()?>/material/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="<?php print path_to_theme()?>/styles/style.css">
 
-</head>
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  </div>
-  <?php // print $page_top; ?>
-  <?php print $page; ?>
-  <?php print $page_bottom; ?>
-</body>
+  </head>
+  <body class="<?php print $classes; ?>" <?php print $attributes;?>>
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
+    </div>
+    <?php // print $page_top; ?>
+    <?php print $page; ?>
+    <?php print $page_bottom; ?>
+    <!-- pwa -->
+    <script type="text/javascript">
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+        .then(function(reg) {
+          console.log('Registro exitoso', reg.scope);
+        })
+        .catch(function(error) {
+          console.log('Error', error);
+        });
+      }
+    </script>
+
+  </body>
 </html>

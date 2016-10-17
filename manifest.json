@@ -1,0 +1,13 @@
+{
+  "short_name": "Colombianime",
+  "name": "Colombianime",
+  "icons": [{
+    "src": "files/images/colombia-anime.jpg",
+    "type": "image/png",
+    "sizes": "200x200"
+  }],
+  "background_color": "#f9bd00",
+  "theme_color": "#3c3c3b",
+  "display": "standalone", 
+  "orientation": "portrait"
+}
