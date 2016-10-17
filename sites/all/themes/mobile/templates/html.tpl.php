@@ -71,6 +71,7 @@
     <?php print $page_bottom; ?>
     <!-- pwa -->
     <script type="text/javascript">
+      /*
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js', { scope: '/' })
         .then(function(reg) {
@@ -79,7 +80,7 @@
         .catch(function(error) {
           console.log('Error', error);
         });
-      }
+      }*/
     </script>
 
   </body>
