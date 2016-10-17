@@ -1,14 +1,14 @@
 header {
   background-color: #7f8893;
-  overflow: hidden;
   position: fixed;
   left: 0;
   z-index: 10;
   width: 100%;
-  bottom: 0; }
+  top: 0;
+  height: 44px; }
   header img {
     width: 200px;
-    margin: 5px auto;
+    margin: 0px auto 0;
     display: block; }
 
 body.page-node .mdl-card {
