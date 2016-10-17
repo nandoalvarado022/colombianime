@@ -1,0 +1,15 @@
+body.page-node .mdl-card {
+  widows: 90%; }
+body.page-node #skip-link {
+  display: none; }
+body.page-node .demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px; }
+body.page-node .demo-card-wide > .mdl-card__menu {
+  color: #fff; }
+body.page-node h2 a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
